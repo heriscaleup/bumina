@@ -218,7 +218,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-full overflow-hidden relative flex-shrink-0">
-              <Image src="/logo.webp" alt="Logo Bumina EENK" fill className="object-cover" unoptimized />
+              <Image src="/logo.webp" alt="Logo Bumina EENK" fill className="object-cover" unoptimized loading="lazy" />
             </div>
             <span className="font-extrabold text-white text-base tracking-tight leading-none">
               Bumina<span className="text-emerald-400"> EENK</span>
@@ -468,7 +468,7 @@ export default function LandingPage() {
                 <div className="grid grid-cols-3 gap-2 rounded-xl overflow-hidden">
                   {['/herohome-kebon-teh.webp', '/herohome-tamanlangit.webp', '/herohome-depan-villa.webp'].map((src, i) => (
                     <div key={i} className="h-20 relative rounded-lg overflow-hidden">
-                      <Image src={src} alt={`Instagram post Bumina EENK ${i + 1}`} fill className="object-cover group-hover:scale-110 transition-transform duration-700" unoptimized />
+                      <Image src={src} alt={`Instagram post Bumina EENK ${i + 1}`} fill className="object-cover group-hover:scale-110 transition-transform duration-700" unoptimized loading="lazy" sizes="80px" />
                     </div>
                   ))}
                 </div>
@@ -505,7 +505,7 @@ export default function LandingPage() {
                           <div className="w-0 h-0 border-t-[5px] border-t-transparent border-l-[8px] border-l-white border-b-[5px] border-b-transparent ml-0.5" />
                         </div>
                       </div>
-                      <Image src={src} alt={`TikTok Bumina EENK ${i + 1}`} fill className="object-cover group-hover:scale-110 transition-transform duration-700" unoptimized />
+                      <Image src={src} alt={`TikTok Bumina EENK ${i + 1}`} fill className="object-cover group-hover:scale-110 transition-transform duration-700" unoptimized loading="lazy" sizes="80px" />
                     </div>
                   ))}
                 </div>
@@ -545,13 +545,13 @@ export default function LandingPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="grid grid-cols-2 gap-4">
               <div className="col-span-2 h-72 relative rounded-3xl overflow-hidden shadow-xl">
-                <Image src="/herohome-kebon-teh.webp" alt="Kebun teh di sekitar Homestay Bumina EENK Pangalengan" fill className="object-cover" unoptimized />
+                <Image src="/herohome-kebon-teh.webp" alt="Kebun teh di sekitar Homestay Bumina EENK Pangalengan" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 1024px) 100vw, 50vw" />
               </div>
               <div className="h-48 relative rounded-2xl overflow-hidden shadow-lg">
-                <Image src="/herohome-depan-villa.webp" alt="Tampak depan Villa Bumina EENK" fill className="object-cover" unoptimized />
+                <Image src="/herohome-depan-villa.webp" alt="Tampak depan Villa Bumina EENK" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 1024px) 50vw, 25vw" />
               </div>
               <div className="h-48 relative rounded-2xl overflow-hidden shadow-lg">
-                <Image src="/herohome-tamanlangit.webp" alt="Taman Langit Pangalengan — 5 menit dari Bumina EENK" fill className="object-cover" unoptimized />
+                <Image src="/herohome-tamanlangit.webp" alt="Taman Langit Pangalengan — 5 menit dari Bumina EENK" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 1024px) 50vw, 25vw" />
               </div>
             </div>
 
@@ -668,19 +668,19 @@ export default function LandingPage() {
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="lg:col-span-2 h-80 relative rounded-3xl overflow-hidden group">
-              <Image src="/herohome-padang-yang-luas.webp" alt="Padang luas dan alam Homestay Bumina EENK Pangalengan" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+              <Image src="/herohome-padang-yang-luas.webp" alt="Padang luas dan alam Homestay Bumina EENK Pangalengan" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, 66vw" />
             </div>
             <div className="h-80 relative rounded-3xl overflow-hidden group">
-              <Image src="/pemandangan1.webp" alt="Pemandangan gunung dari Bumina EENK" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+              <Image src="/pemandangan1.webp" alt="Pemandangan gunung dari Bumina EENK" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
             <div className="h-60 relative rounded-2xl overflow-hidden group">
-              <Image src="/konten1.webp" alt="Suasana dalam villa Bumina EENK" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+              <Image src="/konten1.webp" alt="Suasana dalam villa Bumina EENK" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 50vw, 33vw" />
             </div>
             <div className="h-60 relative rounded-2xl overflow-hidden group">
-              <Image src="/konten2.webp" alt="Fasilitas Homestay Bumina EENK" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+              <Image src="/konten2.webp" alt="Fasilitas Homestay Bumina EENK" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 50vw, 33vw" />
             </div>
             <div className="h-60 relative rounded-2xl overflow-hidden group">
-              <Image src="/pemandangan2.webp" alt="Alam Pangalengan Bandung Selatan" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+              <Image src="/pemandangan2.webp" alt="Alam Pangalengan Bandung Selatan" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 50vw, 33vw" />
             </div>
           </div>
         </div>
@@ -710,7 +710,7 @@ export default function LandingPage() {
                 </blockquote>
                 <div className="flex items-center gap-4 pt-5 border-t border-gray-100">
                   <div className="w-12 h-12 relative rounded-full overflow-hidden flex-shrink-0 ring-2 ring-emerald-100">
-                    <Image src={t.image} alt={t.name} fill className="object-cover" unoptimized />
+                    <Image src={t.image} alt={t.name} fill className="object-cover" unoptimized loading="lazy" sizes="48px" />
                   </div>
                   <div>
                     <div className="font-bold text-gray-900 text-sm">{t.name}</div>
@@ -757,7 +757,7 @@ export default function LandingPage() {
       ════════════════════════════════════════ */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/herohome-kebon-teh.webp" alt="Kebun teh Pangalengan" fill className="object-cover" unoptimized />
+          <Image src="/herohome-kebon-teh.webp" alt="Kebun teh Pangalengan" fill className="object-cover" unoptimized loading="lazy" sizes="100vw" />
           <div className="absolute inset-0 bg-emerald-950/90" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
