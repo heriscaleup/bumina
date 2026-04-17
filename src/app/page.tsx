@@ -958,6 +958,98 @@ export default function HomePage() {
       </section>
 
       {/* ════════════════════════════════════════
+          SECTION HARGA — PAKET & TARIF
+      ════════════════════════════════════════ */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block bg-emerald-50 text-emerald-700 font-bold text-xs tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-5">
+              Harga Transparan
+            </span>
+            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">Pilih Paket yang Sesuai</h2>
+            <p className="text-gray-500 text-lg max-w-2xl mx-auto">Harga terbaik langsung dari kami. Chat WhatsApp untuk konfirmasi ketersediaan dan penawaran spesial.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* Paket Weekday */}
+            <div className="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-shadow flex flex-col">
+              <div className="mb-6">
+                <span className="inline-block bg-emerald-50 text-emerald-700 font-bold text-xs tracking-[0.15em] uppercase px-3 py-1 rounded-full mb-4">Weekday</span>
+                <div className="text-gray-400 text-sm mb-1">Senin – Kamis</div>
+                <div className="text-4xl font-black text-gray-900">Rp 1,5 Jt</div>
+                <div className="text-gray-400 text-sm mt-1">per malam · hingga 25 orang</div>
+              </div>
+              <ul className="space-y-3 text-sm text-gray-600 flex-grow mb-8">
+                {['Seluruh area villa privat', 'Perapian hangat', 'Dapur lengkap & BBQ area', 'Camping ground kayu', 'Parkir luas gratis', 'Pemandangan kebun teh'].map(f => (
+                  <li key={f} className="flex items-center gap-2">
+                    <span className="text-emerald-500 flex-shrink-0">✓</span>{f}
+                  </li>
+                ))}
+              </ul>
+              <a href={WA_URL} target="_blank" rel="noopener noreferrer"
+                className="w-full text-center bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold py-3 rounded-xl transition-colors block">
+                Tanya Ketersediaan
+              </a>
+            </div>
+
+            {/* Paket Weekend — featured */}
+            <div className="bg-emerald-900 rounded-3xl p-8 border border-emerald-700 shadow-2xl shadow-emerald-900/40 flex flex-col relative overflow-hidden">
+              <div className="absolute top-4 right-4">
+                <span className="bg-emerald-400 text-emerald-950 font-black text-xs px-3 py-1 rounded-full">POPULER</span>
+              </div>
+              <div className="mb-6">
+                <span className="inline-block bg-emerald-800 text-emerald-300 font-bold text-xs tracking-[0.15em] uppercase px-3 py-1 rounded-full mb-4">Weekend</span>
+                <div className="text-emerald-400 text-sm mb-1">Jumat – Minggu &amp; Hari Libur</div>
+                <div className="text-4xl font-black text-white">Rp 2 Jt</div>
+                <div className="text-emerald-400 text-sm mt-1">per malam · hingga 25 orang</div>
+              </div>
+              <ul className="space-y-3 text-sm text-emerald-200 flex-grow mb-8">
+                {['Seluruh area villa privat', 'Perapian hangat', 'Dapur lengkap & BBQ area', 'Camping ground kayu', 'Parkir luas gratis', 'Pemandangan kebun teh', 'Prioritas booking'].map(f => (
+                  <li key={f} className="flex items-center gap-2">
+                    <span className="text-emerald-400 flex-shrink-0">✓</span>{f}
+                  </li>
+                ))}
+              </ul>
+              <a href={WA_URL} target="_blank" rel="noopener noreferrer"
+                className="w-full text-center bg-emerald-400 hover:bg-emerald-300 text-emerald-950 font-black py-3 rounded-xl transition-colors block">
+                Book Sekarang
+              </a>
+            </div>
+
+            {/* Paket Spesial */}
+            <div className="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-shadow flex flex-col">
+              <div className="mb-6">
+                <span className="inline-block bg-amber-50 text-amber-700 font-bold text-xs tracking-[0.15em] uppercase px-3 py-1 rounded-full mb-4">Spesial</span>
+                <div className="text-gray-400 text-sm mb-1">Gathering, Arisan &amp; Event</div>
+                <div className="text-4xl font-black text-gray-900">Custom</div>
+                <div className="text-gray-400 text-sm mt-1">harga khusus rombongan</div>
+              </div>
+              <ul className="space-y-3 text-sm text-gray-600 flex-grow mb-8">
+                {['Seluruh area villa privat', 'Setup dekorasi event', 'Koordinator on-site', 'Catering bisa diatur', 'Sound system (request)', 'Harga spesial min. 2 malam'].map(f => (
+                  <li key={f} className="flex items-center gap-2">
+                    <span className="text-amber-500 flex-shrink-0">✓</span>{f}
+                  </li>
+                ))}
+              </ul>
+              <a href={WA_URL} target="_blank" rel="noopener noreferrer"
+                className="w-full text-center bg-amber-50 hover:bg-amber-100 text-amber-800 font-bold py-3 rounded-xl transition-colors block">
+                Minta Penawaran
+              </a>
+            </div>
+          </div>
+
+          {/* Bottom note */}
+          <div className="bg-emerald-50 rounded-2xl p-6 text-center border border-emerald-100">
+            <p className="text-emerald-800 font-semibold mb-1">Semua paket termasuk sewa seluruh villa privat. Tidak ada biaya tersembunyi.</p>
+            <p className="text-emerald-600 text-sm">Check-in 14:00 · Check-out 12:00 · Cek juga harga real-time di{' '}
+              <a href={AGODA_URL} target="_blank" rel="noopener noreferrer" className="underline font-bold">Agoda</a> dan{' '}
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="underline font-bold">Booking.com</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ════════════════════════════════════════
           SECTION 7 — GALERI
       ════════════════════════════════════════ */}
       <section className="py-24 bg-white">
