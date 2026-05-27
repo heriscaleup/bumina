@@ -19,10 +19,6 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
 
-  // Biar proses build tetep jalan meskipun ada error TypeScript, aman!
-  typescript: {
-    ignoreBuildErrors: true,
-  },
 };
 
 export default nextConfig;

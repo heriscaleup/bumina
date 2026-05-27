@@ -2,7 +2,7 @@
 // DEPRECATED: This file is kept for backward compatibility
 // New articles are managed through local Markdown collection in /_posts using articleHelpers.ts
 
-import { getAllArticles, type Article } from './articleHelpers';
+import { getAllArticles, type Article } from '@/blog/articleHelpers';
 
 // Legacy type for backward compatibility
 export type BlogPost = Article;

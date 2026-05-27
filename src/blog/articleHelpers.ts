@@ -51,7 +51,8 @@ async function markdownToHtml(markdown: string): Promise<string> {
     .use(remarkParse)
     .use(remarkRehype)
     .use(rehypeSlug)
-    .use(rehypeAutolinkHeadings, { behavior: 'wrap' })
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    .use(rehypeAutolinkHeadings as any, { behavior: 'wrap' })
     .use(rehypeStringify)
     .process(markdown);
   return String(file);

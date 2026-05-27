@@ -9,6 +9,7 @@ const Header = () => {
   const navigation = [
     { name: "Beranda", href: "/" },
     { name: "Tentang Kami", href: "/about" },
+    { name: "Harga", href: "/harga" },
     { name: "Blog", href: "/blog" },
     { name: "Kontak", href: "/contact" },
   ];
