@@ -26,7 +26,7 @@ Jika bisa mengatur jadwal, datang di weekday adalah cara termudah untuk hemat ta
 
 Ini matematika sederhana yang sering diabaikan: **semakin banyak orang, semakin murah per kepala**.
 
-Contoh nyata: Homestay Bumina EENK di Pangalengan menerima hingga 25 orang. Jika harga sewa Rp 1.500.000/malam (weekday) dibagi 20 orang, biaya per orang hanya **Rp 75.000 per malam**. Ini jauh lebih murah dari hostel atau hotel biasa!
+Contoh nyata: [Homestay Bumina EENK](/harga) di Pangalengan menerima hingga 25 orang. Jika harga sewa Rp 1.500.000/malam (weekday) dibagi 20 orang, biaya per orang hanya **Rp 75.000 per malam**. Ini jauh lebih murah dari hostel atau hotel biasa!
 
 Ajak keluarga besar, teman-teman kantor, atau gabung dengan grup wisata untuk mendapatkan cost sharing yang optimal.
 
@@ -111,6 +111,6 @@ Kurang dari Rp 350.000 per orang untuk 2 hari 1 malam di Pangalengan — sangat 
 
 Untuk rombongan yang ingin liburan hemat tanpa mengorbankan kenyamanan, **Homestay Bumina EENK** adalah jawabannya. Dengan kapasitas hingga 25 orang dan dapur lengkap yang bisa digunakan bebas, biaya penginapan per kepala bisa sangat terjangkau.
 
-Bonus: lokasinya hanya 5 menit jalan kaki ke Taman Langit — kamu bisa nikmatin sunrise gratis setiap pagi tanpa biaya transportasi tambahan. Terdaftar resmi di Agoda & Booking.com dengan rating 4.9★.
+Bonus: lokasinya hanya 5 menit jalan kaki ke [spot sunrise terbaik Pangalengan](/blog/spot-sunrise-terbaik-pangalengan) — nikmati sunrise gratis setiap pagi tanpa biaya transportasi tambahan. Terdaftar resmi di Agoda & Booking.com dengan rating 4.9★.
 
 Liburan hemat bukan berarti liburan murahan. Di Pangalengan bersama Bumina EENK, kamu bisa dapat pengalaman premium dengan harga yang sangat masuk akal.

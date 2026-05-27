@@ -16,7 +16,7 @@ Situ Cileunca terletak di Desa Pulosari, Kecamatan Pangalengan, Kabupaten Bandun
 
 Dari Kota Bandung, ambil arah ke Banjaran lalu terus ke Pangalengan. Total jarak sekitar 35–40 km dari pusat Bandung dengan waktu tempuh 1,5–2 jam tergantung kondisi lalu lintas. Gunakan Google Maps dengan tujuan "Situ Cileunca Pangalengan" untuk navigasi yang akurat.
 
-Kalau menginap di **Homestay Bumina EENK**, jarak ke Situ Cileunca hanya sekitar 15 menit berkendara — sangat dekat untuk dijadikan aktivitas pagi atau sore.
+Kalau menginap di **[Homestay Bumina EENK](/)**, jarak ke Situ Cileunca hanya sekitar 15 menit berkendara — sangat dekat untuk dijadikan aktivitas pagi atau sore.
 
 ## 5 Aktivitas Seru di Situ Cileunca
 
@@ -84,7 +84,7 @@ Keunggulan Bumina EENK untuk wisatawan Situ Cileunca:
 - **Kapasitas 25 orang** — cocok untuk rombongan besar
 - **Dapur lengkap** — masak sendiri setelah seharian beraktivitas
 - **Perapian hangat** — sempurna untuk malam dingin setelah rafting
-- **Taman Langit** hanya 5 menit jalan kaki — bonus sunrise spektakuler di pagi hari
-- **Terdaftar di Agoda & Booking.com** dengan rating 4.9★
+- **Taman Langit** hanya 5 menit jalan kaki — bonus [sunrise spektakuler di pagi hari](/blog/spot-sunrise-terbaik-pangalengan)
+- **Terdaftar di Agoda & Booking.com** dengan rating 4.9★ — [cek harga menginap](/harga)
 
 Situ Cileunca memang paket lengkap. Dan dengan menginap di Bumina EENK, liburanmu di Pangalengan akan terasa semakin sempurna — tidak perlu jauh-jauh mencari penginapan, semua sudah dekat dan nyaman.

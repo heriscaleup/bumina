@@ -98,8 +98,8 @@ Agar sesi sunrise hunting-mu berjalan sempurna, perhatikan tips berikut:
 
 ## Menginap Dekat Taman Langit: Homestay Bumina EENK
 
-Untuk bisa menikmati sunrise Taman Langit tanpa perlu berkendara, **Homestay Bumina EENK** adalah pilihan terbaik. Jaraknya hanya 5 menit jalan kaki dari Taman Langit — kamu bisa keluar pintu penginapan jam 4.30 pagi dan sudah sampai di spot sebelum 5.00.
+Untuk bisa menikmati sunrise Taman Langit tanpa perlu berkendara, **[Homestay Bumina EENK](/)** adalah pilihan terbaik. Jaraknya hanya 5 menit jalan kaki dari Taman Langit — kamu bisa keluar pintu penginapan jam 4.30 pagi dan sudah sampai di spot sebelum 5.00.
 
 Setelah sunrise, kembali ke penginapan untuk sarapan hangat di dapur yang lengkap. Tidak ada yang lebih sempurna dari secangkir teh panas setelah menyaksikan sunrise yang memukau.
 
-Kapasitas 25 orang, terdaftar di Agoda & Booking.com dengan rating 4.9★. Surga sunrise Pangalengan ada di depan pintu — tinggal langkahkan kaki.
+Kapasitas 25 orang, terdaftar di Agoda & Booking.com dengan rating 4.9★. [Cek ketersediaan dan harga menginap](/harga) — surga sunrise Pangalengan ada di depan pintu, tinggal langkahkan kaki.

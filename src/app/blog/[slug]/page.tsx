@@ -80,6 +80,23 @@ export default async function BlogPostDetail({ params }: PageProps) {
               </h1>
             </header>
             
+            {/* Author block — E-E-A-T signal */}
+            <div className="flex items-center gap-3 py-5 mb-8 border-b border-gray-100">
+              <div className="w-10 h-10 relative rounded-full overflow-hidden flex-shrink-0 bg-emerald-50 border border-emerald-100">
+                <Image src="/logo.webp" alt="Logo Bumina EENK" fill className="object-cover" unoptimized />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-semibold text-gray-900 leading-tight">Tim Homestay Bumina EENK</p>
+                <p className="text-xs text-gray-500 mt-0.5">Penulis & Pemandu Wisata Lokal Pangalengan</p>
+              </div>
+              <span className="hidden sm:flex items-center gap-1.5 text-emerald-700 text-xs font-semibold bg-emerald-50 border border-emerald-100 px-3 py-1.5 rounded-full flex-shrink-0">
+                <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden>
+                  <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                Penulis Lokal Terverifikasi
+              </span>
+            </div>
+
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed"
                  dangerouslySetInnerHTML={{ __html: post.content }}
             />

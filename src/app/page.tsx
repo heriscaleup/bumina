@@ -230,6 +230,23 @@ const jsonLdBreadcrumb = {
   ],
 };
 
+const jsonLdVideo = {
+  '@context': 'https://schema.org',
+  '@type': 'VideoObject',
+  name: 'Video Tour Homestay Bumina EENK Pangalengan — Villa Kebun Teh Bandung',
+  description: 'Lihat sendiri kondisi nyata villa, kebun teh, perapian, dan semua fasilitas Homestay Bumina EENK Pangalengan. Kapasitas 25 orang, 5 menit ke Taman Langit.',
+  thumbnailUrl: `${SITE_URL}/herohome.webp`,
+  uploadDate: '2024-01-01',
+  contentUrl: 'https://www.youtube.com/watch?v=bfpnKx1WCQw',
+  embedUrl: 'https://www.youtube.com/embed/bfpnKx1WCQw',
+  publisher: {
+    '@type': 'Organization',
+    name: 'Homestay Bumina EENK',
+    url: SITE_URL,
+    logo: { '@type': 'ImageObject', url: `${SITE_URL}/logo.webp` },
+  },
+};
+
 // ─── CONSTANTS ───────────────────────────────────────────────
 const WA_URL = 'https://wa.me/6285219460779?text=Halo%2C%20saya%20ingin%20tanya%20ketersediaan%20Homestay%20Bumina%20EENK%20Pangalengan';
 const AGODA_URL = 'https://www.agoda.com/en-za/homestay-bumina-eenk-bandung-pangalengan/hotel/palayangan-id.html';
@@ -414,11 +431,10 @@ const ShieldCheck = () => (
 export default function HomePage() {
   return (
     <div className="font-sans antialiased">
-      {/* ── STRUCTURED DATA JSON-LD ── */}
-      {/* Dibaca oleh Google, Gemini, ChatGPT, Claude, Perplexity */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdLodging) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdVideo) }} />
 
       {/* ════════════════════════════════════════
           STICKY NAVBAR

@@ -78,7 +78,7 @@ Hidden gem yang belum banyak diketahui wisatawan. Di sini kamu bisa berinteraksi
 
 ## Penginapan Terbaik di Pangalengan: Homestay Bumina EENK
 
-Salah satu keputusan terpenting dalam perjalanan ke Pangalengan adalah memilih penginapan yang tepat. **Homestay Bumina EENK** hadir sebagai pilihan terbaik untuk kamu yang datang bersama keluarga atau rombongan.
+Salah satu keputusan terpenting dalam perjalanan ke Pangalengan adalah memilih penginapan yang tepat. **[Homestay Bumina EENK](/)** hadir sebagai pilihan terbaik untuk kamu yang datang bersama keluarga atau rombongan.
 
 Terletak di Desa Puncak Mulya di tengah kebun teh Sosro, Bumina EENK menawarkan:
 
@@ -89,6 +89,6 @@ Terletak di Desa Puncak Mulya di tengah kebun teh Sosro, Bumina EENK menawarkan:
 - **5 menit jalan kaki ke Taman Langit** — nikmati sunrise setiap pagi tanpa perlu berkendara
 - **Terdaftar resmi di Agoda dan Booking.com** — keamanan booking terjamin
 
-Ingin tahu ketersediaan? Hubungi via WhatsApp langsung atau cek di Agoda & Booking.com untuk melihat harga terbaru dan testimoni dari ratusan tamu yang sudah berkunjung.
+Ingin tahu ketersediaan? [Lihat harga dan paket menginap](/harga) atau hubungi langsung via WhatsApp. Cek juga di Agoda & Booking.com untuk testimoni dari ratusan tamu yang sudah berkunjung.
 
 Pangalengan menunggu kamu. Satu kali berkunjung, dijamin ingin kembali lagi.

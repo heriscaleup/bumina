@@ -69,8 +69,8 @@ Menemukan tempat-tempat tersembunyi di Pangalengan membutuhkan sedikit usaha eks
 
 ## Jelajahi Pangalengan dari Basecamp Terbaik
 
-Untuk mengeksplorasi semua hidden gems Pangalengan dengan nyaman, kamu butuh basecamp yang strategis. **Homestay Bumina EENK** berada di Desa Puncak Mulya — titik yang dekat dengan hampir semua destinasi yang disebutkan di atas.
+Untuk mengeksplorasi semua hidden gems Pangalengan dengan nyaman, kamu butuh basecamp yang strategis. **[Homestay Bumina EENK](/)** berada di Desa Puncak Mulya — titik yang dekat dengan hampir semua destinasi yang disebutkan di atas.
 
 Dengan kapasitas 25 orang, dapur lengkap, dan perapian hangat, Bumina EENK adalah tempat yang sempurna untuk rombongan yang ingin menjelajahi Pangalengan tanpa terburu-buru. Menginap beberapa malam berarti kamu punya cukup waktu untuk menemukan semua harta karun tersembunyi di kawasan ini.
 
-Sudah terdaftar di Agoda dan Booking.com dengan rating 4.9★ — jadi keamanan booking-mu terjamin.
+Sudah terdaftar di Agoda dan Booking.com dengan rating 4.9★ — [cek harga dan ketersediaan](/harga) sebelum berangkat.
