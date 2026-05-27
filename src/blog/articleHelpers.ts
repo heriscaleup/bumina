@@ -8,6 +8,8 @@ import rehypeStringify from 'rehype-stringify';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
+export const ARTICLES_PER_PAGE = 9;
+
 // Article type (no id). Content is HTML string rendered from Markdown.
 export interface Article {
   title: string;

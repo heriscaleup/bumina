@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BlogPagination from "@/components/BlogPagination";
@@ -6,17 +7,39 @@ import { getAllArticles, type Article, ARTICLES_PER_PAGE } from "@/blog/articleH
 import { generateMetadataObject } from "@/lib/seo";
 import { Metadata } from "next";
 
-// --- METADATA SEO TERPUSAT ---
-export const metadata: Metadata = generateMetadataObject({
-  title: "Blog Wisata Pangalengan — Tips & Panduan Liburan",
-  description: "Temukan panduan, tips liburan, dan rekomendasi tempat wisata terbaik di Pangalengan dari blog Homestay Bumina EENK.",
-  canonical: "/blog",
-});
+interface Props {
+  params: Promise<{ num: string }>;
+}
 
-export default async function BlogPage() {
+export async function generateStaticParams() {
+  const articles = await getAllArticles();
+  const totalPages = Math.ceil(articles.length / ARTICLES_PER_PAGE);
+  return Array.from({ length: totalPages - 1 }, (_, i) => ({ num: String(i + 2) }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { num } = await params;
+  const page = parseInt(num, 10);
+  return generateMetadataObject({
+    title: `Blog Wisata Pangalengan — Halaman ${page}`,
+    description: `Artikel wisata, tips liburan, dan panduan Pangalengan — halaman ${page}.`,
+    canonical: `/blog/page/${page}`,
+  });
+}
+
+export default async function BlogPageNum({ params }: Props) {
+  const { num } = await params;
+  const page = parseInt(num, 10);
+
   const allArticles = await getAllArticles();
   const totalPages = Math.ceil(allArticles.length / ARTICLES_PER_PAGE);
-  const articles = allArticles.slice(0, ARTICLES_PER_PAGE);
+
+  if (isNaN(page) || page < 2 || page > totalPages) {
+    notFound();
+  }
+
+  const start = (page - 1) * ARTICLES_PER_PAGE;
+  const articles = allArticles.slice(start, start + ARTICLES_PER_PAGE);
 
   return (
     <>
@@ -87,7 +110,7 @@ export default async function BlogPage() {
               ))}
             </div>
 
-            <BlogPagination currentPage={1} totalPages={totalPages} />
+            <BlogPagination currentPage={page} totalPages={totalPages} />
           </div>
         </section>
       </main>

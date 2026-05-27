@@ -77,7 +77,7 @@ export function generateMetadataObject({
       title: pageTitle,
       description: pageDescription,
       images: [pageImage],
-      creator: siteConfig.twitterHandle,
+      creator: '@buminaeenk',
     },
     robots: {
       index: true,
