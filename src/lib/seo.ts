@@ -3,17 +3,16 @@ import { type Article } from '@/blog/articleHelpers';
 
 // --- KONFIGURASI SEO GLOBAL ---
 const siteConfig = {
-  title: "Homestay Bumina EENK - Villa & Penginapan Terbaik di Pangalengan",
-  description: "Nikmati pengalaman menginap tak terlupakan di Homestay Bumina EENK, villa sejuk di tengah kebun teh Pangalengan. Fasilitas lengkap dengan perapian hangat.",
-  url: "https://buminaeenk.com", // Ganti dengan URL production Anda
-  ogImage: "https://buminaeenk.com/herohome.webp", // Gambar default untuk social sharing
+  title: "Homestay Bumina EENK — Penginapan Terpercaya di Pangalengan",
+  description: "Homestay Bumina EENK, rating 4.9★ di Agoda & Booking.com. Di tengah kebun teh Pangalengan, 5 mnt ke Taman Langit. Kapasitas 25 orang & perapian hangat.",
+  url: "https://buminaeenk.com",
+  ogImage: "https://buminaeenk.com/herohome.webp",
   author: "Homestay Bumina EENK",
   keywords: "homestay pangalengan, villa di pangalengan, penginapan kebun teh, sewa villa bandung, wisata pangalengan, bumina eenk, taman langit pangalengan",
-  twitterHandle: "@buminaeenk", // Ganti dengan handle Twitter Anda jika ada
   telephone: "+6285219460779",
   address: {
-    street: "Jl. Perkebunan Teh Sosro, Pangalengan",
-    city: "Kabupaten Bandung",
+    street: "Desa Puncak Mulya, dekat Taman Langit",
+    city: "Pangalengan",
     state: "Jawa Barat",
     zipCode: "40378",
     country: "Indonesia",
@@ -40,7 +39,7 @@ export function generateMetadataObject({
   image,
   canonical,
 }: GenerateMetadataProps): Metadata {
-  const pageTitle = title ? `${title} | ${siteConfig.author}` : siteConfig.title;
+  const pageTitle = title ? `${title} | Bumina EENK` : siteConfig.title;
   const pageDescription = description || siteConfig.description;
   const pageKeywords = keywords ? (Array.isArray(keywords) ? keywords.join(', ') : keywords) : siteConfig.keywords;
   const pageImage = image || siteConfig.ogImage;

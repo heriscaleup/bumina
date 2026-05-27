@@ -1,15 +1,15 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { getAllArticles, getArticleBySlug, type Article } from "@/blog/articleHelpers";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { generateMetadataObject, SchemaOrg } from "@/lib/seo";
 import { Metadata } from "next";
 
-// Define a clear PageProps type to guide Next.js type inference.
 type PageProps = {
-  params: { slug: string };
-  searchParams?: { [key: string]: string | string[] | undefined };
+  params: Promise<{ slug: string }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
 export async function generateStaticParams() {
@@ -20,8 +20,9 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { post } = await getArticleBySlug(params.slug);
-  
+  const { slug } = await params;
+  const { post } = await getArticleBySlug(slug);
+
   if (!post) {
     return generateMetadataObject({ title: "Artikel Tidak Ditemukan" });
   }
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function BlogPostDetail({ params }: PageProps) {
-  const { slug } = params;
+  const { slug } = await params;
   const { post, relatedPosts } = await getArticleBySlug(slug);
 
   if (!post) {
@@ -54,10 +55,13 @@ export default async function BlogPostDetail({ params }: PageProps) {
           <article>
             <header className="mb-8 text-center border-b pb-8">
               <div className="w-full h-64 relative mb-6 rounded-lg overflow-hidden">
-                <img 
-                  src={post.image} 
+                <Image
+                  src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                  priority
                 />
               </div>
               <p className="text-base text-gray-500 mb-2">
@@ -95,10 +99,13 @@ export default async function BlogPostDetail({ params }: PageProps) {
                 <Link href={`/blog/${related.slug}`} key={related.slug} className="block group">
                   <article className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
                     <div className="w-full h-40 relative">
-                      <img 
-                        src={related.image} 
+                      <Image
+                        src={related.image}
                         alt={related.title}
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
+                        loading="lazy"
+                        unoptimized
                       />
                     </div>
                     <div className="p-6 flex-grow">

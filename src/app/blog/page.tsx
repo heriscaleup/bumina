@@ -7,7 +7,7 @@ import { Metadata } from "next";
 
 // --- METADATA SEO TERPUSAT ---
 export const metadata: Metadata = generateMetadataObject({
-  title: "Blog Wisata Pangalengan - Tips & Rekomendasi dari Bumina EENK",
+  title: "Blog Wisata Pangalengan — Tips & Panduan Liburan",
   description: "Temukan panduan, tips liburan, dan rekomendasi tempat wisata terbaik di Pangalengan dari blog Homestay Bumina EENK.",
   canonical: "/blog",
 });

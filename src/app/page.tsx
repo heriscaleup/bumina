@@ -4,9 +4,9 @@ import Image from 'next/image';
 const SITE_URL = 'https://buminaeenk.com';
 
 export const metadata: Metadata = {
-  title: 'Homestay Bumina EENK Pangalengan | Villa Kebun Teh Bandung — Terpercaya di Agoda & Booking.com',
+  title: 'Homestay Bumina EENK Pangalengan | Villa Kebun Teh Bandung',
   description:
-    'Homestay Bumina EENK adalah penginapan terbaik di Pangalengan Bandung Selatan. Terdaftar resmi di Agoda & Booking.com, rating 4.9/5. Di tengah kebun teh Sosro, 5 menit jalan kaki ke Taman Langit. Kapasitas 25 orang, perapian hangat, dapur lengkap, camping ground. Cocok untuk keluarga & rombongan. Hubungi WhatsApp untuk booking!',
+    'Homestay Bumina EENK — rating 4.9★ di Agoda & Booking.com. Di tengah kebun teh Pangalengan, 5 mnt ke Taman Langit. Kapasitas 25 orang & perapian hangat.',
   keywords: [
     'homestay pangalengan',
     'penginapan pangalengan',
@@ -427,7 +427,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-full overflow-hidden relative flex-shrink-0">
-              <Image src="/logo.webp" alt="Logo Bumina EENK" fill className="object-cover" unoptimized loading="lazy" />
+              <Image src="/logo.webp" alt="Logo Bumina EENK" fill className="object-cover" unoptimized />
             </div>
             <span className="font-extrabold text-white text-base tracking-tight leading-none">
               Bumina<span className="text-emerald-400"> EENK</span>
@@ -759,7 +759,7 @@ export default function HomePage() {
               Temukan Kami di Google Maps
             </h2>
             <p className="text-gray-500 text-lg max-w-xl mx-auto">
-              Desa Puncak Mulya, Pangalengan — langsung cari <strong>"Homestay Bumina EENK"</strong> dan kami sudah terdaftar resmi.
+              Desa Puncak Mulya, Pangalengan — langsung cari <strong>&ldquo;Homestay Bumina EENK&rdquo;</strong> dan kami sudah terdaftar resmi.
             </p>
           </div>
 

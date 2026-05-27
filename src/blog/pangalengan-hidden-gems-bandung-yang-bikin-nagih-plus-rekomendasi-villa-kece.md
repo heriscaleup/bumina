@@ -1,7 +1,7 @@
 ---
 title: "Pangalengan: Hidden Gems Bandung yang Bikin Nagih! (Plus, Rekomendasi Villa Kece!)"
 excerpt: "Siapa bilang Bandung cuma Kawah Putih dan floating market? Pangalengan punya segudang pesona tersembunyi yang siap memanjakan mata dan dompetmu. Yuk, intip itinerary liburan hemat di Pangalengan!"
-category: "Destinasi"
+category: "Wisata"
 date: "2025-08-30"
 image: "/pemandangan3.webp"
 ---
@@ -37,3 +37,55 @@ Biar liburanmu makin sempurna, pilih penginapan yang nyaman dan strategis. Saya 
 *   **Cari promo:** Pantau promo penginapan dan tempat wisata di media sosial atau website.
 
 Jadi, tunggu apa lagi? Segera rencanakan liburanmu ke Pangalengan dan rasakan sendiri keindahan alamnya yang memukau. Dijamin, kamu bakal ketagihan dan ingin kembali lagi!
+
+## Informasi Praktis Wisata Pangalengan
+
+Sebelum berangkat, ada beberapa hal penting yang perlu kamu siapkan:
+
+**Cara ke Pangalengan:**
+Dari Bandung, ambil arah ke Banjaran kemudian ikuti jalan menuju Pangalengan. Jarak sekitar 40 km, waktu tempuh 1,5–2 jam tergantung kondisi lalu lintas. Untuk navigasi akurat, gunakan Google Maps dengan tujuan "Pangalengan, Kabupaten Bandung."
+
+**Transportasi Lokal:**
+Sewa motor di Pangalengan adalah pilihan terbaik untuk menjelajahi area ini. Harga sewa berkisar Rp 80.000–120.000 per hari. Dengan motor, kamu bisa bebas mampir ke spot-spot tersembunyi yang tidak terjangkau angkutan umum.
+
+**Waktu Terbaik Berkunjung:**
+April–Oktober (musim kemarau) adalah waktu ideal. Langit lebih cerah, jalanan tidak licin, dan pemandangan lebih jernih. Hindari musim hujan (Desember–Februari) karena jalanan berliku bisa sangat licin.
+
+**Yang Perlu Dibawa:**
+- Jaket tebal — suhu bisa turun hingga 13°C di malam hari
+- Jas hujan tipis untuk antisipasi perubahan cuaca
+- Uang tunai — banyak warung dan tiket wisata belum menerima pembayaran digital
+- Sepatu atau sandal gunung yang nyaman untuk trekking
+
+## Itinerary 2 Hari 1 Malam: Pangalengan Hidden Gems Edition
+
+**Hari 1:**
+- 13.00 — Tiba dan check-in penginapan
+- 14.30 — Explore Kebun Teh Malabar dan area sekitarnya
+- 16.30 — Kunjungi Situ Cileunca, foto di Jembatan Cinta
+- 19.00 — Makan malam di warung lokal, istirahat
+
+**Hari 2:**
+- 04.30 — Bangun pagi, sunrise di Taman Langit atau Sunrise Point Cukul
+- 07.00 — Sarapan
+- 09.00 — Cari hidden gems: Curug Penganten atau Penangkaran Rusa Kertamanah
+- 12.00 — Makan siang, belanja oleh-oleh khas Pangalengan
+- 14.00 — Perjalanan pulang
+
+## Rekomendasi Penginapan: Homestay Bumina EENK
+
+Sudah disinggung sebelumnya, tapi mari kita bahas lebih detail kenapa **Homestay Bumina EENK** adalah pilihan terbaik untuk liburan di Pangalengan.
+
+Terletak di Desa Puncak Mulya di tengah kebun teh Sosro, Bumina EENK bukan sekadar tempat tidur — ini adalah pengalaman menginap yang menjadi bagian dari destinasi wisata itu sendiri. Bayangkan bangun tidur dan langsung disuguhi pemandangan kebun teh dari jendela kamar.
+
+**Keunggulan Bumina EENK:**
+- Kapasitas 25 orang — ideal untuk keluarga besar dan rombongan
+- Perapian hangat — esensial untuk malam-malam dingin di Pangalengan
+- Dapur lengkap — masak sendiri untuk penghematan maksimal
+- Camping ground berlantai kayu — pengalaman berkemah tanpa repot
+- 5 menit jalan kaki ke Taman Langit — sunrise gratis setiap pagi
+- Terdaftar resmi di Agoda & Booking.com, rating 4.9★ dari 200+ review
+
+Harga sewa mulai Rp 1.500.000/malam (weekday) dan Rp 2.000.000/malam (weekend) untuk seluruh area villa — dibagi bersama rombongan, jatuhnya sangat terjangkau per orang.
+
+Pangalengan punya banyak hidden gems yang menunggu untuk ditemukan. Jadikan Bumina EENK sebagai basecamp-mu, dan eksplorasi kawasan ini tanpa terburu-buru.

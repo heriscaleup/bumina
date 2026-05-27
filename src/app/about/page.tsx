@@ -6,7 +6,7 @@ import { generateMetadataObject } from "@/lib/seo";
 import { Metadata } from "next";
 
 export const metadata: Metadata = generateMetadataObject({
-  title: "Tentang Kami - Homestay Bumina EENK | Cerita di Balik Villa Pangalengan",
+  title: "Tentang Kami — Cerita di Balik Villa Pangalengan",
   description: "Pelajari kisah Homestay Bumina EENK, penginapan terpercaya di Pangalengan Bandung Selatan. Villa kebun teh, kapasitas 25 orang, rating 4.9/5 di Agoda & Booking.com.",
   canonical: "/about",
 });

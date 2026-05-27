@@ -13,16 +13,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: new Date(article.date),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
+    images: article.image ? [{ url: `${baseUrl}${article.image}` }] : undefined,
   }))
 
   // Halaman statis
   const staticUrls = [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 1.0,
-    },
     {
       url: `${baseUrl}/`,
       lastModified: new Date(),
@@ -40,6 +35,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/harga`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/blog`,

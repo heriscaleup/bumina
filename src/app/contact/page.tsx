@@ -4,7 +4,7 @@ import { generateMetadataObject, SchemaOrg } from "@/lib/seo";
 import { Metadata } from "next";
 
 export const metadata: Metadata = generateMetadataObject({
-  title: "Kontak & Lokasi Homestay Bumina EENK — Pangalengan Bandung",
+  title: "Kontak — Homestay Bumina EENK Pangalengan",
   description: "Hubungi Homestay Bumina EENK untuk booking atau informasi. WhatsApp +62 852-1946-0779. Lokasi: Puncak Mulya, Pangalengan, Bandung Selatan. Cek juga Agoda & Booking.com.",
   canonical: "/contact",
 });
