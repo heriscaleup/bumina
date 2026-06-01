@@ -48,6 +48,49 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
+    // Landing pages SEO — target intent pencarian lokal
+    {
+      url: `${baseUrl}/wisata-situ-cileunca-pangalengan/`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/rafting-pangalengan-situ-cileunca/`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/villa-dekat-situ-cileunca/`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/itinerary-pangalengan-2-hari-1-malam/`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/wisata-rahong-pangalengan/`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/nimo-highland-pangalengan/`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/wayang-windu-pangalengan/`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
   ]
 
   return [...staticUrls, ...blogPostUrls]
