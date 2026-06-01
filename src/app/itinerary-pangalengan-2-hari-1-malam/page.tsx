@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { generateMetadataObject } from '@/lib/seo';
+import Link from 'next/link';
 
 const WA_URL = 'https://wa.me/6285219460779?text=Halo%2C%20saya%20ingin%20tanya%20ketersediaan%20Homestay%20Bumina%20EENK%20Pangalengan';
 const SITE_URL = 'https://buminaeenk.com';
@@ -53,7 +54,7 @@ export default function ItineraryPangalenganPage() {
 
       <nav className="fixed top-0 inset-x-0 z-50 bg-black/30 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-          <a href="/" className="font-extrabold text-white text-base">Bumina<span className="text-emerald-400"> EENK</span></a>
+          <Link href="/" className="font-extrabold text-white text-base">Bumina<span className="text-emerald-400"> EENK</span></Link>
           <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-sm px-5 py-2 rounded-full transition-all">Book Sekarang</a>
         </div>
       </nav>
@@ -183,7 +184,7 @@ export default function ItineraryPangalenganPage() {
       </section>
 
       <footer className="bg-gray-950 text-gray-400 py-10 text-center text-sm">
-        <a href="/" className="font-bold text-white hover:text-emerald-400 transition-colors">Homestay Bumina EENK</a>
+        <Link href="/" className="font-bold text-white hover:text-emerald-400 transition-colors">Homestay Bumina EENK</Link>
         <span className="mx-2">·</span><span>Pangalengan, Bandung Selatan</span>
         <span className="mx-2">·</span>
         <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">WhatsApp</a>
