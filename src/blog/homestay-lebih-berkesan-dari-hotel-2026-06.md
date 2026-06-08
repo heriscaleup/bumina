@@ -8,6 +8,8 @@ image: "/images/blog/homestay-lebih-berkesan-dari-hotel-2026-06.jpg"
 readTime: "7 min read"
 author: "Tim Bumina"
 draft: false
+date: "2026-06-05"
+excerpt: "Menginap di homestay bukan sekadar hemat — ada kehangatan, cerita, dan pengalaman otentik yang tidak bisa kamu temukan di hotel bintang manapun."
 ---
 
 Pernah pulang dari liburan, tapi yang paling kamu ingat bukan hotel mewahnya — melainkan ibu pemilik penginapan yang membuatkan teh hangat sambil cerita soal keindahan desa setempat? Itulah magic dari menginap di homestay.

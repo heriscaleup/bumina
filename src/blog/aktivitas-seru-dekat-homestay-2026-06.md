@@ -8,6 +8,8 @@ image: "/images/blog/aktivitas-seru-dekat-homestay-2026-06.jpg"
 readTime: "7 min read"
 author: "Tim Bumina"
 draft: false
+date: "2026-06-04"
+excerpt: "Menginap di homestay jadi lebih berkesan dengan aktivitas seru di sekitarnya. Simak panduan lengkap aktivitas dekat homestay untuk liburan tak terlupakan."
 ---
 
 Banyak yang berpikir homestay cuma soal tempat tidur dan sarapan pagi. Padahal, **aktivitas seru dekat homestay** justru menjadi bagian yang paling diingat setelah liburan usai. Lokasinya yang biasanya berada di kawasan lokal dan autentik membuka pintu menuju pengalaman yang jauh lebih kaya dibanding sekadar menghabiskan waktu di kamar.

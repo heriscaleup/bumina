@@ -32,7 +32,7 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300">
               <li>Email: info.bumina@example.com</li>
               <li>Phone: +62 812-3456-7890</li>
-              <li>Alamat: Pangalengan, Bandung</li>
+              <li>Alamat: QG8C+QJR, Sukaluyu, Kec. Pangalengan, Kabupaten Bandung, Jawa Barat 40378</li>
             </ul>
           </div>
         </div>

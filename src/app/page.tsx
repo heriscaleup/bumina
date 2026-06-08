@@ -77,8 +77,8 @@ const jsonLdLodging = {
   petsAllowed: false,
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Desa Puncak Mulya, dekat Taman Langit',
-    addressLocality: 'Pangalengan',
+    streetAddress: 'QG8C+QJR, Sukaluyu, Kec. Pangalengan',
+    addressLocality: 'Kabupaten Bandung',
     addressRegion: 'Jawa Barat',
     postalCode: '40378',
     addressCountry: 'ID',
@@ -160,7 +160,7 @@ const jsonLdFaq = {
       name: 'Apa itu Homestay Bumina EENK dan di mana lokasinya?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Homestay Bumina EENK adalah penginapan atau villa yang berlokasi di Desa Puncak Mulya, Pangalengan, Kabupaten Bandung, Jawa Barat. Lokasinya berada di tengah kebun teh Sosro di ketinggian 1.400 mdpl, hanya 5 menit jalan kaki dari Taman Langit Pangalengan.',
+        text: 'Homestay Bumina EENK adalah penginapan atau villa yang berlokasi di QG8C+QJR, Sukaluyu, Kec. Pangalengan, Kabupaten Bandung, Jawa Barat 40378. Lokasinya berada di kawasan sejuk Pangalengan, cocok untuk liburan keluarga dan rombongan.',
       },
     },
     {
@@ -504,7 +504,7 @@ export default function HomePage() {
             dan ratusan tamu sudah membuktikannya.
           </p>
           <p className="text-emerald-300 font-semibold text-sm sm:text-base mb-12">
-            📍 Puncak Mulya, Pangalengan · Kapasitas 25 Orang · 1.400 mdpl · Udara 17°C
+            📍 Sukaluyu, Pangalengan · Kapasitas 25 Orang · Udara Sejuk Pegunungan
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -775,7 +775,7 @@ export default function HomePage() {
               Temukan Kami di Google Maps
             </h2>
             <p className="text-gray-500 text-lg max-w-xl mx-auto">
-              Desa Puncak Mulya, Pangalengan — langsung cari <strong>&ldquo;Homestay Bumina EENK&rdquo;</strong> dan kami sudah terdaftar resmi.
+              QG8C+QJR, Sukaluyu, Pangalengan — buka Google Maps untuk menuju lokasi Homestay Bumina EENK.
             </p>
           </div>
 
@@ -784,7 +784,7 @@ export default function HomePage() {
             <div className="lg:col-span-2 rounded-3xl overflow-hidden shadow-xl border border-gray-100">
               <iframe
                 title="Lokasi Homestay Bumina EENK di Google Maps"
-                src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=Homestay+Bumina+EENK+Pangalengan+Bandung&language=id&zoom=15`}
+                src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=QG8C%2BQJR%2C+Sukaluyu%2C+Pangalengan%2C+Kabupaten+Bandung%2C+Jawa+Barat+40378&language=id&zoom=15`}
                 width="100%"
                 height="420"
                 style={{ border: 0, display: 'block' }}
@@ -832,8 +832,8 @@ export default function HomePage() {
               <div className="bg-emerald-50 border border-emerald-100 rounded-2xl p-6">
                 <h3 className="font-black text-gray-900 mb-3 text-sm">📍 Alamat Lengkap</h3>
                 <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                  Desa Puncak Mulya, dekat Taman Langit,<br />
-                  Pangalengan, Kabupaten Bandung,<br />
+                  QG8C+QJR, Sukaluyu,<br />
+                  Kec. Pangalengan, Kabupaten Bandung,<br />
                   Jawa Barat 40378
                 </p>
                 <div className="space-y-2 text-sm">
@@ -1216,7 +1216,7 @@ export default function HomePage() {
       <footer className="bg-gray-950 py-10 text-center text-gray-500 text-sm">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-emerald-400 font-bold text-xl mb-2">Homestay Bumina EENK</div>
-          <p className="mb-1">Desa Puncak Mulya, dekat Taman Langit, Pangalengan, Kabupaten Bandung, Jawa Barat</p>
+          <p className="mb-1">QG8C+QJR, Sukaluyu, Kec. Pangalengan, Kabupaten Bandung, Jawa Barat 40378</p>
           <p className="mb-5">
             +62 852-1946-0779 ·{' '}
             <a href="https://buminaeenk.com" className="hover:text-white transition-colors">buminaeenk.com</a>

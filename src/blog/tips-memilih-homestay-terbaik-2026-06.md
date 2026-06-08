@@ -8,6 +8,8 @@ image: "/images/blog/tips-memilih-homestay-terbaik-2026-06.jpg"
 readTime: "6 min read"
 author: "Tim Bumina"
 draft: false
+date: "2026-06-03"
+excerpt: "Mau liburan berkesan tanpa kuras dompet? Simak 7 tips memilih homestay terbaik agar pengalaman menginapmu nyaman, aman, dan sesuai ekspektasi."
 ---
 
 Liburan sudah di depan mata, tiket sudah di tangan — tapi satu hal yang sering bikin galau: **milih homestay yang mana?**

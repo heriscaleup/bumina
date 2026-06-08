@@ -19,7 +19,7 @@ const jsonLd = {
   description: 'Villa dan penginapan terdekat dari Situ Cileunca Pangalengan. Hanya 15 menit berkendara. Kapasitas 25 orang, perapian hangat, dapur lengkap, kebun teh Sosro.',
   url: SITE_URL,
   telephone: '+6285219460779',
-  address: { '@type': 'PostalAddress', streetAddress: 'Desa Puncak Mulya', addressLocality: 'Pangalengan', addressRegion: 'Jawa Barat', addressCountry: 'ID' },
+  address: { '@type': 'PostalAddress', streetAddress: 'QG8C+QJR, Sukaluyu, Kec. Pangalengan', addressLocality: 'Kabupaten Bandung', addressRegion: 'Jawa Barat', addressCountry: 'ID' },
   aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', bestRating: '5', ratingCount: '200' },
   amenityFeature: [
     { '@type': 'LocationFeatureSpecification', name: 'Perapian', value: true },

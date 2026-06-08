@@ -8,6 +8,8 @@ image: "/images/blog/pengalaman-menginap-homestay-cerita-tamu-2026-06.jpg"
 readTime: "6 min read"
 author: "Tim Bumina"
 draft: false
+date: "2026-06-07"
+excerpt: "Lima kisah nyata tamu homestay yang membuktikan bahwa pengalaman menginap di homestay jauh lebih berkesan, hangat, dan personal dibanding hotel biasa."
 ---
 
 Kalau liburan cuma soal checklist tempat wisata, mungkin hotel berbintang sudah cukup. Tapi kalau kamu mau pulang dengan cerita yang bisa diceritakan bertahun-tahun kemudian — homestay adalah pilihan yang berbeda.

@@ -11,8 +11,8 @@ const siteConfig = {
   keywords: "homestay pangalengan, villa di pangalengan, penginapan kebun teh, sewa villa bandung, wisata pangalengan, bumina eenk, taman langit pangalengan",
   telephone: "+6285219460779",
   address: {
-    street: "Desa Puncak Mulya, dekat Taman Langit",
-    city: "Pangalengan",
+    street: "QG8C+QJR, Sukaluyu, Kec. Pangalengan",
+    city: "Kabupaten Bandung",
     state: "Jawa Barat",
     zipCode: "40378",
     country: "Indonesia",

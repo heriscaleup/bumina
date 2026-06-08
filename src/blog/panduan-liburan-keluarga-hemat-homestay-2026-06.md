@@ -8,6 +8,8 @@ image: "/images/blog/panduan-liburan-keluarga-hemat-homestay-2026-06.jpg"
 readTime: "8 min read"
 author: "Tim Bumina"
 draft: false
+date: "2026-06-06"
+excerpt: "Liburan keluarga hemat bisa tetap berkesan! Panduan lengkap memilih homestay, mengatur budget, dan tips agar liburan bersama anak makin menyenangkan."
 ---
 
 Liburan bareng keluarga sering kali terasa mahal — hotel, transportasi, makan, tiket masuk, oleh-oleh. Padahal, **liburan keluarga hemat** itu sangat mungkin diwujudkan, asal tahu triknya. Dan salah satu kunci terbesarnya adalah: pilih homestay, bukan hotel.

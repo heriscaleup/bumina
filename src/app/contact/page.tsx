@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = generateMetadataObject({
   title: "Kontak — Homestay Bumina EENK Pangalengan",
-  description: "Hubungi Homestay Bumina EENK untuk booking atau informasi. WhatsApp +62 852-1946-0779. Lokasi: Puncak Mulya, Pangalengan, Bandung Selatan. Cek juga Agoda & Booking.com.",
+  description: "Hubungi Homestay Bumina EENK untuk booking atau informasi. WhatsApp +62 852-1946-0779. Lokasi: QG8C+QJR, Sukaluyu, Kec. Pangalengan, Kabupaten Bandung, Jawa Barat 40378. Cek juga Agoda & Booking.com.",
   canonical: "/contact",
 });
 
@@ -110,9 +110,9 @@ export default function ContactPage() {
                   <div>
                     <div className="font-black text-gray-900 mb-1">Alamat</div>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      Desa Puncak Mulya, dekat Taman Langit<br />
-                      Pangalengan, Kabupaten Bandung<br />
-                      Jawa Barat 40378, Indonesia
+                      QG8C+QJR, Sukaluyu<br />
+                      Kec. Pangalengan, Kabupaten Bandung<br />
+                      Jawa Barat 40378
                     </p>
                   </div>
                 </div>
@@ -214,12 +214,12 @@ export default function ContactPage() {
                 Temukan Kami di Peta
               </h2>
               <p className="text-gray-500 text-lg max-w-xl mx-auto">
-                Kami berada di Puncak Mulya, Pangalengan — dikelilingi keindahan alam dan kebun teh Sosro yang legendaris.
+                Kami berada di Sukaluyu, Kecamatan Pangalengan — dikelilingi keindahan alam dan kebun teh yang legendaris.
               </p>
             </div>
             <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-100">
               <iframe
-                src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=Homestay+Bumina+EENK+Pangalengan+Bandung&language=id&zoom=15`}
+                src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=QG8C%2BQJR%2C+Sukaluyu%2C+Pangalengan%2C+Kabupaten+Bandung%2C+Jawa+Barat+40378&language=id&zoom=15`}
                 width="100%"
                 height="480"
                 style={{ border: 0, display: 'block' }}
@@ -231,7 +231,7 @@ export default function ContactPage() {
             </div>
             <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://maps.google.com/?q=Homestay+Bumina+EENK+Pangalengan"
+                href="https://maps.google.com/?q=QG8C%2BQJR%2C%20Sukaluyu%2C%20Kec.%20Pangalengan%2C%20Kabupaten%20Bandung%2C%20Jawa%20Barat%2040378"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-white border border-gray-200 hover:border-emerald-500 text-gray-700 hover:text-emerald-700 font-bold px-6 py-3 rounded-xl transition-all shadow-sm"
