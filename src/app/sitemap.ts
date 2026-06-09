@@ -91,6 +91,67 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'monthly' as const,
       priority: 0.9,
     },
+    // Static landing pages — pangalengan SEO expansion
+    {
+      url: `${baseUrl}/glamping-pangalengan/`,
+      lastModified: new Date('2026-06-07'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/offroad-pangalengan/`,
+      lastModified: new Date('2026-06-07'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/rafting-pangalengan/`,
+      lastModified: new Date('2026-06-07'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/situ-cileunca/`,
+      lastModified: new Date('2026-06-07'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/camping-ground-pangalengan/`,
+      lastModified: new Date('2026-06-07'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/sunrise-point-cukul/`,
+      lastModified: new Date('2026-06-07'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/family-gathering-pangalengan/`,
+      lastModified: new Date('2026-06-07'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/outbound-pangalengan/`,
+      lastModified: new Date('2026-06-07'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/tempat-wisata-pangalengan/`,
+      lastModified: new Date('2026-06-07'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/penginapan-pangalengan/`,
+      lastModified: new Date('2026-06-07'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
   ]
 
   return [...staticUrls, ...blogPostUrls]

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://buminaeenk.com/family-gathering-pangalengan/sitemap.xml
