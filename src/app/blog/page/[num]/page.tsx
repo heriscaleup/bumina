@@ -1,0 +1,120 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import BlogPagination from "@/components/BlogPagination";
+import { getAllArticles, type Article, ARTICLES_PER_PAGE } from "@/blog/articleHelpers";
+import { generateMetadataObject } from "@/lib/seo";
+import { Metadata } from "next";
+
+interface Props {
+  params: Promise<{ num: string }>;
+}
+
+export async function generateStaticParams() {
+  const articles = await getAllArticles();
+  const totalPages = Math.ceil(articles.length / ARTICLES_PER_PAGE);
+  return Array.from({ length: totalPages - 1 }, (_, i) => ({ num: String(i + 2) }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { num } = await params;
+  const page = parseInt(num, 10);
+  return generateMetadataObject({
+    title: `Blog Wisata Pangalengan — Halaman ${page}`,
+    description: `Artikel wisata, tips liburan, dan panduan Pangalengan — halaman ${page}.`,
+    canonical: `/blog/page/${page}`,
+  });
+}
+
+export default async function BlogPageNum({ params }: Props) {
+  const { num } = await params;
+  const page = parseInt(num, 10);
+
+  const allArticles = await getAllArticles();
+  const totalPages = Math.ceil(allArticles.length / ARTICLES_PER_PAGE);
+
+  if (isNaN(page) || page < 2 || page > totalPages) {
+    notFound();
+  }
+
+  const start = (page - 1) * ARTICLES_PER_PAGE;
+  const articles = allArticles.slice(start, start + ARTICLES_PER_PAGE);
+
+  return (
+    <>
+      <Header />
+      <main className="min-h-screen bg-gray-50">
+        <section className="bg-gradient-to-br from-green-50 to-emerald-50 py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Blog Bumina EENK
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Panduan, tips, dan cerita seru buat nemenin petualangan lo di Pangalengan.
+            </p>
+          </div>
+        </section>
+
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {articles.map((post: Article) => (
+                <article
+                  key={post.slug}
+                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                >
+                  <div className="p-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
+                        {post.category}
+                      </span>
+                      <time className="text-gray-500 text-sm">
+                        {new Date(post.date).toLocaleDateString("id-ID", {
+                          year: "numeric",
+                          month: "long",
+                          day: "numeric",
+                        })}
+                      </time>
+                    </div>
+
+                    <div className="text-center mb-4">
+                      <div className="w-full h-48 relative mb-4 rounded-lg overflow-hidden">
+                        <img
+                          src={post.image}
+                          alt={post.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+
+                    <h2 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
+                      {post.title}
+                    </h2>
+
+                    <p className="text-gray-600 mb-4 line-clamp-3">
+                      {post.excerpt}
+                    </p>
+
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="inline-flex items-center text-green-600 font-medium hover:text-green-700 transition-colors"
+                    >
+                      Baca Selengkapnya
+                      <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <BlogPagination currentPage={page} totalPages={totalPages} />
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}
