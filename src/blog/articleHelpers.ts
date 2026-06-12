@@ -25,14 +25,43 @@ export interface Article {
 // Directory for local markdown collection
 const POSTS_DIR = path.join(process.cwd(), 'src', 'blog');
 
-// Ensure required frontmatter exists
-function assertFrontmatter(data: { [key: string]: unknown }, slug:string) {
-  const required = ['title', 'date', 'category', 'excerpt', 'image'];
-  const missing = required.filter((k) => !data?.[k]);
-  if (missing.length) {
-    throw new Error(`Missing frontmatter fields [${missing.join(', ')}] in ${slug}.md`);
+const FALLBACK_IMAGES = [
+  '/herohome-kebon-teh.webp',
+  '/herohome-depan-villa.webp',
+  '/pemandangan1.webp',
+  '/pemandangan2.webp',
+  '/tempat-wisata-pangalengan/pangalengan.jpg',
+];
+
+function fallbackImageFor(slug: string, category?: string) {
+  const key = `${slug}-${category ?? ''}`;
+  let hash = 0;
+  for (let i = 0; i < key.length; i++) hash = (hash + key.charCodeAt(i) * (i + 1)) % FALLBACK_IMAGES.length;
+  return FALLBACK_IMAGES[hash];
+}
+
+async function resolveImage(value: unknown, slug: string, category?: string) {
+  const image = typeof value === 'string' ? value.trim() : '';
+  if (!image) return fallbackImageFor(slug, category);
+  if (image.startsWith('http://') || image.startsWith('https://')) return image;
+  const normalized = image.startsWith('/') ? image : `/${image}`;
+  try {
+    await fs.access(path.join(process.cwd(), 'public', normalized.slice(1)));
+    return normalized;
+  } catch {
+    return fallbackImageFor(slug, category);
   }
 }
+
+// Ensure important frontmatter exists, but never kill a blog page just because an image is missing.
+function normalizeFrontmatter(data: { [key: string]: unknown }, slug:string) {
+  if (!data.title) data.title = slug.replace(/-/g, ' ');
+  if (!data.date) data.date = new Date().toISOString().slice(0, 10);
+  if (!data.category) data.category = 'Panduan';
+  if (!data.excerpt) data.excerpt = 'Panduan wisata dan penginapan Pangalengan dari Bumina EENK.';
+  // image is resolved per article after async filesystem verification
+}
+
 
 async function listPostFilenames(): Promise<string[]> {
   try {
@@ -69,7 +98,7 @@ export async function getAllArticles(): Promise<Article[]> {
     const fullPath = path.join(POSTS_DIR, filename);
     const raw = await fs.readFile(fullPath, 'utf-8');
     const { data, content } = matter(raw);
-    assertFrontmatter(data, slug);
+    normalizeFrontmatter(data, slug);
 
     posts.push({
       title: String(data.title),
@@ -79,7 +108,7 @@ export async function getAllArticles(): Promise<Article[]> {
       category: String(data.category),
       date: String(data.date),
       slug,
-      image: String(data.image),
+      image: await resolveImage(data.image, slug, String(data.category)),
     });
   }
 
@@ -92,7 +121,7 @@ export async function getArticleBySlug(slug: string) {
   try {
     const raw = await fs.readFile(filepath, 'utf-8');
     const { data, content } = matter(raw);
-    assertFrontmatter(data, slug);
+    normalizeFrontmatter(data, slug);
     const html = await markdownToHtml(content);
 
     const post: Article = {
@@ -102,7 +131,7 @@ export async function getArticleBySlug(slug: string) {
       category: String(data.category),
       date: String(data.date),
       slug,
-      image: String(data.image),
+      image: await resolveImage(data.image, slug, String(data.category)),
     };
 
     // Get related posts
