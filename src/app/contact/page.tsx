@@ -219,7 +219,7 @@ export default function ContactPage() {
             </div>
             <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-100">
               <iframe
-                src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=QG8C%2BQJR%2C+Sukaluyu%2C+Pangalengan%2C+Kabupaten+Bandung%2C+Jawa+Barat+40378&language=id&zoom=15`}
+                src="https://www.google.com/maps?q=QG8C%2BQJR%2C%20Sukaluyu%2C%20Kec.%20Pangalengan%2C%20Kabupaten%20Bandung%2C%20Jawa%20Barat%2040378&hl=id&z=15&output=embed"
                 width="100%"
                 height="480"
                 style={{ border: 0, display: 'block' }}
@@ -231,7 +231,7 @@ export default function ContactPage() {
             </div>
             <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://maps.google.com/?q=QG8C%2BQJR%2C%20Sukaluyu%2C%20Kec.%20Pangalengan%2C%20Kabupaten%20Bandung%2C%20Jawa%20Barat%2040378"
+                href="https://maps.app.goo.gl/QuE23efP6yoJxFLn7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-white border border-gray-200 hover:border-emerald-500 text-gray-700 hover:text-emerald-700 font-bold px-6 py-3 rounded-xl transition-all shadow-sm"
@@ -255,3 +255,5 @@ export default function ContactPage() {
     </>
   );
 }
+
+

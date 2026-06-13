@@ -784,7 +784,7 @@ export default function HomePage() {
             <div className="lg:col-span-2 rounded-3xl overflow-hidden shadow-xl border border-gray-100">
               <iframe
                 title="Lokasi Homestay Bumina EENK di Google Maps"
-                src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=QG8C%2BQJR%2C+Sukaluyu%2C+Pangalengan%2C+Kabupaten+Bandung%2C+Jawa+Barat+40378&language=id&zoom=15`}
+                src="https://www.google.com/maps?q=QG8C%2BQJR%2C%20Sukaluyu%2C%20Kec.%20Pangalengan%2C%20Kabupaten%20Bandung%2C%20Jawa%20Barat%2040378&hl=id&z=15&output=embed"
                 width="100%"
                 height="420"
                 style={{ border: 0, display: 'block' }}
@@ -819,7 +819,7 @@ export default function HomePage() {
                 </div>
                 <p className="text-gray-500 text-xs mb-4">200+ ulasan terverifikasi</p>
                 <a
-                  href="https://maps.google.com/maps?q=Homestay+Bumina+EENK+Pangalengan"
+                  href="https://maps.app.goo.gl/QuE23efP6yoJxFLn7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-center bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm py-2.5 px-4 rounded-xl transition-colors"
@@ -1242,3 +1242,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+
