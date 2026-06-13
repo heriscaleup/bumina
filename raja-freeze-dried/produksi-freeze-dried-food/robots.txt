@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rajafreezdriedfood.com/produksi-freeze-dried-food/sitemap.xml

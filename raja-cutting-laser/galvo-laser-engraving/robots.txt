@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rajacuttinglaser.com/galvo-laser-engraving/sitemap.xml

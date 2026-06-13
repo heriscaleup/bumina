@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rajafreezdriedfood.com/jasa-freeze-drying/sitemap.xml
