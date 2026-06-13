@@ -8,9 +8,18 @@ image: "/pemandangan1.webp"
 
 # Tempat Wisata Pangalengan yang Wajib Dikunjungi
 
-Kalau kamu lagi cari destinasi liburan yang adem, asri, dan bikin hati tenang, **Pangalengan** jawabannya! Kawasan pegunungan di selatan Kabupaten Bandung ini memang sudah lama jadi favorit wisatawan lokal maupun mancanegara. Udaranya segar, pemandangannya memukau, dan suasananya jauh dari hiruk-pikuk kota. Nggak heran kalau banyak orang yang sekali ke Pangalengan, langsung ketagihan pengen balik lagi.
+Kalau kamu ingin liburan yang udaranya sejuk, pemandangannya hijau, dan ritmenya lebih pelan dari kota, **Pangalengan** adalah salah satu pilihan paling kuat di Bandung Selatan. Daya tariknya bukan cuma satu: ada danau, kebun teh, sunrise, rafting, kuliner lokal, sampai penginapan yang cocok untuk keluarga.
 
-Di artikel ini, kita bakal kupas tuntas tempat-tempat wisata di Pangalengan yang wajib banget masuk daftar itinerary kamu. Siap? Yuk, simak!
+Panduan ini merangkum tempat wisata Pangalengan yang paling layak masuk itinerary, lengkap dengan alasan kenapa harus datang, aktivitas yang bisa dilakukan, dan tips agar perjalanan lebih efisien.
+
+## Rekomendasi Cepat Itinerary Pangalengan
+
+Untuk kunjungan 2 hari 1 malam, susunan paling nyaman biasanya seperti ini:
+
+- **Hari pertama:** Situ Cileunca, rafting Sungai Palayangan, kuliner lokal, check-in homestay.
+- **Hari kedua:** sunrise di area perbukitan, Kebun Teh Malabar, agrowisata, lalu pulang sebelum sore.
+
+Urutan ini membantu kamu menikmati spot utama tanpa terlalu banyak bolak-balik di jalan yang berliku.
 
 ---
 
@@ -79,6 +88,12 @@ Sebelum berangkat, ada beberapa hal yang perlu kamu persiapkan supaya liburan ma
 5. **Pilih penginapan yang tepat** — menginap di Pangalengan adalah pilihan terbaik supaya kamu bisa menikmati semua destinasi tanpa terburu-buru
 
 ---
+
+## Tips Memilih Penginapan di Pangalengan
+
+Agar itinerary tidak habis di jalan, pilih penginapan yang dekat dengan tujuan utama. Jika fokusmu Situ Cileunca dan rafting, cari homestay di area Pangalengan yang aksesnya mudah ke danau. Untuk keluarga, prioritaskan parkir aman, kamar bersih, air hangat, dan host yang responsif.
+
+Lokasi penginapan yang tepat membuat kamu bisa mulai aktivitas pagi lebih cepat—terutama kalau ingin mengejar kabut, sunrise, atau jadwal rafting pertama.
 
 ## Menginap di Pangalengan? Pilih Homestay Bumina EENK!
 
