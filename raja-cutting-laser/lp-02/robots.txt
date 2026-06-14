@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://jasalasercutting.com/sitemap.xml
