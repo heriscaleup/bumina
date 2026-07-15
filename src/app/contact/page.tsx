@@ -104,6 +104,27 @@ export default function ContactPage() {
                   </div>
                 </a>
 
+                {/* Hidden WebMCP form for AI Agents to trigger WhatsApp chat */}
+                <form 
+                  action="https://wa.me/6285219460779" 
+                  method="GET" 
+                  style={{ display: 'none' }}
+                  {...{
+                    toolname: "startWhatsappChat",
+                    tooldescription: "Initiate a direct WhatsApp chat with Homestay Bumina EENK Pangalengan for booking or availability inquiries",
+                    toolautosubmit: "true"
+                  } as Record<string, string>}
+                >
+                  <input 
+                    type="text" 
+                    name="text" 
+                    {...{
+                      toolparamtitle: "messageText",
+                      toolparamdescription: "Pre-filled text message detailing your booking request or questions"
+                    } as Record<string, string>}
+                  />
+                </form>
+
                 {/* Alamat */}
                 <div className="flex items-start gap-4 p-5">
                   <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center flex-shrink-0 text-xl">📍</div>
