@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { generateMetadataObject } from '@/lib/seo';
 import Link from 'next/link';
 import Image from 'next/image';
+import Header from '@/components/Header';
 
 const WA_URL = 'https://wa.me/6285219460779?text=Halo%2C%20saya%20ingin%20tanya%20ketersediaan%20Homestay%20Bumina%20EENK%20Pangalengan';
 const SITE_URL = 'https://buminaeenk.com';
@@ -37,12 +38,7 @@ export default function WisataRahongPage() {
     <div className="font-sans antialiased">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <nav className="fixed top-0 inset-x-0 z-50 bg-black/30 backdrop-blur-md border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="font-extrabold text-white text-base">Bumina<span className="text-emerald-400"> EENK</span></Link>
-          <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-sm px-5 py-2 rounded-full transition-all">Book Sekarang</a>
-        </div>
-      </nav>
+      <Header />
 
       <section className="relative min-h-[78vh] flex items-center justify-center overflow-hidden bg-green-950">
         <div className="absolute inset-0">

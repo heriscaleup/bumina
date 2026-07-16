@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 import ScrollStory from '@/components/ScrollStory';
+import Header from '@/components/Header';
 
 const SITE_URL = 'https://buminaeenk.com';
 
@@ -423,12 +423,6 @@ const CheckBadge = () => (
   </svg>
 );
 
-const ShieldCheck = () => (
-  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-  </svg>
-);
-
 export default function HomePage() {
   return (
     <div className="font-sans antialiased">
@@ -437,42 +431,7 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdVideo) }} />
 
-      {/* ════════════════════════════════════════
-          STICKY NAVBAR
-      ════════════════════════════════════════ */}
-      <nav className="fixed top-0 inset-x-0 z-50 bg-black/30 backdrop-blur-md border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-full overflow-hidden relative flex-shrink-0">
-              <Image src="/logo.webp" alt="Logo Bumina EENK" fill className="object-cover" unoptimized />
-            </div>
-            <span className="font-extrabold text-white text-base tracking-tight leading-none">
-              Bumina<span className="text-emerald-400"> EENK</span>
-            </span>
-          </div>
-          <div className="flex items-center gap-5">
-            <div className="hidden items-center gap-5 text-[11px] font-bold uppercase tracking-[0.13em] text-white/70 lg:flex">
-              <a href="#experience" className="transition-colors hover:text-emerald-300">Experience</a>
-              <a href="#stay" className="transition-colors hover:text-emerald-300">The Stay</a>
-              <a href="#facilities" className="transition-colors hover:text-emerald-300">Facilities</a>
-              <a href="#rates" className="transition-colors hover:text-emerald-300">Rates</a>
-              <Link href="/blog" className="transition-colors hover:text-emerald-300">Journal</Link>
-            </div>
-            <div className="hidden sm:flex items-center gap-1.5 text-emerald-300 text-xs font-semibold">
-              <ShieldCheck />
-              Terverifikasi Agoda & Booking.com
-            </div>
-            <a
-              href={WA_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-sm px-5 py-2 rounded-full transition-all hover:scale-105"
-            >
-              Book Sekarang
-            </a>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       {/* ════════════════════════════════════════
           SECTION 1 — HERO

@@ -12,6 +12,8 @@ Tidak ada dependency baru dan tidak ada database atau migrasi.
 ## Yang berubah
 
 - Homepage kini memiliki sticky parallax story 420vh, cinematic layering, scroll progress, reveal motion, editorial typography, galeri baru, dan copy yang lebih khas hospitality Pangalengan.
+- Navbar sinematik kini memakai satu komponen global yang konsisten di homepage, Journal, detail artikel, pagination, About, Harga, Kontak, dan seluruh landing wisata. Journal memiliki active state di semua URL `/blog/...`.
+- Masthead Journal, judul artikel, spacing di bawah fixed navbar, tracking, dan baseline tipografi sudah dinormalisasi untuk mobile dan desktop.
 - About, Harga, Kontak, Blog, artikel, itinerary, Nimo Highland, rafting, villa dekat Situ Cileunca, Wayang Windu, Rahong, dan Situ Cileunca mendapat visual treatment yang konsisten.
 - 32 foto editorial WebP baru dibuat khusus tanpa orang atau wajah. Total payload aset baru sekitar 3,9 MB, tetapi setiap halaman hanya mengambil media yang dipakai.
 - Seluruh 40 artikel blog sekarang memakai cover unik; tidak ada lagi satu foto yang muncul sebagai cover berulang.

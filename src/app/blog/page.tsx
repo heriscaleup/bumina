@@ -24,7 +24,7 @@ export default async function BlogPage() {
     <>
       <Header />
       <main className="min-h-screen overflow-hidden bg-[#f3f1e9] text-[#13251d]">
-        <section className="relative border-b border-emerald-950/15">
+        <section className="relative border-b border-emerald-950/15 pt-16">
           <div className="pointer-events-none absolute -right-24 top-12 h-80 w-80 rounded-full bg-emerald-300/20 blur-3xl" data-parallax="0.08" />
           <div className="mx-auto max-w-7xl px-4 pb-14 pt-16 sm:px-6 lg:px-8 lg:pb-20 lg:pt-24">
             <div className="mb-12 flex items-center justify-between border-b border-emerald-950/15 pb-4 text-[10px] font-black uppercase tracking-[.22em] text-emerald-800">
@@ -33,11 +33,11 @@ export default async function BlogPage() {
               <span className="hidden sm:block">Pangalengan · Indonesia</span>
             </div>
             <p className="mb-5 text-xs font-black uppercase tracking-[0.28em] text-emerald-700">Bumina Field Notes · Vol. 01</p>
-            <h1 className="max-w-6xl text-[18vw] font-black leading-[.68] tracking-[-.09em] sm:text-[8.5rem] lg:text-[11rem]">
-              FIELD<br /><span className="ml-[12vw] font-serif font-normal italic text-emerald-700 sm:ml-32">Notes.</span>
+            <h1 className="max-w-6xl text-[17vw] font-black leading-[.76] tracking-[-.085em] sm:text-[8rem] lg:text-[10.5rem]">
+              FIELD<span className="block pl-[.16em] font-serif font-normal italic tracking-[-.065em] text-emerald-700">Notes.</span>
             </h1>
             <div className="mt-12 grid gap-6 border-t border-emerald-950/15 pt-6 sm:grid-cols-[1fr_1fr] lg:grid-cols-[1.4fr_.6fr]">
-              <p className="max-w-2xl text-xl leading-8 sm:text-2xl">Catatan dari jalan berkabut, dapur yang tetap hangat, dan pagi yang dimulai sebelum matahari.</p>
+              <p className="max-w-2xl text-xl font-medium leading-8 tracking-[-.02em] sm:text-2xl">Catatan dari jalan berkabut, dapur yang tetap hangat, dan pagi yang dimulai sebelum matahari.</p>
               <p className="max-w-sm text-sm leading-6 text-emerald-950/60 lg:justify-self-end">Panduan lokal, itinerary, dan cerita Pangalengan—ditulis untuk dibawa pergi, bukan hanya dibaca lalu dilupakan.</p>
             </div>
           </div>
