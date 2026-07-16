@@ -3,7 +3,7 @@ title: "Villa Keluarga di Pangalengan: Pilihan Kapasitas Besar"
 date: "2026-04-13"
 category: "Penginapan"
 excerpt: "Cari villa keluarga di Pangalengan dengan kapasitas besar? Temukan rekomendasi terbaik untuk liburan seru bersama rombongan keluarga atau grup."
-image: "/pemandangan1.webp"
+image: "/herohome-kebon-teh.webp"
 ---
 
 Liburan bareng keluarga besar atau rombongan teman memang selalu seru. Tapi tantangannya? Nyari penginapan yang bisa muat banyak orang sekaligus tanpa harus bayar mahal atau terpisah di beberapa kamar yang berbeda lokasi. Nah, kalau kamu lagi planning liburan ke Pangalengan, kabar baiknya adalah kawasan pegunungan yang sejuk ini punya banyak pilihan villa keluarga dengan kapasitas besar yang siap bikin liburanmu makin berkesan.

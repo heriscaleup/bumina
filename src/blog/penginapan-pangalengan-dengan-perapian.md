@@ -3,7 +3,7 @@ title: "Penginapan Pangalengan dengan Perapian yang Bikin Betah"
 date: "2026-04-12"
 category: "Penginapan"
 excerpt: "Cari penginapan di Pangalengan yang ada perapiannya? Ini rekomendasi terbaik buat kamu yang mau liburan nyaman dan hangat!"
-image: "/pemandangan1.webp"
+image: "/images/editorial/outdoor-fireplace.webp"
 ---
 
 Pangalengan memang punya daya tarik tersendiri yang bikin orang selalu pengen balik lagi. Udara dinginnya yang menggigit, hamparan kebun teh yang hijau, danau-danau cantik yang tenang, dan suasana pegunungan yang jauh dari kebisingan kota — semua itu jadi kombinasi sempurna buat liburan yang menyegarkan jiwa dan raga.

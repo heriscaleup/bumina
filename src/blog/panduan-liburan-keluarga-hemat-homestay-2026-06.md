@@ -4,7 +4,7 @@ description: "Liburan keluarga hemat bisa tetap berkesan! Panduan lengkap memili
 pubDate: 2026-06-06T07:00:00.000Z
 category: "Tips"
 tags: ["liburan keluarga hemat", "homestay keluarga", "tips wisata hemat"]
-image: "/images/blog/panduan-liburan-keluarga-hemat-homestay-2026-06.jpg"
+image: "/images/editorial/weekend-luggage.webp"
 readTime: "8 min read"
 author: "Tim Bumina"
 draft: false

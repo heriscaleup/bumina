@@ -4,7 +4,7 @@ import { type Article } from '@/blog/articleHelpers';
 // --- KONFIGURASI SEO GLOBAL ---
 const siteConfig = {
   title: "Homestay Bumina EENK — Penginapan Terpercaya di Pangalengan",
-  description: "Homestay Bumina EENK, rating 4.9★ di Agoda & Booking.com. Di tengah kebun teh Pangalengan, 5 mnt ke Taman Langit. Kapasitas 25 orang & perapian hangat.",
+  description: "Homestay Syariah Bumina EENK di Pangalengan. Empat menit ke Taman Langit, rumah privat maksimal 20 orang, dapur lengkap, serta perapian dalam dan luar.",
   url: "https://buminaeenk.com",
   ogImage: "https://buminaeenk.com/herohome.webp",
   author: "Homestay Bumina EENK",
@@ -124,7 +124,7 @@ export const SchemaOrg = {
       { '@type': 'LocationFeatureSpecification', name: 'Perapian', value: 'Yes' },
       { '@type': 'LocationFeatureSpecification', name: 'Dapur Lengkap', value: 'Yes' },
       { '@type': 'LocationFeatureSpecification', name: 'Parkir Luas', value: 'Yes' },
-      { '@type': 'LocationFeatureSpecification', name: 'Kapasitas 25 Orang', value: 'Yes' },
+      { '@type': 'LocationFeatureSpecification', name: 'Kapasitas Maksimal 20 Orang', value: 'Yes' },
     ],
   }),
   faqPage: (questions: { question: string; answer: string }[]) => ({

@@ -67,7 +67,7 @@ async function listPostFilenames(): Promise<string[]> {
   try {
     const files = await fs.readdir(POSTS_DIR);
     return files.filter((f) => f.endsWith('.md'));
-  } catch (e) {
+  } catch {
     // if directory not exist, return empty list
     return [];
   }
@@ -97,7 +97,7 @@ export async function getAllArticles(): Promise<Article[]> {
     const slug = filenameToSlug(filename);
     const fullPath = path.join(POSTS_DIR, filename);
     const raw = await fs.readFile(fullPath, 'utf-8');
-    const { data, content } = matter(raw);
+    const { data } = matter(raw);
     normalizeFrontmatter(data, slug);
 
     posts.push({
@@ -144,7 +144,7 @@ export async function getArticleBySlug(slug: string) {
       post,
       relatedPosts,
     };
-  } catch (e) {
+  } catch {
     return { post: null, relatedPosts: [] };
   }
 }

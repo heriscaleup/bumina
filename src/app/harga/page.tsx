@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 const SITE_URL = 'https://buminaeenk.com';
 const WA_HARGA = 'https://wa.me/6285219460779?text=Halo%2C%20saya%20mau%20tanya%20info%20harga%20dan%20booking%20Homestay%20Bumina%20EENK%20Pangalengan';
@@ -9,9 +10,9 @@ const AGODA_URL = 'https://www.agoda.com/en-za/homestay-bumina-eenk-bandung-pang
 const BOOKING_URL = 'https://www.booking.com/hotel/id/bumina-eenk.id.html';
 
 export const metadata: Metadata = {
-  title: 'Harga Sewa Villa Bumina EENK Pangalengan | Mulai Rp 1,5 Jt',
+  title: 'Harga Homestay Syariah Bumina EENK | Mulai Rp 850 Ribu',
   description:
-    'Sewa villa privat di Pangalengan mulai Rp 1,5 Jt/malam. Kapasitas 25 orang, perapian hangat, dapur & BBQ. Weekday & weekend tersedia — Booking.com & Agoda.',
+    'Homestay syariah privat di Pangalengan mulai Rp 850 ribu/malam untuk 5 orang. Tambahan tamu Rp 70 ribu/orang, maksimal 20 orang.',
   keywords: [
     'harga homestay pangalengan',
     'tarif villa pangalengan',
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     'harga villa rombongan pangalengan',
     'tarif homestay bumina eenk',
     'harga penginapan pangalengan bandung',
-    'villa 25 orang pangalengan harga',
+    'villa 20 orang pangalengan harga',
     'sewa villa keluarga pangalengan murah',
     'harga villa kebun teh pangalengan',
     'penginapan rombongan bandung selatan',
@@ -30,9 +31,9 @@ export const metadata: Metadata = {
     canonical: `${SITE_URL}/harga`,
   },
   openGraph: {
-    title: 'Harga Sewa Homestay Bumina EENK Pangalengan | Mulai Rp 1,5 Jt/Malam',
+    title: 'Harga Homestay Syariah Bumina EENK | Mulai Rp 850 Ribu/Malam',
     description:
-      'Villa privat kapasitas 25 orang di tengah kebun teh Pangalengan. Harga transparan, fasilitas lengkap — perapian, dapur, BBQ & camping ground. Cek tarif sekarang!',
+      'Rumah privat maksimal 20 orang di tengah kebun teh Pangalengan. Weekday Rp 850 ribu untuk 5 orang, fasilitas lengkap dan harga transparan.',
     url: `${SITE_URL}/harga`,
     siteName: 'Homestay Bumina EENK',
     images: [
@@ -48,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Harga Homestay Bumina EENK Pangalengan | Mulai Rp 1,5 Jt/Malam',
-    description: 'Villa privat 25 orang di kebun teh Pangalengan. Tarif transparan, booking via WhatsApp.',
+    title: 'Harga Homestay Bumina EENK Pangalengan | Mulai Rp 850 Ribu/Malam',
+    description: 'Homestay syariah privat maksimal 20 orang di kebun teh Pangalengan. Tarif transparan, booking via WhatsApp.',
     images: [`${SITE_URL}/herohome.webp`],
   },
 };
@@ -57,35 +58,35 @@ export const metadata: Metadata = {
 const faqItems = [
   {
     q: 'Berapa harga sewa Homestay Bumina EENK per malam?',
-    a: 'Harga weekday (Senin–Kamis) mulai Rp 1.500.000 per malam, dan harga weekend (Jumat–Minggu & hari libur nasional) mulai Rp 2.000.000 per malam. Semua harga sudah termasuk sewa seluruh area villa privat untuk kapasitas hingga 25 orang.',
+    a: 'Weekday Rp 850.000, weekend Rp 900.000, long holiday Rp 1.000.000, dan high season Rp 1.500.000 per malam untuk 5 orang. Tambahan tamu Rp 70.000/orang, maksimal 20 orang.',
   },
   {
     q: 'Apakah harga sudah termasuk fasilitas lengkap?',
-    a: 'Ya! Semua paket sudah termasuk: perapian hangat, dapur lengkap, area BBQ, camping ground kayu, parkir gratis, dan akses ke seluruh area villa secara privat. Tidak ada biaya tersembunyi.',
+    a: 'Ya. Semua paket mencakup seluruh rumah privat: 3 kamar tidur, 2 kamar mandi, ruang keluarga, perapian dalam dan luar, dapur beserta alat masak dan makan, serta area parkir luas.',
   },
   {
     q: 'Berapa kapasitas maksimal untuk satu malam sewa?',
-    a: 'Kapasitas maksimal adalah 25 orang. Cocok untuk keluarga besar, rombongan kantor, arisan, gathering, atau acara ulang tahun.',
+    a: 'Kapasitas maksimal homestay adalah 20 orang. Untuk rombongan di atas 20 orang tersedia tenda gratis sesuai ketentuan booking.',
   },
   {
     q: 'Bagaimana cara booking dan sistem pembayaran?',
-    a: 'Booking bisa langsung via WhatsApp kami di +62 852-1946-0779. Tersedia juga di platform Agoda dan Booking.com. Sistem DP (down payment) berlaku setelah konfirmasi ketersediaan tanggal.',
+    a: 'Booking dilakukan setelah tanggal dikonfirmasi melalui WhatsApp. DP minimal 40%. Kami tidak melayani survei pada hari kedatangan.',
   },
   {
-    q: 'Berapa lama minimal menginap?',
-    a: 'Minimal 1 malam untuk paket weekday dan weekend. Untuk paket Spesial (gathering/event), kami sarankan minimal 2 malam agar lebih maksimal.',
+    q: 'Apakah tenda bisa disewa?',
+    a: 'Bisa, khusus untuk tamu homestay dengan harga Rp150.000. Untuk rombongan lebih dari 20 orang, tenda diberikan gratis sesuai ketentuan booking.',
   },
   {
-    q: 'Apakah ada harga khusus untuk menginap lebih dari 2 malam?',
-    a: 'Ya, tersedia diskon khusus untuk menginap 3 malam atau lebih. Hubungi kami via WhatsApp untuk mendapatkan penawaran terbaik.',
+    q: 'Apakah ada diskon booking lebih awal?',
+    a: 'Ada. Booking 1 bulan sebelumnya diskon 10%, 2 bulan sebelumnya 15%, dan 3 bulan atau lebih 20%. Saat high season, diskon maksimal 15%.',
   },
   {
     q: 'Jam berapa check-in dan check-out?',
     a: 'Check-in mulai pukul 14.00 WIB dan check-out pukul 12.00 WIB. Early check-in atau late check-out dapat diatur sesuai ketersediaan — hubungi kami terlebih dahulu.',
   },
   {
-    q: 'Apakah ada biaya tambahan yang perlu diketahui?',
-    a: 'Tidak ada biaya tersembunyi. Harga yang tertera adalah harga final sewa villa. Fasilitas seperti kayu bakar tambahan, set BBQ lengkap, atau catering tersedia sebagai add-on dengan biaya terpisah yang transparan.',
+    q: 'Apakah ada biaya tambahan untuk tamu?',
+    a: 'Harga dasar berlaku untuk 5 orang. Setiap tamu tambahan dikenakan Rp70.000 per orang, sampai kapasitas maksimal 20 orang.',
   },
 ];
 
@@ -94,7 +95,7 @@ export default function HargaPage() {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: 'Homestay Bumina EENK Pangalengan',
-    description: 'Villa privat kapasitas 25 orang di tengah kebun teh Pangalengan Bandung, lengkap dengan perapian, dapur, BBQ area, dan camping ground.',
+    description: 'Homestay syariah privat maksimal 20 orang di tengah kebun teh Pangalengan, dengan 3 kamar, 2 kamar mandi, dua perapian, dan dapur lengkap.',
     image: `${SITE_URL}/herohome.webp`,
     brand: {
       '@type': 'Brand',
@@ -104,12 +105,12 @@ export default function HargaPage() {
       {
         '@type': 'Offer',
         name: 'Paket Weekday',
-        description: 'Sewa villa privat Senin–Kamis, kapasitas 25 orang',
-        price: '1500000',
+        description: 'Sewa homestay privat Senin–Kamis untuk 5 orang',
+        price: '850000',
         priceCurrency: 'IDR',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '1500000',
+          price: '850000',
           priceCurrency: 'IDR',
           unitText: 'per malam',
         },
@@ -122,13 +123,31 @@ export default function HargaPage() {
       },
       {
         '@type': 'Offer',
+        name: 'Paket Long Holiday',
+        description: 'Sewa homestay privat saat long holiday untuk 5 orang',
+        price: '1000000',
+        priceCurrency: 'IDR',
+        availability: 'https://schema.org/InStock',
+        url: `${SITE_URL}/harga`,
+      },
+      {
+        '@type': 'Offer',
+        name: 'Paket High Season',
+        description: 'Sewa homestay privat saat high season untuk 5 orang',
+        price: '1500000',
+        priceCurrency: 'IDR',
+        availability: 'https://schema.org/InStock',
+        url: `${SITE_URL}/harga`,
+      },
+      {
+        '@type': 'Offer',
         name: 'Paket Weekend',
-        description: 'Sewa villa privat Jumat–Minggu & Hari Libur, kapasitas 25 orang',
-        price: '2000000',
+        description: 'Sewa homestay privat Jumat–Minggu untuk 5 orang',
+        price: '900000',
         priceCurrency: 'IDR',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '2000000',
+          price: '900000',
           priceCurrency: 'IDR',
           unitText: 'per malam',
         },
@@ -173,14 +192,13 @@ export default function HargaPage() {
       {/* ══════════════════════════════════════
           HERO — HARGA & VALUE PROPOSITION
       ══════════════════════════════════════ */}
-      <section className="relative bg-gradient-to-br from-emerald-950 via-emerald-900 to-green-900 overflow-hidden">
-        {/* Decorative blobs */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-emerald-700/20 blur-3xl" data-parallax="0.12" />
-          <div className="absolute bottom-0 -left-16 w-72 h-72 rounded-full bg-green-600/15 blur-3xl" data-parallax="0.07" />
+      <section className="relative min-h-[74vh] bg-emerald-950 overflow-hidden flex items-center">
+        <div className="absolute -inset-6 pointer-events-none" data-parallax="0.055">
+          <Image src="/images/editorial/fireplace-interior.webp" alt="" fill priority unoptimized sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-b from-emerald-950/35 via-slate-950/65 to-emerald-950/95" />
         </div>
 
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 lg:pt-28 lg:pb-32">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-24 lg:pt-36 lg:pb-32">
           <div className="text-center">
             {/* Eyebrow */}
             <span className="inline-flex items-center gap-2 bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 font-bold text-xs tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-6">
@@ -190,14 +208,14 @@ export default function HargaPage() {
 
             {/* H1 */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
-              Sewa Villa Privat 25 Orang<br />
-              <span className="text-emerald-400">Mulai Rp 1,5 Juta</span> per Malam
+              Satu Rumah Privat, Maksimal 20 Orang<br />
+              <span className="text-emerald-400">Mulai Rp 850 Ribu</span> per Malam
             </h1>
 
             <p className="text-emerald-100 text-lg sm:text-xl max-w-2xl mx-auto mb-4 leading-relaxed">
               Nikmati seluruh homestay di tengah kebun teh Pangalengan —{' '}
               <strong className="text-white">hanya untuk keluarga atau rombongan kamu</strong>.{' '}
-              Fasilitas perapian, dapur lengkap, BBQ & camping ground sudah termasuk.
+              Tiga kamar, dua kamar mandi, dapur lengkap, serta perapian dalam dan luar sudah termasuk.
             </p>
 
             <p className="text-emerald-400 font-semibold text-sm mb-10">
@@ -233,7 +251,7 @@ export default function HargaPage() {
               </span>
               <span className="text-emerald-700">·</span>
               <span className="flex items-center gap-2">
-                <span className="text-emerald-400">✓</span> Kapasitas 25 Orang
+                <span className="text-emerald-400">✓</span> Maksimal 20 Orang
               </span>
               <span className="text-emerald-700">·</span>
               <span className="flex items-center gap-2">
@@ -302,7 +320,7 @@ export default function HargaPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block bg-emerald-50 text-emerald-700 font-bold text-xs tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-5">
-              Daftar Harga 2025
+              Daftar Harga Terbaru
             </span>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               Pilih Paket yang Sesuai
@@ -312,7 +330,7 @@ export default function HargaPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
             {/* ── Paket Weekday ── */}
             <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
               <div className="mb-7">
@@ -321,22 +339,21 @@ export default function HargaPage() {
                 </span>
                 <div className="text-gray-400 text-sm mb-1">Senin – Kamis</div>
                 <div className="flex items-end gap-2 mb-1">
-                  <span className="text-5xl font-black text-gray-900">Rp 1,5 Jt</span>
+                  <span className="text-5xl font-black text-gray-900">Rp 850K</span>
                 </div>
-                <div className="text-gray-400 text-sm">per malam · hingga 25 orang</div>
-                <div className="text-gray-400 text-xs mt-0.5">= <strong className="text-gray-600">Rp 60.000</strong>/orang jika rombongan penuh</div>
+                <div className="text-gray-400 text-sm">per malam · untuk 5 orang</div>
+                <div className="text-gray-400 text-xs mt-0.5">+ <strong className="text-gray-600">Rp 70.000</strong> per tamu tambahan</div>
               </div>
 
               <ul className="space-y-3 text-sm text-gray-600 flex-grow mb-8">
                 {[
                   'Seluruh area villa privat',
-                  'Perapian hangat & kayu bakar',
-                  'Dapur lengkap (kompor, kulkas, peralatan masak)',
-                  'Area BBQ outdoor',
-                  'Camping ground kayu',
+                  'Perapian di dalam & luar rumah',
+                  'Dapur dan alat masak lengkap',
+                  '3 kamar tidur & 2 kamar mandi',
+                  'Ruang keluarga',
                   'Parkir luas gratis',
-                  'Teras & view kebun teh',
-                  'WiFi area umum',
+                  'Maksimal 20 orang',
                 ].map((f) => (
                   <li key={f} className="flex items-start gap-2.5">
                     <span className="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
@@ -370,23 +387,21 @@ export default function HargaPage() {
                 </span>
                 <div className="text-emerald-400 text-sm mb-1">Jumat – Minggu &amp; Hari Libur</div>
                 <div className="flex items-end gap-2 mb-1">
-                  <span className="text-5xl font-black text-white">Rp 2 Jt</span>
+                  <span className="text-5xl font-black text-white">Rp 900K</span>
                 </div>
-                <div className="text-emerald-400 text-sm">per malam · hingga 25 orang</div>
-                <div className="text-emerald-500 text-xs mt-0.5">= <strong className="text-emerald-300">Rp 80.000</strong>/orang jika rombongan penuh</div>
+                <div className="text-emerald-400 text-sm">per malam · untuk 5 orang</div>
+                <div className="text-emerald-500 text-xs mt-0.5">+ <strong className="text-emerald-300">Rp 70.000</strong> per tamu tambahan</div>
               </div>
 
               <ul className="space-y-3 text-sm text-emerald-200 flex-grow mb-8">
                 {[
                   'Seluruh area villa privat',
-                  'Perapian hangat & kayu bakar',
-                  'Dapur lengkap (kompor, kulkas, peralatan masak)',
-                  'Area BBQ outdoor',
-                  'Camping ground kayu',
+                  'Perapian di dalam & luar rumah',
+                  'Dapur dan alat masak lengkap',
+                  '3 kamar tidur & 2 kamar mandi',
+                  'Ruang keluarga',
                   'Parkir luas gratis',
-                  'Teras & view kebun teh',
-                  'WiFi area umum',
-                  'Prioritas konfirmasi booking',
+                  'Maksimal 20 orang',
                 ].map((f) => (
                   <li key={f} className="flex items-start gap-2.5">
                     <span className="text-emerald-400 mt-0.5 flex-shrink-0">✓</span>
@@ -405,30 +420,26 @@ export default function HargaPage() {
               </a>
             </div>
 
-            {/* ── Paket Spesial / Event ── */}
+            {/* ── Musim liburan ── */}
             <div className="bg-white rounded-3xl p-8 border border-amber-100 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
               <div className="mb-7">
                 <span className="inline-block bg-amber-50 text-amber-700 font-bold text-xs tracking-widest uppercase px-3 py-1.5 rounded-full mb-4">
-                  Spesial
+                  Musim Liburan
                 </span>
-                <div className="text-gray-400 text-sm mb-1">Gathering · Arisan · Event · Ulang Tahun</div>
-                <div className="flex items-end gap-2 mb-1">
-                  <span className="text-5xl font-black text-gray-900">Custom</span>
-                </div>
-                <div className="text-gray-400 text-sm">harga spesial rombongan</div>
-                <div className="text-amber-600 text-xs mt-0.5 font-semibold">Diskon menarik min. 2 malam</div>
+                <div className="text-gray-400 text-sm mb-1">Long holiday</div>
+                <div className="text-4xl font-black text-gray-900">Rp 1JT</div>
+                <div className="mt-5 text-gray-400 text-sm mb-1">High season</div>
+                <div className="text-4xl font-black text-gray-900">Rp 1,5JT</div>
+                <div className="text-amber-600 text-xs mt-2 font-semibold">per malam · untuk 5 orang</div>
               </div>
 
               <ul className="space-y-3 text-sm text-gray-600 flex-grow mb-8">
                 {[
-                  'Seluruh area villa privat',
-                  'Setup dekorasi event (request)',
-                  'Koordinator on-site',
-                  'Katering bisa diatur',
-                  'Sound system (request)',
-                  'Perapian & BBQ area',
-                  'Camping ground kayu',
-                  'Dokumentasi foto (request)',
+                  'Seluruh area rumah privat',
+                  'Tamu tambahan Rp 70.000/orang',
+                  'Maksimal 20 orang',
+                  'Fasilitas lengkap tetap termasuk',
+                  'Diskon high season maksimal 15%',
                 ].map((f) => (
                   <li key={f} className="flex items-start gap-2.5">
                     <span className="text-amber-500 mt-0.5 flex-shrink-0">✓</span>
@@ -443,7 +454,7 @@ export default function HargaPage() {
                 rel="noopener noreferrer"
                 className="w-full text-center bg-amber-50 hover:bg-amber-100 text-amber-800 font-bold py-3.5 rounded-2xl transition-colors block text-sm"
               >
-                Minta Penawaran Spesial
+                Cek Tanggal Liburan
               </a>
             </div>
           </div>
@@ -451,7 +462,7 @@ export default function HargaPage() {
           {/* Bottom note */}
           <div className="mt-10 bg-emerald-50 rounded-2xl p-6 text-center border border-emerald-100">
             <p className="text-emerald-800 font-semibold mb-1">
-              Semua paket termasuk sewa seluruh villa privat · Tidak ada biaya tersembunyi
+              Harga dasar untuk 5 orang · Tambahan Rp70.000/orang · Maksimal 20 orang
             </p>
             <p className="text-emerald-600 text-sm">
               Check-in 14:00 · Check-out 12:00 · Cek ketersediaan real-time di{' '}
@@ -489,24 +500,19 @@ export default function HargaPage() {
               <div className="px-4 text-left text-gray-400">Fasilitas</div>
               <div>Weekday</div>
               <div>Weekend</div>
-              <div>Spesial</div>
+              <div>Liburan</div>
             </div>
 
             {[
               { label: 'Villa privat eksklusif', w: true, we: true, s: true },
-              { label: 'Kapasitas hingga 25 orang', w: true, we: true, s: true },
-              { label: 'Perapian + kayu bakar', w: true, we: true, s: true },
-              { label: 'Dapur lengkap', w: true, we: true, s: true },
-              { label: 'Area BBQ outdoor', w: true, we: true, s: true },
-              { label: 'Camping ground kayu', w: true, we: true, s: true },
+              { label: 'Maksimal 20 orang', w: true, we: true, s: true },
+              { label: 'Perapian dalam & luar', w: true, we: true, s: true },
+              { label: 'Dapur & alat masak lengkap', w: true, we: true, s: true },
+              { label: '3 kamar tidur', w: true, we: true, s: true },
+              { label: '2 kamar mandi', w: true, we: true, s: true },
+              { label: 'Ruang keluarga', w: true, we: true, s: true },
               { label: 'Parkir luas gratis', w: true, we: true, s: true },
-              { label: 'Teras view kebun teh', w: true, we: true, s: true },
-              { label: 'WiFi area umum', w: true, we: true, s: true },
-              { label: 'Prioritas booking', w: false, we: true, s: true },
-              { label: 'Setup dekorasi event', w: false, we: false, s: true },
-              { label: 'Koordinator on-site', w: false, we: false, s: true },
-              { label: 'Katering (request)', w: false, we: false, s: true },
-              { label: 'Sound system (request)', w: false, we: false, s: true },
+              { label: 'Alat makan & minum', w: true, we: true, s: true },
             ].map((row, i) => (
               <div
                 key={row.label}
@@ -535,49 +541,19 @@ export default function HargaPage() {
             <p className="text-gray-500 text-base">Bisa ditambahkan saat booking — harga transparan, tidak ada kejutan.</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {[
-              {
-                icon: '🪵',
-                title: 'Kayu Bakar Tambahan',
-                desc: 'Stok tambahan kayu bakar untuk api unggun atau perapian lebih lama.',
-                price: 'Hubungi kami',
-              },
-              {
-                icon: '🍖',
-                title: 'Set BBQ Lengkap',
-                desc: 'Termasuk arang, bumbu marinasi, dan peralatan BBQ siap pakai.',
-                price: 'Hubungi kami',
-              },
-              {
-                icon: '🎉',
-                title: 'Dekorasi Ulang Tahun / Event',
-                desc: 'Balon, banner, backdrop, dan setup meja sesuai tema.',
-                price: 'Hubungi kami',
-              },
-              {
-                icon: '🍱',
-                title: 'Katering / Nasi Box',
-                desc: 'Tersedia makan pagi, siang, atau malam dari dapur lokal Pangalengan.',
-                price: 'Hubungi kami',
-              },
-            ].map((item) => (
-              <div
-                key={item.title}
-                className="flex items-start gap-4 bg-gray-50 rounded-2xl p-5 border border-gray-100 hover:border-emerald-200 transition-colors"
-              >
-                <span className="text-3xl flex-shrink-0">{item.icon}</span>
-                <div className="flex-grow">
-                  <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
-                  <p className="text-gray-500 text-sm mb-2">{item.desc}</p>
-                  <span className="text-emerald-600 font-semibold text-xs">{item.price}</span>
-                </div>
+          <div className="mx-auto max-w-2xl rounded-[2rem] border border-amber-100 bg-[#fbfaf7] p-7 sm:flex sm:items-center sm:justify-between sm:gap-8">
+            <div className="flex items-start gap-4">
+              <span className="text-4xl" aria-hidden="true">⛺</span>
+              <div>
+                <h3 className="font-black text-gray-900">Sewa Tenda · Khusus Tamu</h3>
+                <p className="mt-2 text-sm leading-6 text-gray-500">Tambahan ruang tidur untuk rombongan. Gratis untuk grup lebih dari 20 orang sesuai ketentuan booking.</p>
               </div>
-            ))}
+            </div>
+            <p className="mt-5 shrink-0 text-2xl font-black text-emerald-800 sm:mt-0">Rp150K</p>
           </div>
 
           <p className="text-center text-sm text-gray-400 mt-8">
-            Harga add-on disesuaikan dengan jumlah tamu dan kebutuhan spesifik.{' '}
+            Konfirmasi kebutuhan tenda saat memesan.{' '}
             <a href={WA_HARGA} target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-semibold hover:underline">
               Tanya via WhatsApp →
             </a>
@@ -614,10 +590,10 @@ export default function HargaPage() {
               },
               {
                 label: 'Homestay Bumina EENK',
-                kapasitas: 'Hingga 25 orang',
-                harga: 'Rp 1,5–2 Jt/malam',
-                total: '= Rp 60–80 rb/orang',
-                note: 'Villa privat lengkap · All-in',
+                kapasitas: 'Maksimal 20 orang',
+                harga: 'Rp 850 ribu–1,5 juta/malam',
+                total: '≈ Rp 95–127,5 rb/orang saat penuh',
+                note: 'Rumah privat · Harga dasar 5 orang',
                 highlight: true,
               },
               {
@@ -733,7 +709,7 @@ export default function HargaPage() {
               {
                 name: 'Rombongan Kantor',
                 asal: 'Bekasi',
-                quote: 'Team building di sini keren banget. Area luas, bisa BBQ, ada camping ground. Semuanya all-in di harga sewa, tidak ada biaya tambahan yang mengejutkan.',
+                quote: 'Ruang keluarganya enak untuk berkumpul, parkirnya luas, dan perapian luar menjadi pusat obrolan kami sampai malam.',
                 rating: 5,
               },
             ].map((t) => (

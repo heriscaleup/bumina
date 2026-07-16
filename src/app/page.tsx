@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import ScrollStory from '@/components/ScrollStory';
 
 const SITE_URL = 'https://buminaeenk.com';
 
 export const metadata: Metadata = {
   title: 'Homestay Bumina EENK Pangalengan | Villa Kebun Teh Bandung',
   description:
-    'Homestay Bumina EENK — rating 4.9★ di Agoda & Booking.com. Di tengah kebun teh Pangalengan, 5 mnt ke Taman Langit. Kapasitas 25 orang & perapian hangat.',
+    'Homestay syariah privat di tengah kebun teh Pangalengan. 3 kamar, perapian, kapasitas hingga 20 orang, dan hanya 4 menit ke Taman Langit.',
   keywords: [
     'homestay pangalengan',
     'penginapan pangalengan',
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     'penginapan dekat taman langit pangalengan',
     'villa rombongan pangalengan',
     'penginapan bandung selatan',
-    'villa pangalengan 25 orang',
+    'villa pangalengan 20 orang',
     'homestay pangalengan agoda',
     'homestay pangalengan booking.com',
     'villa perapian pangalengan',
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Homestay Bumina EENK | Villa Kebun Teh Pangalengan Bandung — Rating 4.9★',
     description:
-      'Penginapan terpercaya di Pangalengan, terdaftar di Agoda & Booking.com. 5 menit ke Taman Langit, kapasitas 25 orang, perapian hangat, 1.400 mdpl. Aktif di Instagram & TikTok.',
+      'Homestay syariah privat di Pangalengan, 4 menit ke Taman Langit, 3 kamar, dua perapian, dan kapasitas hingga 20 orang.',
     url: SITE_URL,
     siteName: 'Homestay Bumina EENK',
     images: [{ url: `${SITE_URL}/herohome.webp`, width: 1200, height: 630, alt: 'Homestay Bumina EENK Pangalengan — Villa Kebun Teh Bandung Selatan' }],
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Homestay Bumina EENK | Villa Kebun Teh di Pangalengan Bandung',
-    description: 'Rating 4.9★ di Agoda & Booking.com. 5 menit ke Taman Langit. Kapasitas 25 orang, perapian hangat. Aktif di IG & TikTok.',
+    description: 'Homestay syariah privat, 4 menit ke Taman Langit. 3 kamar, dua perapian, dapur lengkap, dan kapasitas hingga 20 orang.',
     images: [`${SITE_URL}/herohome.webp`],
   },
   robots: {
@@ -62,7 +63,7 @@ const jsonLdLodging = {
   name: 'Homestay Bumina EENK',
   alternateName: ['Bumina EENK', 'Villa Bumina EENK Pangalengan'],
   description:
-    'Homestay Bumina EENK adalah penginapan nyaman di tengah kebun teh Sosro, Pangalengan Bandung Selatan. Lokasi strategis 5 menit jalan kaki ke Taman Langit. Kapasitas 25 orang, dilengkapi perapian hangat, dapur lengkap, dan camping ground berlantai kayu.',
+    'Homestay Syariah Bumina EENK adalah rumah privat di tengah kebun teh Pangalengan Bandung Selatan. Sekitar 4 menit ke Taman Langit, memiliki 3 kamar tidur, 2 kamar mandi, perapian dalam dan luar, dapur lengkap, serta kapasitas maksimal 20 orang.',
   url: SITE_URL,
   image: [
     `${SITE_URL}/herohome.webp`,
@@ -74,7 +75,7 @@ const jsonLdLodging = {
   priceRange: '$$',
   checkinTime: '14:00',
   checkoutTime: '12:00',
-  numberOfRooms: 5,
+  numberOfRooms: 3,
   petsAllowed: false,
   address: {
     '@type': 'PostalAddress',
@@ -119,36 +120,36 @@ const jsonLdLodging = {
       author: { '@type': 'Person', name: 'Rombongan PT Maju Bersama' },
       reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
       reviewBody:
-        'Villa yang sangat luas, bisa menampung 25 orang dengan nyaman. Fasilitas lengkap, dapur bersih, dan pemandangan gunung di pagi hari bikin tim kami tidak mau pulang.',
+        'Rumahnya luas untuk rombongan. Fasilitas lengkap, dapur bersih, dan pemandangan gunung di pagi hari bikin tim kami tidak mau pulang.',
     },
     {
       '@type': 'Review',
       author: { '@type': 'Person', name: 'Keluarga Sari Wijaya' },
       reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
       reviewBody:
-        'Lokasi strategis, cuma jalan kaki ke Taman Langit! Anak-anak senang main di camping ground berlantai kayu. Suasana alami yang masih asri.',
+        'Lokasi strategis, sekitar empat menit ke Taman Langit. Pagi terasa tenang dan suasana alamnya masih asri.',
     },
   ],
   amenityFeature: [
     { '@type': 'LocationFeatureSpecification', name: 'Perapian dalam rumah', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Dapur lengkap', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Parkir luas', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Camping ground berlantai kayu', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Kapasitas 25 orang', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Perapian luar rumah', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Kapasitas maksimal 20 orang', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Pemandangan kebun teh', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Pemandangan gunung', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Udara sejuk 17°C', value: true },
   ],
   containsPlace: [
     { '@type': 'Accommodation', name: 'Villa Utama', accommodationCategory: 'Villa' },
-    { '@type': 'Campground', name: 'Camping Ground Berlantai Kayu' },
+    { '@type': 'Accommodation', name: 'Tenda Tambahan', accommodationCategory: 'Tent' },
   ],
   nearbyAttractions: [
-    { '@type': 'TouristAttraction', name: 'Taman Langit Pangalengan', distance: '5 menit jalan kaki' },
-    { '@type': 'TouristAttraction', name: 'Situ Cileunca', distance: '15 menit berkendara' },
-    { '@type': 'TouristAttraction', name: 'Nimo Highland', distance: '20 menit berkendara' },
-    { '@type': 'TouristAttraction', name: 'Hutan Pinus Rahong', distance: '10 menit berkendara' },
-    { '@type': 'TouristAttraction', name: 'Wayang Windu Panenjoan', distance: '25 menit berkendara' },
+    { '@type': 'TouristAttraction', name: 'Taman Langit Pangalengan', distance: 'sekitar 4 menit' },
+    { '@type': 'TouristAttraction', name: 'Sunrise Point Cukul', distance: 'sekitar 7 menit' },
+    { '@type': 'TouristAttraction', name: 'Situ Cileunca', distance: 'sekitar 26 menit' },
+    { '@type': 'TouristAttraction', name: 'Hutan Pinus Rahong', distance: 'sekitar 32 menit' },
+    { '@type': 'TouristAttraction', name: 'Nimo Highland', distance: 'sekitar 45 menit' },
   ],
 };
 
@@ -169,7 +170,7 @@ const jsonLdFaq = {
       name: 'Berapa kapasitas Homestay Bumina EENK?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Homestay Bumina EENK dapat menampung hingga 25 orang — cocok untuk keluarga besar, rombongan kantor, gathering perusahaan, atau reunian bersama.',
+        text: 'Homestay Bumina EENK berkapasitas maksimal 20 orang. Rombongan lebih besar dapat menggunakan fasilitas tenda sesuai ketentuan booking.',
       },
     },
     {
@@ -185,7 +186,7 @@ const jsonLdFaq = {
       name: 'Apa saja wisata terdekat dari Homestay Bumina EENK Pangalengan?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Homestay Bumina EENK dekat dengan banyak destinasi wisata: Taman Langit Pangalengan (5 menit jalan kaki), Hutan Pinus Rahong (10 menit), Situ Cileunca (15 menit), Nimo Highland (20 menit), Wayang Windu Panenjoan (25 menit), dan Sunrise Point Cukul (30 menit).',
+        text: 'Destinasi terdekat meliputi Taman Langit (sekitar 4 menit), Sunrise Point Cukul (7 menit), Situ Cileunca (26 menit), Hutan Pinus Rahong (32 menit), Nimo Highland (45 menit), Rumah Pengabdi Setan (48 menit), Carita Alam (49 menit), dan Kawah Wayang (sekitar 1 jam).',
       },
     },
     {
@@ -201,7 +202,7 @@ const jsonLdFaq = {
       name: 'Penginapan apa yang direkomendasikan di Pangalengan?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Homestay Bumina EENK adalah salah satu penginapan paling direkomendasikan di Pangalengan. Keunggulannya: lokasi strategis di tengah kebun teh Sosro, 5 menit ke Taman Langit, kapasitas besar (25 orang), fasilitas lengkap (perapian, dapur, camping ground), dan sudah terverifikasi di Agoda & Booking.com dengan rating 4.9/5.',
+        text: 'Homestay Syariah Bumina EENK adalah rumah privat di tengah kebun teh, sekitar 4 menit ke Taman Langit, berkapasitas maksimal 20 orang, dengan 3 kamar, 2 kamar mandi, dua perapian, dan dapur lengkap.',
       },
     },
     {
@@ -217,7 +218,7 @@ const jsonLdFaq = {
       name: 'Apakah Homestay Bumina EENK cocok untuk keluarga dengan anak-anak?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ya, sangat cocok! Homestay Bumina EENK menyediakan halaman luas, camping ground berlantai kayu, dan lingkungan kebun teh yang aman untuk anak-anak. Kapasitas 25 orang memungkinkan seluruh keluarga besar menginap bersama.',
+        text: 'Ya. Homestay menyediakan ruang keluarga, halaman dan parkir luas, dapur siap pakai, serta lingkungan kebun teh yang cocok untuk perjalanan keluarga.',
       },
     },
   ],
@@ -235,7 +236,7 @@ const jsonLdVideo = {
   '@context': 'https://schema.org',
   '@type': 'VideoObject',
   name: 'Video Tour Homestay Bumina EENK Pangalengan — Villa Kebun Teh Bandung',
-  description: 'Lihat sendiri kondisi nyata villa, kebun teh, perapian, dan semua fasilitas Homestay Bumina EENK Pangalengan. Kapasitas 25 orang, 5 menit ke Taman Langit.',
+  description: 'Video suasana Homestay Syariah Bumina EENK, kebun teh, dua perapian, dan fasilitas rumah privat untuk maksimal 20 orang.',
   thumbnailUrl: `${SITE_URL}/herohome.webp`,
   uploadDate: '2024-01-01',
   contentUrl: 'https://www.youtube.com/watch?v=bfpnKx1WCQw',
@@ -355,30 +356,31 @@ const platforms = [
 ];
 
 const nearbyAttractions = [
-  { icon: '🌤️', name: 'Taman Langit Pangalengan', distance: '5 menit jalan kaki', tag: 'Terdekat!', tagColor: 'bg-emerald-500', desc: 'Jembatan kayu ikonik di atas hamparan kebun teh dengan sunrise paling spektakuler. Bisa dicapai jalan kaki dari homestay!' },
-  { icon: '🌉', name: 'Nimo Highland', distance: '20 menit berkendara', tag: 'Viral 2025', tagColor: 'bg-red-500', desc: 'Glass Sky Bridge tapal kuda dengan panorama 360° kebun teh dan Situ Cileunca dari ketinggian.' },
-  { icon: '🚣', name: 'Situ Cileunca', distance: '15 menit berkendara', tag: 'Wisata Air', tagColor: 'bg-blue-500', desc: 'Danau indah dikelilingi perbukitan hijau. Ada rafting, perahu, dan spot foto berlatar pegunungan.' },
-  { icon: '🌲', name: 'Hutan Pinus Rahong', distance: '10 menit berkendara', tag: 'Healing', tagColor: 'bg-amber-600', desc: 'Spot camping kekinian di antara pohon pinus tinggi. Ada hammock, tubing sungai, dan aura healing.' },
-  { icon: '🍃', name: 'Wayang Windu Panenjoan', distance: '25 menit berkendara', tag: 'IG-worthy', tagColor: 'bg-purple-500', desc: 'Hamparan kebun teh seluas mata memandang dengan jembatan kayu baru yang viral di media sosial.' },
-  { icon: '🌅', name: 'Sunrise Point Cukul', distance: '30 menit berkendara', tag: 'Best Sunrise', tagColor: 'bg-orange-500', desc: 'Dari 1.600 mdpl, saksikan matahari terbit dari balik Gunung Wayang — pemandangan tak terlupakan.' },
+  { icon: '🌤️', name: 'Taman Langit', distance: '±4 menit', tag: 'Terdekat', tagColor: 'bg-emerald-500', desc: 'Spot terdekat untuk menunggu matahari terbit atau pulang—dikelilingi garis bukit dan kebun teh.' },
+  { icon: '🌅', name: 'Sunrise Point Cukul', distance: '±7 menit', tag: 'Sunrise', tagColor: 'bg-orange-500', desc: 'Pagi yang pelan, kabut yang turun rendah, dan sudut pandang luas ke hamparan perkebunan.' },
+  { icon: '🚣', name: 'Situ Cileunca', distance: '±26 menit', tag: 'Adventure', tagColor: 'bg-blue-500', desc: 'Danau ikonik untuk rafting, offroad, dan perjalanan sehari yang lebih berani.' },
+  { icon: '🌲', name: 'Hutan Pinus Rahong', distance: '±32 menit', tag: 'Forest', tagColor: 'bg-amber-600', desc: 'Hutan pinus berkabut untuk berjalan pelan, berhenti sejenak, dan mengambil foto tanpa keramaian kota.' },
+  { icon: '🌉', name: 'Nimo Highland', distance: '±45 menit', tag: 'Sky bridge', tagColor: 'bg-red-500', desc: 'Jembatan langit dan panorama 360° Pangalengan—datang pagi untuk suasana paling tenang.' },
+  { icon: '🏚️', name: 'Rumah Pengabdi Setan', distance: '±48 menit', tag: 'Explore', tagColor: 'bg-gray-700', desc: 'Bangunan kolonial ikonik dengan atmosfer sinematik untuk pencinta sejarah dan eksplorasi.' },
+  { icon: '♨️', name: 'Carita Alam', distance: '±49 menit', tag: 'Hot spring', tagColor: 'bg-rose-600', desc: 'Pemandian air panas untuk menutup perjalanan dengan tubuh rileks dan pikiran lebih ringan.' },
+  { icon: '🌋', name: 'Kawah Wayang', distance: '±1 jam', tag: 'Volcanic', tagColor: 'bg-purple-600', desc: 'Lanskap kawah yang mentah dan dramatis—tujuan eksplorasi untuk perjalanan yang lebih panjang.' },
 ];
 
 const facilities = [
-  { icon: '🏠', title: 'Rumah Luas', desc: 'Kapasitas hingga 25 orang' },
-  { icon: '🔥', title: 'Perapian', desc: 'Hangat di malam dingin' },
-  { icon: '🍳', title: 'Dapur Lengkap', desc: 'Masak sendiri, hemat!' },
-  { icon: '⛺', title: 'Camping Ground', desc: 'Berlantai kayu, siap pakai' },
-  { icon: '🚗', title: 'Parkir Luas', desc: 'Motor & mobil aman' },
-  { icon: '🌿', title: 'Kebun Teh', desc: 'Mengelilingi area homestay' },
-  { icon: '🏔️', title: 'View Gunung', desc: 'Panorama setiap hari' },
-  { icon: '❄️', title: 'Udara 17°C', desc: 'Kabut turun setiap pagi' },
+  { icon: '🛏️', title: '3 Kamar Tidur', desc: 'Ruang privat untuk beristirahat' },
+  { icon: '🚿', title: '2 Kamar Mandi', desc: 'Nyaman untuk rombongan' },
+  { icon: '🛋️', title: 'Ruang Keluarga', desc: 'Tempat semua cerita berkumpul' },
+  { icon: '🔥', title: 'Dua Perapian', desc: 'Di dalam dan luar rumah' },
+  { icon: '🍳', title: 'Dapur Siap Pakai', desc: 'Alat masak & makan lengkap' },
+  { icon: '⛺', title: 'Tenda Tamu', desc: 'Tersedia khusus tamu homestay' },
+  { icon: '🚗', title: 'Parkir Luas', desc: 'Aman untuk rombongan' },
+  { icon: '🌿', title: 'Di Kebun Teh', desc: 'Pagi datang bersama kabut' },
 ];
 
 const testimonials = [
   {
     name: 'Keluarga Budi Santoso',
     location: 'Jakarta',
-    image: '/orang3.webp',
     source: 'Booking.com',
     sourceColor: 'text-blue-600',
     text: 'Pengalaman menginap yang luar biasa! Suasana kebun teh yang hijau dan udara sejuk pegunungan membuat kami sangat nyaman. Perapian di dalam rumah benar-benar menghangatkan malam yang dingin.',
@@ -386,24 +388,22 @@ const testimonials = [
   {
     name: 'Rombongan PT Maju Bersama',
     location: 'Surabaya',
-    image: '/orang2.webp',
     source: 'Agoda',
     sourceColor: 'text-red-600',
-    text: 'Villa yang sangat luas, bisa menampung 25 orang dengan nyaman. Fasilitas lengkap, dapur bersih, dan pemandangan gunung di pagi hari bikin tim kami tidak mau pulang.',
+    text: 'Rumahnya luas untuk rombongan kami. Fasilitas lengkap, dapur bersih, dan pemandangan gunung di pagi hari bikin tim tidak mau pulang.',
   },
   {
     name: 'Keluarga Sari Wijaya',
     location: 'Bandung',
-    image: '/orang1.webp',
     source: 'Google Review',
     sourceColor: 'text-emerald-600',
-    text: 'Lokasi strategis banget! Cuma jalan kaki ke Taman Langit. Anak-anak senang main di camping ground berlantai kayu. Suasana alami yang masih asri — pasti balik lagi!',
+    text: 'Lokasinya strategis—sekitar empat menit ke Taman Langit. Paginya tenang dan suasana alamnya masih asri; kami ingin kembali lagi.',
   },
 ];
 
 const faqs = [
-  { q: 'Berapa kapasitas Homestay Bumina EENK?', a: 'Hingga 25 orang dengan nyaman — ideal untuk keluarga besar, rombongan kantor, gathering, atau reunian.' },
-  { q: 'Seberapa dekat dari Taman Langit Pangalengan?', a: 'Hanya 5 menit jalan kaki! Nikmati sunrise spektakuler setiap pagi tanpa perlu berkendara.' },
+  { q: 'Berapa kapasitas Homestay Bumina EENK?', a: 'Kapasitas homestay maksimal 20 orang. Untuk rombongan lebih besar tersedia tenda gratis sesuai ketentuan booking.' },
+  { q: 'Seberapa dekat dari Taman Langit Pangalengan?', a: 'Sekitar 4 menit dari homestay—ideal untuk mengejar sunrise maupun menikmati sunset.' },
   { q: 'Apakah benar terdaftar di Agoda & Booking.com?', a: 'Ya, 100% resmi dan terverifikasi di kedua platform internasional tersebut. Anda bisa cek langsung di Agoda dan Booking.com untuk membaca ribuan review asli dari tamu sebelumnya.' },
   { q: 'Bagaimana cara booking yang aman?', a: 'Booking via WhatsApp langsung dengan kami, atau pesan melalui Agoda/Booking.com yang menjamin keamanan pembayaran Anda. Kami juga aktif di Instagram @homestay_buminaeenk dan TikTok @homestay_bandung.' },
   { q: 'Apakah tersedia fasilitas memasak sendiri?', a: 'Ya! Dapur lengkap tersedia. Bawa bahan makanan dan masak sendiri — hemat pengeluaran, terutama untuk rombongan besar.' },
@@ -451,9 +451,11 @@ export default function HomePage() {
             </span>
           </div>
           <div className="flex items-center gap-5">
-            <div className="hidden items-center gap-5 text-xs font-bold text-white/80 lg:flex">
-              <Link href="/about" className="transition-colors hover:text-emerald-300">Cerita Kami</Link>
-              <Link href="/harga" className="transition-colors hover:text-emerald-300">Harga</Link>
+            <div className="hidden items-center gap-5 text-[11px] font-bold uppercase tracking-[0.13em] text-white/70 lg:flex">
+              <a href="#experience" className="transition-colors hover:text-emerald-300">Experience</a>
+              <a href="#stay" className="transition-colors hover:text-emerald-300">The Stay</a>
+              <a href="#facilities" className="transition-colors hover:text-emerald-300">Facilities</a>
+              <a href="#rates" className="transition-colors hover:text-emerald-300">Rates</a>
               <Link href="/blog" className="transition-colors hover:text-emerald-300">Journal</Link>
             </div>
             <div className="hidden sm:flex items-center gap-1.5 text-emerald-300 text-xs font-semibold">
@@ -495,23 +497,21 @@ export default function HomePage() {
               <span className="text-sm">✅</span> Booking.com 4.9★
             </a>
             <span className="flex items-center gap-1.5 bg-emerald-700/80 backdrop-blur-sm border border-emerald-400/30 rounded-full px-3.5 py-1.5 text-xs font-bold">
-              <span className="text-sm">🏔️</span> 5 mnt ke Taman Langit
+              <span className="text-sm">🏔️</span> 4 mnt ke Taman Langit
             </span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.05] mb-6" data-reveal="slow">
-            Homestay Kebun Teh<br />
-            <span className="text-emerald-400">Terpercaya</span> di Pangalengan
+          <p className="mb-5 text-xs font-black uppercase tracking-[0.28em] text-emerald-300">A private hillside stay · Pangalengan</p>
+          <h1 className="text-5xl sm:text-7xl lg:text-[7.8rem] font-black tracking-[-0.07em] leading-[0.82] mb-8" data-reveal="slow">
+            Di sini, kota<br />
+            <span className="font-serif font-normal italic text-emerald-300">kehilangan suaranya.</span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-gray-200 leading-relaxed max-w-3xl mx-auto mb-3">
-            <strong className="text-white">Bumina EENK</strong> — bukan sekadar klaim. Kami terdaftar di{' '}
-            <strong className="text-red-300">Agoda</strong> dan{' '}
-            <strong className="text-blue-300">Booking.com</strong>, aktif di Instagram &amp; TikTok,
-            dan ratusan tamu sudah membuktikannya.
+          <p className="text-lg sm:text-xl text-white/75 leading-relaxed max-w-2xl mx-auto mb-3">
+            <strong className="text-white">Bumina EENK</strong> adalah homestay syariah privat di antara kebun teh dan kabut Pangalengan—tempat keluarga pulang dengan cerita baru.
           </p>
           <p className="text-emerald-300 font-semibold text-sm sm:text-base mb-12">
-            📍 Sukaluyu, Pangalengan · Kapasitas 25 Orang · Udara Sejuk Pegunungan
+            Sukaluyu · 3 kamar · Hingga 20 tamu · 4 menit ke Taman Langit
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -544,11 +544,13 @@ export default function HomePage() {
         </div>
       </section>
 
+      <ScrollStory />
+
       {/* ════════════════════════════════════════
           SECTION 2 — TRUST / CREDIBILITY BLOCK
           "Takut kena tipu? Ini buktinya."
       ════════════════════════════════════════ */}
-      <section className="py-24 bg-white">
+      <section id="proof" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Heading with hook */}
@@ -559,13 +561,12 @@ export default function HomePage() {
           </div>
           <div className="text-center mb-6">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight">
-              Sebelum Booking, Cek Dulu
-              <span className="block text-emerald-600">5 Bukti Ini. 👇</span>
+              Kepercayaan tidak lahir
+              <span className="block font-serif font-normal italic text-emerald-700">dari tombol booking.</span>
             </h2>
           </div>
           <p className="text-center text-gray-500 text-lg max-w-2xl mx-auto mb-16">
-            Kami paham — pesan homestay online memang butuh keberanian. Makanya kami buka semua.
-            Tidak ada yang disembunyikan.
+            Ia lahir dari jejak yang bisa diperiksa. Karena itu, identitas dan kanal resmi Bumina EENK kami buka tanpa lapisan yang dibuat-buat.
           </p>
 
           {/* Platform cards */}
@@ -669,8 +670,8 @@ export default function HomePage() {
               Sosial Media Kami
             </span>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4 leading-tight">
-              Viral di Medsos.<br />
-              <span className="text-emerald-600">Bukan Kebetulan.</span>
+              Yang nyata tidak perlu<br />
+              <span className="font-serif font-normal italic text-emerald-700">terlalu banyak filter.</span>
             </h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">
               Follow kami dan lihat sendiri kenapa Bumina EENK jadi destinasi healing favorit ribuan orang dari seluruh Indonesia.
@@ -854,7 +855,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex items-center gap-2 text-gray-600">
                     <span>🌤️</span>
-                    <span>5 menit ke Taman Langit</span>
+                    <span>±4 menit ke Taman Langit</span>
                   </div>
                 </div>
               </div>
@@ -866,7 +867,7 @@ export default function HomePage() {
       {/* ════════════════════════════════════════
           SECTION 4 — ABOUT / CERITA
       ════════════════════════════════════════ */}
-      <section className="py-24 bg-white">
+      <section id="stay" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="grid grid-cols-2 gap-4">
@@ -877,7 +878,7 @@ export default function HomePage() {
                 <Image src="/herohome-depan-villa.webp" alt="Tampak depan Villa Bumina EENK" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 1024px) 50vw, 25vw" />
               </div>
               <div className="h-48 relative rounded-2xl overflow-hidden shadow-lg">
-                <Image src="/herohome-tamanlangit.webp" alt="Taman Langit Pangalengan — 5 menit dari Bumina EENK" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 1024px) 50vw, 25vw" />
+                <Image src="/herohome-tamanlangit.webp" alt="Taman Langit Pangalengan — sekitar 4 menit dari Bumina EENK" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 1024px) 50vw, 25vw" />
               </div>
             </div>
 
@@ -886,8 +887,8 @@ export default function HomePage() {
                 Tentang Homestay
               </span>
               <h2 className="text-4xl sm:text-5xl font-black text-gray-900 leading-tight mb-6">
-                Bukan Sekadar Menginap.
-                <span className="block text-emerald-600">Ini Rumah Keduamu.</span>
+                Sebuah rumah, ditulis
+                <span className="block font-serif font-normal italic text-emerald-700">oleh kabut dan perapian.</span>
               </h2>
               <p className="text-gray-500 text-lg leading-relaxed mb-5">
                 Bumina EENK adalah <strong className="text-gray-800">rumah hangat di tengah kebun teh Sosro</strong> yang menjadi basecamp sempurna untuk liburan di Pangalengan. Bayangkan: bangun pagi, kabut tipis menyapu teras, dan hijau kebun teh sejauh mata memandang.
@@ -897,8 +898,8 @@ export default function HomePage() {
               </p>
               <ul className="space-y-3">
                 {[
-                  '5 menit jalan kaki ke Taman Langit Pangalengan',
-                  'Kapasitas 25 orang — keluarga & rombongan',
+                  'Sekitar 4 menit ke Taman Langit Pangalengan',
+                  'Kapasitas maksimal 20 orang',
                   'Dapur lengkap — masak sendiri, lebih hemat',
                   'Perapian hangat untuk malam yang dingin',
                   'Camping ground berlantai kayu tersedia',
@@ -933,8 +934,8 @@ export default function HomePage() {
               Lokasi Strategis
             </span>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4 leading-tight">
-              6 Wisata Hits Pangalengan<br />
-              <span className="text-emerald-600">Semuanya Dekat dari Sini</span>
+              Bangun di tengah<br />
+              <span className="font-serif font-normal italic text-emerald-700">peta perjalanan.</span>
             </h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">
               Bumina EENK adalah <em>home base</em> ideal untuk menjelajahi seluruh Bandung Selatan dalam satu trip hemat.
@@ -959,14 +960,14 @@ export default function HomePage() {
       {/* ════════════════════════════════════════
           SECTION 6 — FASILITAS
       ════════════════════════════════════════ */}
-      <section className="py-24 bg-emerald-950 text-white">
+      <section id="facilities" className="py-24 bg-emerald-950 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block bg-emerald-800 text-emerald-300 font-bold text-xs tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-5">
               Fasilitas
             </span>
-            <h2 className="text-4xl sm:text-5xl font-black mb-4">Semua Sudah Tersedia</h2>
-            <p className="text-emerald-300 text-lg max-w-2xl mx-auto">Datang santai. Kami yang siapkan segalanya.</p>
+            <h2 className="text-5xl sm:text-7xl font-black tracking-[-0.06em] leading-[.9] mb-5">Yang kamu butuhkan.<br /><span className="font-serif font-normal italic text-emerald-300">Tanpa yang berlebihan.</span></h2>
+            <p className="text-emerald-200/70 text-lg max-w-2xl mx-auto">Ruang untuk berkumpul, sudut untuk menyendiri, dan api yang tetap menyala saat udara turun.</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {facilities.map((f) => (
@@ -983,91 +984,56 @@ export default function HomePage() {
       {/* ════════════════════════════════════════
           SECTION HARGA — PAKET & TARIF
       ════════════════════════════════════════ */}
-      <section className="py-24 bg-gray-50">
+      <section id="rates" className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="inline-block bg-emerald-50 text-emerald-700 font-bold text-xs tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-5">
-              Harga Transparan
-            </span>
-            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">Pilih Paket yang Sesuai</h2>
-            <p className="text-gray-500 text-lg max-w-2xl mx-auto">Harga terbaik langsung dari kami. Chat WhatsApp untuk konfirmasi ketersediaan dan penawaran spesial.</p>
+          <div className="mb-16 grid items-end gap-7 border-b border-emerald-950/15 pb-10 lg:grid-cols-[1fr_1.15fr]">
+            <div>
+              <span className="text-xs font-black uppercase tracking-[0.25em] text-emerald-700">Stay, simply</span>
+              <h2 className="mt-5 text-5xl font-black leading-[0.88] tracking-[-0.065em] text-gray-950 sm:text-7xl">
+                Satu rumah.<br /><span className="font-serif font-normal italic text-emerald-700">Banyak cerita.</span>
+              </h2>
+            </div>
+            <p className="max-w-xl text-lg leading-8 text-gray-600 lg:justify-self-end">Tarif yang jelas untuk homestay syariah privat. Lima tamu pertama sudah termasuk; datang lebih ramai, tinggal tambahkan per orang.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {/* Paket Weekday */}
-            <div className="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-shadow flex flex-col">
-              <div className="mb-6">
-                <span className="inline-block bg-emerald-50 text-emerald-700 font-bold text-xs tracking-[0.15em] uppercase px-3 py-1 rounded-full mb-4">Weekday</span>
-                <div className="text-gray-400 text-sm mb-1">Senin – Kamis</div>
-                <div className="text-4xl font-black text-gray-900">Rp 1,5 Jt</div>
-                <div className="text-gray-400 text-sm mt-1">per malam · hingga 25 orang</div>
-              </div>
-              <ul className="space-y-3 text-sm text-gray-600 flex-grow mb-8">
-                {['Seluruh area villa privat', 'Perapian hangat', 'Dapur lengkap & BBQ area', 'Camping ground kayu', 'Parkir luas gratis', 'Pemandangan kebun teh'].map(f => (
-                  <li key={f} className="flex items-center gap-2">
-                    <span className="text-emerald-500 flex-shrink-0">✓</span>{f}
-                  </li>
-                ))}
-              </ul>
-              <a href={WA_URL} target="_blank" rel="noopener noreferrer"
-                className="w-full text-center bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold py-3 rounded-xl transition-colors block">
-                Tanya Ketersediaan
-              </a>
-            </div>
-
-            {/* Paket Weekend — featured */}
-            <div className="bg-emerald-900 rounded-3xl p-8 border border-emerald-700 shadow-2xl shadow-emerald-900/40 flex flex-col relative overflow-hidden">
-              <div className="absolute top-4 right-4">
-                <span className="bg-emerald-400 text-emerald-950 font-black text-xs px-3 py-1 rounded-full">POPULER</span>
-              </div>
-              <div className="mb-6">
-                <span className="inline-block bg-emerald-800 text-emerald-300 font-bold text-xs tracking-[0.15em] uppercase px-3 py-1 rounded-full mb-4">Weekend</span>
-                <div className="text-emerald-400 text-sm mb-1">Jumat – Minggu &amp; Hari Libur</div>
-                <div className="text-4xl font-black text-white">Rp 2 Jt</div>
-                <div className="text-emerald-400 text-sm mt-1">per malam · hingga 25 orang</div>
-              </div>
-              <ul className="space-y-3 text-sm text-emerald-200 flex-grow mb-8">
-                {['Seluruh area villa privat', 'Perapian hangat', 'Dapur lengkap & BBQ area', 'Camping ground kayu', 'Parkir luas gratis', 'Pemandangan kebun teh', 'Prioritas booking'].map(f => (
-                  <li key={f} className="flex items-center gap-2">
-                    <span className="text-emerald-400 flex-shrink-0">✓</span>{f}
-                  </li>
-                ))}
-              </ul>
-              <a href={WA_URL} target="_blank" rel="noopener noreferrer"
-                className="w-full text-center bg-emerald-400 hover:bg-emerald-300 text-emerald-950 font-black py-3 rounded-xl transition-colors block">
-                Book Sekarang
-              </a>
-            </div>
-
-            {/* Paket Spesial */}
-            <div className="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-shadow flex flex-col">
-              <div className="mb-6">
-                <span className="inline-block bg-amber-50 text-amber-700 font-bold text-xs tracking-[0.15em] uppercase px-3 py-1 rounded-full mb-4">Spesial</span>
-                <div className="text-gray-400 text-sm mb-1">Gathering, Arisan &amp; Event</div>
-                <div className="text-4xl font-black text-gray-900">Custom</div>
-                <div className="text-gray-400 text-sm mt-1">harga khusus rombongan</div>
-              </div>
-              <ul className="space-y-3 text-sm text-gray-600 flex-grow mb-8">
-                {['Seluruh area villa privat', 'Setup dekorasi event', 'Koordinator on-site', 'Catering bisa diatur', 'Sound system (request)', 'Harga spesial min. 2 malam'].map(f => (
-                  <li key={f} className="flex items-center gap-2">
-                    <span className="text-amber-500 flex-shrink-0">✓</span>{f}
-                  </li>
-                ))}
-              </ul>
-              <a href={WA_URL} target="_blank" rel="noopener noreferrer"
-                className="w-full text-center bg-amber-50 hover:bg-amber-100 text-amber-800 font-bold py-3 rounded-xl transition-colors block">
-                Minta Penawaran
-              </a>
-            </div>
+          <div className="mb-10 grid gap-px overflow-hidden rounded-[2rem] bg-emerald-950/15 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { season: 'Weekday', price: '850K', note: 'Senin — Kamis' },
+              { season: 'Weekend', price: '900K', note: 'Jumat — Minggu' },
+              { season: 'Long holiday', price: '1JT', note: 'Libur panjang' },
+              { season: 'High season', price: '1.5JT', note: 'Peak dates' },
+            ].map((rate, index) => (
+              <article key={rate.season} className={`group relative min-h-80 p-7 transition-colors sm:p-8 ${index === 3 ? 'bg-emerald-950 text-white' : 'bg-white hover:bg-emerald-50'}`}>
+                <div className={`text-[10px] font-black uppercase tracking-[0.22em] ${index === 3 ? 'text-emerald-300' : 'text-emerald-700'}`}>{String(index + 1).padStart(2, '0')} / {rate.season}</div>
+                <div className="mt-12 font-serif text-6xl italic tracking-[-0.07em] sm:text-7xl">{rate.price}</div>
+                <p className={`mt-3 text-sm ${index === 3 ? 'text-emerald-200' : 'text-gray-500'}`}>per malam · untuk 5 tamu</p>
+                <div className={`absolute inset-x-7 bottom-7 border-t pt-5 text-sm leading-6 ${index === 3 ? 'border-white/15 text-emerald-100' : 'border-black/10 text-gray-600'}`}>
+                  {rate.note}<br />Tamu tambahan <strong>Rp70.000/orang</strong>
+                </div>
+              </article>
+            ))}
           </div>
 
-          {/* Bottom note */}
-          <div className="bg-emerald-50 rounded-2xl p-6 text-center border border-emerald-100">
-            <p className="text-emerald-800 font-semibold mb-1">Semua paket termasuk sewa seluruh villa privat. Tidak ada biaya tersembunyi.</p>
-            <p className="text-emerald-600 text-sm">Check-in 14:00 · Check-out 12:00 · Cek juga harga real-time di{' '}
-              <a href={AGODA_URL} target="_blank" rel="noopener noreferrer" className="underline font-bold">Agoda</a> dan{' '}
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="underline font-bold">Booking.com</a>
-            </p>
+          <div className="grid gap-5 lg:grid-cols-[1.2fr_.8fr]">
+            <div className="rounded-[2rem] bg-emerald-100 p-7 sm:p-9">
+              <p className="text-xs font-black uppercase tracking-[.2em] text-emerald-800">Early escape privilege</p>
+              <div className="mt-6 grid grid-cols-3 gap-3 text-center">
+                {[['H−1 bulan', '10%'], ['H−2 bulan', '15%'], ['H−3 bulan+', '20%']].map(([label, value]) => (
+                  <div key={label} className="rounded-2xl bg-white/70 px-3 py-5"><strong className="block text-2xl text-emerald-950 sm:text-3xl">{value}</strong><span className="mt-1 block text-xs text-emerald-800">{label}</span></div>
+                ))}
+              </div>
+              <p className="mt-4 text-xs text-emerald-800/70">High season: diskon maksimal 15%.</p>
+            </div>
+            <div className="rounded-[2rem] bg-[#13251d] p-7 text-white sm:p-9">
+              <p className="text-xs font-black uppercase tracking-[.2em] text-emerald-300">Good to know</p>
+              <ul className="mt-6 space-y-3 text-sm leading-6 text-white/75">
+                <li>• Maksimal 20 tamu di homestay</li>
+                <li>• Sewa tenda khusus tamu: Rp150.000</li>
+                <li>• Tenda gratis untuk rombongan di atas 20 orang</li>
+                <li>• DP minimal 40% untuk mengunci tanggal</li>
+                <li>• Survei tidak dilayani pada hari H</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -1075,30 +1041,30 @@ export default function HomePage() {
       {/* ════════════════════════════════════════
           SECTION 7 — GALERI
       ════════════════════════════════════════ */}
-      <section className="py-24 bg-white">
+      <section id="gallery" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block bg-emerald-50 text-emerald-700 font-bold text-xs tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-5">
               Galeri
             </span>
-            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">Lihat Sendiri Keindahannya</h2>
-            <p className="text-gray-500 text-lg">Foto asli — bukan editan berlebihan. Realita lebih indah dari ekspektasi.</p>
+            <h2 className="text-5xl sm:text-7xl font-black tracking-[-0.06em] leading-[.9] text-gray-950 mb-5">Pangalengan dalam<br /><span className="font-serif font-normal italic text-emerald-700">beberapa bingkai.</span></h2>
+            <p className="text-gray-500 text-lg">Foto suasana tanpa wajah buatan, tanpa adegan yang dipaksakan—hanya ruang, cahaya, dan lanskap sebagaimana adanya.</p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="lg:col-span-2 h-80 relative rounded-3xl overflow-hidden group">
-              <Image src="/herohome-padang-yang-luas.webp" alt="Padang luas dan alam Homestay Bumina EENK Pangalengan" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, 66vw" />
+              <Image src="/images/editorial/homestay-rain.webp" alt="Homestay hangat dalam kabut Pangalengan" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, 66vw" />
             </div>
             <div className="h-80 relative rounded-3xl overflow-hidden group">
-              <Image src="/pemandangan1.webp" alt="Pemandangan gunung dari Bumina EENK" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, 33vw" />
+              <Image src="/images/editorial/bedroom-rain.webp" alt="Kamar tidur hangat menghadap hujan Pangalengan" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
             <div className="h-60 relative rounded-2xl overflow-hidden group">
-              <Image src="/konten1.webp" alt="Suasana dalam villa Bumina EENK" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 50vw, 33vw" />
+              <Image src="/images/editorial/fireplace-interior.webp" alt="Perapian dalam rumah yang hangat" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 50vw, 33vw" />
             </div>
             <div className="h-60 relative rounded-2xl overflow-hidden group">
-              <Image src="/konten2.webp" alt="Fasilitas Homestay Bumina EENK" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 50vw, 33vw" />
+              <Image src="/images/editorial/homestay-kitchen.webp" alt="Dapur lengkap siap dipakai" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 50vw, 33vw" />
             </div>
             <div className="h-60 relative rounded-2xl overflow-hidden group">
-              <Image src="/pemandangan2.webp" alt="Alam Pangalengan Bandung Selatan" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 50vw, 33vw" />
+              <Image src="/images/editorial/outdoor-fireplace.webp" alt="Perapian luar rumah pada malam berkabut" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 50vw, 33vw" />
             </div>
           </div>
         </div>
@@ -1113,8 +1079,8 @@ export default function HomePage() {
             <span className="inline-block bg-emerald-50 text-emerald-700 font-bold text-xs tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-5">
               Testimoni
             </span>
-            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-3">
-              Kata Mereka yang Sudah Datang
+            <h2 className="text-4xl sm:text-6xl font-black tracking-[-0.055em] text-gray-950 mb-3">
+              Cerita yang tertinggal<br /><span className="font-serif font-normal italic text-emerald-700">setelah checkout.</span>
             </h2>
             <StarRow count={5} size="text-yellow-400 text-2xl" />
             <p className="text-gray-500 mt-2">Rating 4.9/5 dari ratusan tamu terverifikasi</p>
@@ -1127,9 +1093,7 @@ export default function HomePage() {
                   &ldquo;{t.text}&rdquo;
                 </blockquote>
                 <div className="flex items-center gap-4 pt-5 border-t border-gray-100">
-                  <div className="w-12 h-12 relative rounded-full overflow-hidden flex-shrink-0 ring-2 ring-emerald-100">
-                    <Image src={t.image} alt={t.name} fill className="object-cover" unoptimized loading="lazy" sizes="48px" />
-                  </div>
+                  <div className="grid h-12 w-12 flex-shrink-0 place-items-center rounded-full bg-emerald-950 font-serif text-lg italic text-emerald-200" aria-hidden="true">BE</div>
                   <div>
                     <div className="font-bold text-gray-900 text-sm">{t.name}</div>
                     <div className="text-xs text-gray-400">{t.location}</div>
@@ -1149,7 +1113,7 @@ export default function HomePage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block bg-emerald-50 text-emerald-700 font-bold text-xs tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-5">FAQ</span>
-            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">Pertanyaan Umum</h2>
+            <h2 className="text-4xl sm:text-6xl font-black tracking-[-0.055em] text-gray-950 mb-4">Hal kecil yang baik<br /><span className="font-serif font-normal italic text-emerald-700">untuk diketahui.</span></h2>
             <p className="text-gray-500 text-lg">Semua yang perlu kamu tahu sebelum booking.</p>
           </div>
           <div className="space-y-3">
@@ -1181,8 +1145,8 @@ export default function HomePage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
           <span className="inline-block text-emerald-400 font-bold text-xs tracking-[0.2em] uppercase mb-6">Yuk, Liburan!</span>
           <h2 className="text-4xl sm:text-6xl font-black mb-4 leading-tight">
-            Sudah Yakin?<br />
-            <span className="text-emerald-400">Slot Akhir Pekan Cepat Habis.</span>
+            Datang sebelum akhir pekan<br />
+            <span className="font-serif font-normal italic text-emerald-300">belajar terlalu ramai.</span>
           </h2>
           <p className="text-xl text-emerald-200 mb-4 max-w-2xl mx-auto">
             Ribuan tamu sudah membuktikan. Kamu yang belum.
@@ -1242,11 +1206,10 @@ export default function HomePage() {
               </a>
             ))}
           </div>
-          <p className="text-gray-700">© 2025 Homestay Bumina EENK. All rights reserved.</p>
+          <p className="text-gray-700">© 2026 Homestay Bumina EENK. All rights reserved.</p>
         </div>
       </footer>
 
     </div>
   );
 }
-

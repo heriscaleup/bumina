@@ -1,21 +1,22 @@
 import type { Metadata } from 'next';
 import { generateMetadataObject } from '@/lib/seo';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const WA_URL = 'https://wa.me/6285219460779?text=Halo%2C%20saya%20ingin%20tanya%20ketersediaan%20Homestay%20Bumina%20EENK%20Pangalengan';
 const SITE_URL = 'https://buminaeenk.com';
 
 export const metadata: Metadata = generateMetadataObject({
-  title: 'Itinerary Pangalengan 2 Hari 1 Malam — Rencana Wisata Terlengkap 2025',
+  title: 'Itinerary Pangalengan 2 Hari 1 Malam — Rencana Wisata 2026',
   description: 'Itinerary Pangalengan 2 hari 1 malam paling worth it: Taman Langit, Nimo Highland, Situ Cileunca, Wayang Windu. Budget, tips packing, dan rekomendasi home base terbaik di Bumina EENK.',
-  keywords: ['itinerary pangalengan 2 hari 1 malam', 'rencana wisata pangalengan', 'trip pangalengan', 'jadwal wisata pangalengan', 'pangalengan weekend trip', 'wisata pangalengan 2024 2025'],
+  keywords: ['itinerary pangalengan 2 hari 1 malam', 'rencana wisata pangalengan', 'trip pangalengan', 'jadwal wisata pangalengan', 'pangalengan weekend trip', 'wisata pangalengan 2026'],
   canonical: '/itinerary-pangalengan-2-hari-1-malam/',
 });
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Itinerary Pangalengan 2 Hari 1 Malam — Rencana Wisata Terlengkap 2025',
+  headline: 'Itinerary Pangalengan 2 Hari 1 Malam — Rencana Wisata 2026',
   description: 'Panduan itinerary lengkap wisata Pangalengan 2D1N dengan basecamp Homestay Bumina EENK — semua destinasi populer bisa dijangkau dalam satu trip.',
   url: `${SITE_URL}/itinerary-pangalengan-2-hari-1-malam/`,
   author: { '@type': 'Organization', name: 'Homestay Bumina EENK', url: SITE_URL },
@@ -31,9 +32,9 @@ const hari1 = [
 
 const hari2 = [
   { time: '05.00', activity: 'Bangun & siap-siap', detail: 'Jaket tebal wajib. Udara pagi sekitar 13–15°C.' },
-  { time: '05.30', activity: '🌤️ Taman Langit — Sunrise', detail: '5 menit jalan kaki dari Bumina! Spot sunrise terbaik dengan jembatan kayu ikonik.' },
+  { time: '05.30', activity: '🌤️ Taman Langit — Sunrise', detail: 'Sekitar 4 menit dari Bumina. Spot sunrise terdekat dengan jembatan kayu ikonik.' },
   { time: '07.30', activity: 'Balik & sarapan di homestay', detail: 'Masak nasi goreng atau mie instan — lebih enak di udara dingin.' },
-  { time: '09.00', activity: '🌉 Nimo Highland — Sky Bridge', detail: '20 menit berkendara. Datang sebelum ramai. Glass bridge tapal kuda dengan view 360°.' },
+  { time: '09.00', activity: '🌉 Nimo Highland — Sky Bridge', detail: 'Sekitar 45 menit berkendara. Datang sebelum ramai untuk panorama 360° yang lebih tenang.' },
   { time: '11.00', activity: '🚣 Situ Cileunca', detail: '15 menit dari Nimo. Makan siang dulu di warung sekitar, lalu keliling danau atau rafting.' },
   { time: '14.00', activity: '🍃 Wayang Windu Panenjoan', detail: '25 menit dari Situ Cileunca. Hamparan kebun teh dan jembatan kayu yang viral.' },
   { time: '16.00', activity: 'Balik ke Bandung', detail: 'Estimasi 1,5–2 jam perjalanan pulang.' },
@@ -59,8 +60,11 @@ export default function ItineraryPangalenganPage() {
         </div>
       </nav>
 
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-amber-950 via-orange-900 to-emerald-950">
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_top_right,_#f59e0b,_transparent)]" />
+      <section className="relative min-h-[78vh] flex items-center justify-center overflow-hidden bg-emerald-950">
+        <div className="absolute inset-0">
+          <Image src="/images/editorial/itinerary-gear.webp" alt="Perlengkapan perjalanan Pangalengan di atas meja kayu" fill priority unoptimized sizes="100vw" className="object-cover scale-[1.03]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-amber-950/55 to-emerald-950/95" />
+        </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center pt-24 pb-16">
           <span className="inline-block bg-amber-500/20 border border-amber-400/30 text-amber-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">🗺️ Panduan Trip Pangalengan</span>
           <h1 className="text-4xl sm:text-6xl font-black text-white leading-tight mb-6">
@@ -161,8 +165,8 @@ export default function ItineraryPangalenganPage() {
       <section className="py-16 bg-emerald-600">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-black text-white mb-4">Bumina EENK — Home Base Sempurna untuk Trip Ini</h2>
-          <p className="text-emerald-100 mb-2">Taman Langit 5 menit jalan kaki · Nimo Highland 20 mnt · Situ Cileunca 15 mnt · Wayang Windu 25 mnt</p>
-          <p className="text-emerald-100 mb-8">Kapasitas 25 orang · Perapian hangat · Dapur lengkap · Terdaftar Agoda & Booking.com 4.9★</p>
+          <p className="text-emerald-100 mb-2">Taman Langit ±4 menit · Nimo Highland ±45 menit · Situ Cileunca ±26 menit · Sunrise Point Cukul ±7 menit</p>
+          <p className="text-emerald-100 mb-8">Maksimal 20 orang · Perapian dalam & luar · Dapur lengkap · Terdaftar Agoda & Booking.com 4.9★</p>
           <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-white text-emerald-800 font-black py-4 px-10 rounded-2xl text-lg transition-all hover:scale-105">
             📱 Book Bumina EENK via WhatsApp
           </a>

@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
 import { generateMetadataObject } from '@/lib/seo';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const WA_URL = 'https://wa.me/6285219460779?text=Halo%2C%20saya%20ingin%20tanya%20ketersediaan%20Homestay%20Bumina%20EENK%20Pangalengan';
 const SITE_URL = 'https://buminaeenk.com';
 
 export const metadata: Metadata = generateMetadataObject({
-  title: 'Rafting Pangalengan Situ Cileunca — Harga, Rute & Tips 2025',
-  description: 'Panduan rafting Pangalengan di Sungai Palayangan Situ Cileunca: harga Rp150-250rb, jarak 4-5km, tips & rekomendasi penginapan terdekat. Homestay Bumina EENK 15 menit dari lokasi rafting.',
+  title: 'Rafting Pangalengan Situ Cileunca — Harga, Rute & Tips 2026',
+  description: 'Panduan rafting Pangalengan di Sungai Palayangan Situ Cileunca: harga Rp150-250rb, jarak 4-5km, tips, dan home base sekitar 26 menit dari kawasan Situ Cileunca.',
   keywords: ['rafting pangalengan', 'rafting situ cileunca', 'rafting sungai palayangan', 'harga rafting pangalengan', 'arung jeram pangalengan', 'penginapan dekat rafting pangalengan'],
   canonical: '/rafting-pangalengan-situ-cileunca/',
 });
@@ -24,7 +25,7 @@ const jsonLd = {
     name: 'Homestay Bumina EENK',
     url: SITE_URL,
     telephone: '+6285219460779',
-    description: 'Penginapan 15 menit dari lokasi rafting. Ideal untuk menginap malam sebelum rafting pagi hari.',
+    description: 'Penginapan sekitar 26 menit dari kawasan Situ Cileunca. Ideal untuk menginap malam sebelum rafting pagi hari.',
   },
 };
 
@@ -33,7 +34,7 @@ const faqs = [
   { q: 'Berapa minimal peserta untuk rafting?', a: 'Minimal 4–6 orang per perahu. Untuk grup kecil, biasanya bisa join dengan grup lain atau membayar slot kosong. Hubungi operator langsung untuk info terkini.' },
   { q: 'Berapa usia minimal untuk rafting di Pangalengan?', a: 'Umumnya usia minimal 7–10 tahun, dengan catatan anak harus bisa berenang dan didampingi orang tua di perahu yang sama. Setiap peserta wajib mengenakan pelampung dan helm yang disediakan.' },
   { q: 'Apa yang harus dibawa saat rafting?', a: 'Bawa: baju ganti (wajib — pasti basah!), sandal yang aman, sunscreen, kacamata renang opsional, dan simpan barang berharga di mobil atau titipkan ke penginapan. Jangan bawa HP ke perahu kecuali ada waterproof case.' },
-  { q: 'Penginapan mana yang paling dekat dengan lokasi rafting?', a: 'Homestay Bumina EENK adalah penginapan terdekat — hanya 15 menit berkendara dari Situ Cileunca dan area rafting. Kapasitas 25 orang, ada perapian hangat yang sangat nyaman setelah basah-basahan rafting seharian.' },
+  { q: 'Berapa jarak homestay ke lokasi rafting?', a: 'Area rafting Situ Cileunca berjarak sekitar 26 menit dari Bumina EENK, bergantung lalu lintas. Homestay menerima maksimal 20 orang dan memiliki perapian untuk menghangatkan diri setelah aktivitas.' },
   { q: 'Waktu terbaik rafting di Pangalengan?', a: 'Waktu terbaik adalah pagi hari antara jam 08.00–10.00 WIB — debit air stabil, cuaca belum terlalu panas, dan belum terlalu ramai. Hindari musim hujan lebat karena arus bisa terlalu deras.' },
 ];
 
@@ -49,8 +50,11 @@ export default function RaftingPangalenganPage() {
         </div>
       </nav>
 
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-blue-950 via-cyan-900 to-blue-950">
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_bottom,_#06b6d4,_transparent)]" />
+      <section className="relative min-h-[78vh] flex items-center justify-center overflow-hidden bg-blue-950">
+        <div className="absolute inset-0">
+          <Image src="/images/editorial/rafting-river.webp" alt="Arus rafting Sungai Palayangan di antara hutan Pangalengan" fill priority unoptimized sizes="100vw" className="object-cover scale-[1.03]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-cyan-950/35 via-blue-950/55 to-slate-950/95" />
+        </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center pt-24 pb-16">
           <span className="inline-block bg-cyan-500/20 border border-cyan-400/30 text-cyan-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">🚣 Arung Jeram Pangalengan</span>
           <h1 className="text-4xl sm:text-6xl font-black text-white leading-tight mb-6">
@@ -121,13 +125,13 @@ export default function RaftingPangalenganPage() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-10">
             <span className="inline-block bg-emerald-100 text-emerald-700 font-bold text-xs tracking-widest uppercase px-4 py-2 rounded-full mb-4">Rekomendasi Penginapan</span>
-            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">Menginap Malam Sebelum Rafting?<br /><span className="text-emerald-600">Bumina EENK — 15 Menit dari Start Point</span></h2>
+            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">Menginap Malam Sebelum Rafting?<br /><span className="text-emerald-600">Bumina EENK — ±26 Menit dari Situ Cileunca</span></h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">Rafting paling seru kalau berangkat pagi. Menginap di Bumina EENK semalam sebelumnya — bangun segar, sarapan, langsung gas ke Situ Cileunca.</p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
-              { icon: '📍', label: 'Jarak ke Start Point', val: '15 menit berkendara' },
-              { icon: '👥', label: 'Kapasitas Grup', val: 'Hingga 25 orang' },
+              { icon: '📍', label: 'Jarak ke Kawasan', val: '±26 menit berkendara' },
+              { icon: '👥', label: 'Kapasitas Grup', val: 'Maksimal 20 orang' },
               { icon: '🔥', label: 'Setelah Basah-basahan', val: 'Perapian hangat tersedia' },
               { icon: '🍳', label: 'Sarapan Sebelum Rafting', val: 'Dapur lengkap, masak sendiri' },
               { icon: '⭐', label: 'Rating OTA', val: '4.9/5 Booking.com' },

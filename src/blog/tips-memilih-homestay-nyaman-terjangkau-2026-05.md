@@ -3,7 +3,7 @@ title: "Tips Memilih Homestay Nyaman dan Terjangkau"
 date: "2026-05-27"
 category: "Tips"
 excerpt: "Mau liburan tapi bingung pilih penginapan? Ini tips praktis memilih homestay yang nyaman dan terjangkau agar perjalananmu makin berkesan dan hemat."
-image: "/tips-memilih-homestay-nyaman-terjangkau-2026-05.webp"
+image: "/images/editorial/homestay-bathroom.webp"
 ---
 
 Memilih **homestay yang nyaman dan terjangkau** ternyata bukan perkara sepele. Banyak traveler yang kecewa saat tiba di tempat karena foto di platform pemesanan tidak sesuai kenyataan—kasur tidak empuk, kamar mandi tidak bersih, atau lokasi yang ternyata jauh dari mana-mana. Kalau kamu tidak mau pengalaman itu terulang, baca tips berikut sebelum menekan tombol "Pesan Sekarang."

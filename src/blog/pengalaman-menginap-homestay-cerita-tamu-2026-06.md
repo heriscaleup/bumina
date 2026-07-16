@@ -4,7 +4,7 @@ description: "Lima kisah nyata tamu homestay yang membuktikan bahwa pengalaman m
 pubDate: 2026-06-07T07:00:00.000Z
 category: "Wisata"
 tags: ["pengalaman homestay", "cerita tamu", "menginap di homestay"]
-image: "/images/blog/pengalaman-menginap-homestay-cerita-tamu-2026-06.jpg"
+image: "/images/editorial/bedroom-rain.webp"
 readTime: "6 min read"
 author: "Tim Bumina"
 draft: false

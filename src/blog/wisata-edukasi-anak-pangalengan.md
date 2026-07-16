@@ -3,7 +3,7 @@ title: "Wisata Edukasi Anak di Pangalengan Bandung yang Seru"
 date: "2026-06-29"
 category: "Wisata"
 excerpt: "Temukan rekomendasi wisata edukasi anak di Pangalengan Bandung yang seru, murah, dan penuh pengalaman berharga untuk si kecil."
-image: "/pemandangan1.webp"
+image: "/images/editorial/pangalengan-dairy.webp"
 ---
 
 Liburan bareng anak memang selalu jadi momen yang paling ditunggu-tunggu. Tapi gimana kalau liburannya bukan cuma seru, tapi juga bikin anak belajar hal baru? Nah, itulah yang bisa kamu temukan di **Pangalengan, Bandung**! Kawasan pegunungan yang sejuk ini ternyata menyimpan banyak potensi wisata edukasi yang cocok banget buat anak-anak dari berbagai usia.

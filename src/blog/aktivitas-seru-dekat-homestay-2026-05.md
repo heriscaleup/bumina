@@ -3,7 +3,7 @@ title: "10 Aktivitas Seru yang Bisa Dilakukan Dekat Homestay"
 date: "2026-05-28"
 category: "Wisata"
 excerpt: "Menginap di homestay bukan cuma soal tidur. Temukan 10 aktivitas seru yang bisa kamu lakukan di sekitar homestay untuk liburan yang makin berkesan."
-image: "/aktivitas-seru-dekat-homestay.webp"
+image: "/images/editorial/boardgame-evening.webp"
 ---
 
 Salah satu keunggulan menginap di homestay adalah lokasinya yang biasanya dekat dengan kehidupan lokal—bukan di pusat kota yang ramai dan penuh turis. Ini justru jadi keuntungan besar. Kamu bisa menjelajah banyak hal autentik yang tidak akan kamu temukan kalau tinggal di hotel bintang lima sekalipun.

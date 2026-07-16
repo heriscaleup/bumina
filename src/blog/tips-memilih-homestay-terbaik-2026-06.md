@@ -4,7 +4,7 @@ description: "Mau liburan berkesan tanpa kuras dompet? Simak 7 tips memilih home
 pubDate: 2026-06-03T07:00:00.000Z
 category: "Tips"
 tags: ["tips homestay", "pilih penginapan", "liburan hemat"]
-image: "/images/blog/tips-memilih-homestay-terbaik-2026-06.jpg"
+image: "/images/editorial/homestay-kitchen.webp"
 readTime: "6 min read"
 author: "Tim Bumina"
 draft: false

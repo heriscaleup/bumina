@@ -1,12 +1,13 @@
 import type { Metadata } from 'next';
 import { generateMetadataObject } from '@/lib/seo';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const WA_URL = 'https://wa.me/6285219460779?text=Halo%2C%20saya%20ingin%20tanya%20ketersediaan%20Homestay%20Bumina%20EENK%20Pangalengan';
 const SITE_URL = 'https://buminaeenk.com';
 
 export const metadata: Metadata = generateMetadataObject({
-  title: 'Wayang Windu Panenjoan Pangalengan — Spot Sunrise Terbaik Bandung 2025',
+  title: 'Wayang Windu Panenjoan Pangalengan — Spot Sunrise Terbaik Bandung 2026',
   description: 'Panduan wisata Wayang Windu Panenjoan Pangalengan: sunrise terbaik, tiket masuk, jam terbaik, dan rute dari Bandung. Homestay Bumina EENK hanya 25 menit — strategi sunrise terbaik.',
   keywords: ['wayang windu pangalengan', 'wayang windu panenjoan', 'sunrise wayang windu', 'kebun teh wayang windu', 'spot sunrise bandung', 'wisata wayang windu tiket'],
   canonical: '/wayang-windu-pangalengan/',
@@ -43,8 +44,11 @@ export default function WayangWinduPage() {
         </div>
       </nav>
 
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-orange-950 via-amber-900 to-yellow-950">
-        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_top,_#f59e0b,_transparent)]" />
+      <section className="relative min-h-[78vh] flex items-center justify-center overflow-hidden bg-amber-950">
+        <div className="absolute inset-0">
+          <Image src="/images/editorial/wayang-windu-deck.webp" alt="Dek pandang Wayang Windu saat matahari terbit" fill priority unoptimized sizes="100vw" className="object-cover scale-[1.03]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-orange-950/25 via-amber-950/45 to-slate-950/95" />
+        </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center pt-24 pb-16">
           <span className="inline-block bg-amber-500/20 border border-amber-400/30 text-amber-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">🌅 Spot Sunrise Terbaik Bandung</span>
           <h1 className="text-4xl sm:text-6xl font-black text-white leading-tight mb-6">
@@ -137,7 +141,7 @@ export default function WayangWinduPage() {
           </div>
           <div className="text-center">
             <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-10 rounded-2xl text-lg transition-all hover:scale-105">📱 Book Bumina EENK via WhatsApp</a>
-            <p className="text-gray-500 text-sm mt-3">Kapasitas 25 orang · Perapian hangat · 4.9★ Booking.com</p>
+            <p className="text-gray-500 text-sm mt-3">Maksimal 20 orang · Perapian hangat · 4.9★ Booking.com</p>
           </div>
         </div>
       </section>

@@ -3,7 +3,7 @@ title: "Kuliner Khas Pangalengan yang Wajib Kamu Coba"
 date: "2026-06-01"
 category: "Kuliner"
 excerpt: "Jelajahi cita rasa autentik Pangalengan lewat deretan kuliner khas yang menggugah selera dan sayang untuk dilewatkan saat berkunjung."
-image: "/pemandangan1.webp"
+image: "/images/editorial/local-food-tea.webp"
 ---
 
 # Kuliner Khas Pangalengan yang Wajib Kamu Coba

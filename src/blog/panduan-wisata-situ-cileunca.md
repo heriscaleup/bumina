@@ -3,7 +3,7 @@ title: "Panduan Lengkap Wisata ke Situ Cileunca: Ada Apa Aja?"
 date: "2024-07-25"
 category: "Wisata"
 excerpt: "Situ Cileunca bukan cuma danau biasa. Dari rafting, flying fox, sampai jembatan cinta yang ikonik, semua ada di sini. Yuk, kita bedah tuntas!"
-image: "/pemandangan2.webp"
+image: "/images/editorial/situ-cileunca-blue-hour.webp"
 ---
 
 Situ Cileunca adalah salah satu destinasi wisata paling lengkap di Pangalengan, Bandung Selatan. Danau buatan yang terbentuk dari Bendungan Pulo Tillar ini membentang di antara perbukitan hijau dengan pemandangan yang benar-benar bikin mata segar. Bukan hanya indah dipandang — Situ Cileunca juga menawarkan beragam aktivitas yang cocok untuk semua umur, dari yang suka tantangan hingga yang ingin bersantai.
@@ -81,7 +81,7 @@ Setelah seharian beraktivitas di Situ Cileunca, kamu butuh tempat istirahat yang
 Keunggulan Bumina EENK untuk wisatawan Situ Cileunca:
 
 - **Hanya 15 menit berkendara** dari Situ Cileunca
-- **Kapasitas 25 orang** — cocok untuk rombongan besar
+- **Maksimal 20 orang** — cocok untuk rombongan besar
 - **Dapur lengkap** — masak sendiri setelah seharian beraktivitas
 - **Perapian hangat** — sempurna untuk malam dingin setelah rafting
 - **Taman Langit** hanya 5 menit jalan kaki — bonus [sunrise spektakuler di pagi hari](/blog/spot-sunrise-terbaik-pangalengan)

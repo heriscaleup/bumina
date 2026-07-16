@@ -3,7 +3,7 @@ title: "Tempat Wisata Pangalengan yang Wajib Dikunjungi"
 date: "2026-06-08"
 category: "Wisata"
 excerpt: "Pangalengan menyimpan pesona alam yang luar biasa, dari danau hingga kebun teh yang memanjakan mata dan jiwa."
-image: "/pemandangan1.webp"
+image: "/images/editorial/nimo-skybridge.webp"
 ---
 
 # Tempat Wisata Pangalengan yang Wajib Dikunjungi

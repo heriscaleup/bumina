@@ -3,7 +3,7 @@ title: "Liburan Akhir Pekan dari Bandung ke Pangalengan"
 date: "2026-04-20"
 category: "Tips"
 excerpt: "Pangalengan cuma 2 jam dari Bandung tapi suasananya beda banget — cocok banget buat kamu yang butuh kabur dari rutinitas kota."
-image: "/pemandangan1.webp"
+image: "/images/editorial/tea-road-bicycle.webp"
 ---
 
 Capek sama rutinitas Bandung yang makin padat? Macet di mana-mana, udara makin panas, dan rasanya pikiran udah penuh banget? Tenang, kamu nggak perlu jauh-jauh dan nggak perlu ngeluarin budget gede buat sekadar recharge energi. Cukup meluncur ke **Pangalengan**, destinasi wisata alam yang jaraknya cuma sekitar 40 kilometer dari pusat kota Bandung.

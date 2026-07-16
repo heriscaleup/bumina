@@ -3,7 +3,7 @@ title: "Itinerary Pangalengan 2 Hari 1 Malam yang Seru!"
 date: "2026-04-13"
 category: "Tips"
 excerpt: "Rencanakan liburan ke Pangalengan dengan itinerary 2 hari 1 malam yang lengkap, seru, dan anti ribet untuk kamu dan keluarga!"
-image: "/pemandangan1.webp"
+image: "/images/editorial/itinerary-gear.webp"
 ---
 
 Pangalengan, destinasi wisata alam yang satu ini emang nggak ada habisnya buat dieksplorasi. Terletak di selatan Kabupaten Bandung, kawasan pegunungan ini menawarkan udara segar, hamparan kebun teh yang hijau, danau yang tenang, serta spot-spot foto yang bikin feed Instagram kamu makin kece. Kalau kamu cuma punya waktu singkat, tenang aja — itinerary Pangalengan 2 hari 1 malam sudah lebih dari cukup buat kamu menjelajahi spot terbaiknya!

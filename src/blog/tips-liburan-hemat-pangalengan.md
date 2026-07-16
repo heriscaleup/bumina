@@ -3,7 +3,7 @@ title: "Tips Liburan Hemat dan Seru di Pangalengan"
 date: "2024-07-20"
 category: "Tips"
 excerpt: "Siapa bilang liburan ke Pangalengan harus mahal? Dengan tips ini, lo bisa nikmatin semua keindahannya tanpa bikin kantong bolong."
-image: "/pemandangan2.webp"
+image: "/images/editorial/tea-leaves-dew.webp"
 ---
 
 Pangalengan punya segalanya: udara sejuk, pemandangan kebun teh, danau biru, sunrise spektakuler, dan banyak aktivitas seru. Satu-satunya pertanyaan yang sering muncul: "Mahal nggak ya?"
@@ -26,7 +26,7 @@ Jika bisa mengatur jadwal, datang di weekday adalah cara termudah untuk hemat ta
 
 Ini matematika sederhana yang sering diabaikan: **semakin banyak orang, semakin murah per kepala**.
 
-Contoh nyata: [Homestay Bumina EENK](/harga) di Pangalengan menerima hingga 25 orang. Jika harga sewa Rp 1.500.000/malam (weekday) dibagi 20 orang, biaya per orang hanya **Rp 75.000 per malam**. Ini jauh lebih murah dari hostel atau hotel biasa!
+Contoh nyata: [Homestay Bumina EENK](/#rates) di Pangalengan menerima maksimal 20 orang. Harga weekday Rp850.000 untuk 5 orang, lalu Rp70.000 untuk setiap tamu tambahan. Dengan rombongan penuh, totalnya Rp1.900.000 atau sekitar **Rp95.000 per orang per malam**.
 
 Ajak keluarga besar, teman-teman kantor, atau gabung dengan grup wisata untuk mendapatkan cost sharing yang optimal.
 
@@ -109,7 +109,7 @@ Kurang dari Rp 350.000 per orang untuk 2 hari 1 malam di Pangalengan — sangat 
 
 ## Penginapan Hemat Tapi Nyaman: Homestay Bumina EENK
 
-Untuk rombongan yang ingin liburan hemat tanpa mengorbankan kenyamanan, **Homestay Bumina EENK** adalah jawabannya. Dengan kapasitas hingga 25 orang dan dapur lengkap yang bisa digunakan bebas, biaya penginapan per kepala bisa sangat terjangkau.
+Untuk rombongan yang ingin liburan hemat tanpa mengorbankan kenyamanan, **Homestay Bumina EENK** adalah jawabannya. Dengan kapasitas maksimal 20 orang dan dapur lengkap yang bisa digunakan bebas, biaya penginapan per kepala tetap terjangkau.
 
 Bonus: lokasinya hanya 5 menit jalan kaki ke [spot sunrise terbaik Pangalengan](/blog/spot-sunrise-terbaik-pangalengan) — nikmati sunrise gratis setiap pagi tanpa biaya transportasi tambahan. Terdaftar resmi di Agoda & Booking.com dengan rating 4.9★.
 

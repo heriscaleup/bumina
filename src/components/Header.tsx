@@ -10,8 +10,9 @@ const Header = () => {
 
   const navigation = [
     { name: "Beranda", href: "/" },
-    { name: "Tentang Kami", href: "/about" },
-    { name: "Harga", href: "/harga" },
+    { name: "Pengalaman", href: "/#experience" },
+    { name: "Fasilitas", href: "/#facilities" },
+    { name: "Harga", href: "/#rates" },
     { name: "Blog", href: "/blog" },
     { name: "Kontak", href: "/contact" },
   ];

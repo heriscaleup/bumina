@@ -3,7 +3,7 @@ title: "Penginapan Murah Dekat Situ Cileunca yang Wajib Dicoba"
 date: "2026-06-15"
 category: "Penginapan"
 excerpt: "Cari penginapan murah dekat Situ Cileunca? Ini rekomendasi terbaik yang nyaman, terjangkau, dan dekat dengan wisata alam Pangalengan."
-image: "/pemandangan1.webp"
+image: "/pemandangan2.webp"
 ---
 
 Situ Cileunca lagi hits banget belakangan ini. Danau cantik yang ada di kawasan Pangalengan, Kabupaten Bandung ini memang menawarkan pemandangan yang bikin mata seger dan pikiran jadi tenang. Dikelilingi perkebunan teh yang hijau, udara sejuk khas pegunungan, dan suasana yang jauh dari keramaian kota — wajar banget kalau banyak wisatawan yang rela jauh-jauh datang ke sini.

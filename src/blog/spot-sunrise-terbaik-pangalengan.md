@@ -3,7 +3,7 @@ title: "5 Spot Sunrise Terbaik di Pangalengan, Wajib Datang!"
 date: "2024-07-28"
 category: "Wisata"
 excerpt: "Jangan ngaku ke Pangalengan kalau belum liat sunrise-nya. Ini dia 5 spot terbaik buat nikmatin matahari terbit yang bikin lupa daratan."
-image: "/pemandangan3.webp"
+image: "/herohome-padang-yang-luas.webp"
 ---
 
 Kalau kamu pernah menyaksikan sunrise dari ketinggian 1.400 mdpl dengan lautan awan di bawahmu dan cahaya emas yang perlahan muncul dari balik gunung — kamu tidak akan pernah lupa momen itu.
@@ -102,4 +102,4 @@ Untuk bisa menikmati sunrise Taman Langit tanpa perlu berkendara, **[Homestay Bu
 
 Setelah sunrise, kembali ke penginapan untuk sarapan hangat di dapur yang lengkap. Tidak ada yang lebih sempurna dari secangkir teh panas setelah menyaksikan sunrise yang memukau.
 
-Kapasitas 25 orang, terdaftar di Agoda & Booking.com dengan rating 4.9★. [Cek ketersediaan dan harga menginap](/harga) — surga sunrise Pangalengan ada di depan pintu, tinggal langkahkan kaki.
+Maksimal 20 orang, terdaftar di Agoda & Booking.com dengan rating 4.9★. [Cek ketersediaan dan harga menginap](/#rates) — Taman Langit hanya sekitar empat menit dari rumah.

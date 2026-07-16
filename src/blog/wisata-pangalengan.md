@@ -3,7 +3,7 @@ title: "Wisata Pangalengan Bandung: Destinasi Terbaik & Tips Lengkap"
 excerpt: "Panduan lengkap wisata Pangalengan Bandung — dari kebun teh Malabar, Situ Cileunca, hingga sunrise point Cukul. Destinasi, tips hemat, dan rekomendasi penginapan terbaik."
 category: "Wisata"
 date: "2025-09-18"
-image: "/pemandangan1.webp"
+image: "/herohome.webp"
 ---
 
 Pangalengan adalah salah satu destinasi wisata alam terbaik di Jawa Barat yang masih terasa autentik. Terletak di Kabupaten Bandung bagian selatan, kawasan ini berada di ketinggian 1.400–1.600 mdpl — cukup tinggi untuk menghasilkan udara sejuk sekitar 17°C dan pemandangan pegunungan yang memukau.
@@ -82,7 +82,7 @@ Salah satu keputusan terpenting dalam perjalanan ke Pangalengan adalah memilih p
 
 Terletak di Desa Puncak Mulya di tengah kebun teh Sosro, Bumina EENK menawarkan:
 
-- **Kapasitas 25 orang** — ideal untuk keluarga besar, rombongan kantor, atau gathering
+- **Maksimal 20 orang** — ideal untuk keluarga besar, rombongan kantor, atau gathering
 - **Perapian hangat** — menghangatkan malam yang dingin di ketinggian 1.400 mdpl
 - **Dapur lengkap** — masak sendiri, hemat biaya makan
 - **Camping ground berlantai kayu** — pengalaman camping tanpa harus tidur di tanah

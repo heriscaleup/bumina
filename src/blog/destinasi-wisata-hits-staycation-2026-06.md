@@ -3,7 +3,7 @@ title: "5 Destinasi Wisata Hits yang Cocok untuk Staycation"
 date: "2026-06-01"
 category: "Wisata"
 excerpt: "Bingung mau staycation di mana? Temukan 5 destinasi wisata hits Indonesia yang cocok buat kamu yang ingin liburan dekat, nyaman, dan tetap berkesan."
-image: "/destinasi-wisata-hits-staycation-2026-06.webp"
+image: "/images/editorial/lake-sunrise-aerial.webp"
 ---
 
 Staycation makin jadi pilihan favorit banyak orang. Bukan sekadar tren, staycation adalah cara cerdas untuk menikmati liburan berkualitas tanpa harus terbang jauh atau menguras tabungan. Kuncinya: pilih destinasi yang tepat.

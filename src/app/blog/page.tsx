@@ -18,53 +18,66 @@ export default async function BlogPage() {
   const totalPages = Math.ceil(allArticles.length / ARTICLES_PER_PAGE);
   const articles = allArticles.slice(0, ARTICLES_PER_PAGE);
   const [featured, ...rest] = articles;
+  const formatDate = (date: string) => new Date(date).toLocaleDateString("id-ID", { day: "2-digit", month: "short", year: "numeric" });
 
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-[#fbfaf7] text-neutral-950">
-        <section className="border-b border-black/10">
-          <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-            <Link href="/" className="mb-10 inline-flex text-sm font-semibold text-neutral-600 hover:text-neutral-950">← Kembali ke Beranda</Link>
-            <p className="mb-4 text-xs font-black uppercase tracking-[0.24em] text-emerald-700">Bumina Travel Notes</p>
-            <h1 className="max-w-4xl text-5xl font-black leading-[0.98] tracking-[-0.055em] sm:text-6xl lg:text-7xl">Blog Bumina EENK</h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-neutral-600 sm:text-xl">Panduan Pangalengan, cerita tamu, itinerary, dan tips memilih homestay—dibuat rapi, ringan dibaca, dan penuh gambar.</p>
+      <main className="min-h-screen overflow-hidden bg-[#f3f1e9] text-[#13251d]">
+        <section className="relative border-b border-emerald-950/15">
+          <div className="pointer-events-none absolute -right-24 top-12 h-80 w-80 rounded-full bg-emerald-300/20 blur-3xl" data-parallax="0.08" />
+          <div className="mx-auto max-w-7xl px-4 pb-14 pt-16 sm:px-6 lg:px-8 lg:pb-20 lg:pt-24">
+            <div className="mb-12 flex items-center justify-between border-b border-emerald-950/15 pb-4 text-[10px] font-black uppercase tracking-[.22em] text-emerald-800">
+              <Link href="/">← Bumina EENK</Link>
+              <span>Stories from 1.400 mdpl</span>
+              <span className="hidden sm:block">Pangalengan · Indonesia</span>
+            </div>
+            <p className="mb-5 text-xs font-black uppercase tracking-[0.28em] text-emerald-700">Bumina Field Notes · Vol. 01</p>
+            <h1 className="max-w-6xl text-[18vw] font-black leading-[.68] tracking-[-.09em] sm:text-[8.5rem] lg:text-[11rem]">
+              FIELD<br /><span className="ml-[12vw] font-serif font-normal italic text-emerald-700 sm:ml-32">Notes.</span>
+            </h1>
+            <div className="mt-12 grid gap-6 border-t border-emerald-950/15 pt-6 sm:grid-cols-[1fr_1fr] lg:grid-cols-[1.4fr_.6fr]">
+              <p className="max-w-2xl text-xl leading-8 sm:text-2xl">Catatan dari jalan berkabut, dapur yang tetap hangat, dan pagi yang dimulai sebelum matahari.</p>
+              <p className="max-w-sm text-sm leading-6 text-emerald-950/60 lg:justify-self-end">Panduan lokal, itinerary, dan cerita Pangalengan—ditulis untuk dibawa pergi, bukan hanya dibaca lalu dilupakan.</p>
+            </div>
           </div>
         </section>
 
         {featured && (
-          <section className="border-b border-black/10">
-            <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-              <Link href={`/blog/${featured.slug}`} className="group grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-                <div className="relative aspect-[16/10] overflow-hidden rounded-[2rem] border border-black/10 bg-neutral-100">
-                  <Image src={featured.image} alt={featured.title} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover transition duration-700 group-hover:scale-[1.03]" unoptimized priority />
+          <section className="border-b border-emerald-950/15 bg-[#13251d] text-white">
+            <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+              <div className="mb-8 flex items-center justify-between text-[10px] font-black uppercase tracking-[.22em] text-emerald-300"><span>Cover Story</span><span>01 / {String(allArticles.length).padStart(2, '0')}</span></div>
+              <Link href={`/blog/${featured.slug}`} className="group grid gap-10 lg:grid-cols-[1.25fr_.75fr] lg:items-end">
+                <div className="relative aspect-[4/3] overflow-hidden bg-emerald-950 lg:aspect-[16/11]">
+                  <Image src={featured.image} alt={featured.title} fill sizes="(min-width: 1024px) 65vw, 100vw" className="image-lift object-cover grayscale-[15%]" unoptimized priority />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent" />
                 </div>
-                <div>
-                  <div className="mb-5 flex flex-wrap items-center gap-3 text-sm text-neutral-500"><span className="font-black uppercase tracking-[0.18em] text-emerald-700">{featured.category}</span><span>•</span><time>{new Date(featured.date).toLocaleDateString("id-ID", { year:"numeric", month:"long", day:"numeric" })}</time></div>
-                  <h2 className="text-3xl font-black leading-tight tracking-[-0.035em] sm:text-5xl">{featured.title}</h2>
-                  <p className="mt-5 text-lg leading-8 text-neutral-600">{featured.excerpt}</p>
-                  <span className="mt-8 inline-flex rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-bold group-hover:border-neutral-950">Baca artikel utama →</span>
+                <div className="pb-2">
+                  <div className="mb-5 flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-emerald-300"><span>{featured.category}</span><span>—</span><time>{formatDate(featured.date)}</time></div>
+                  <h2 className="text-4xl font-black leading-[.95] tracking-[-0.055em] sm:text-6xl">{featured.title}</h2>
+                  <p className="mt-6 text-base leading-7 text-white/65">{featured.excerpt}</p>
+                  <span className="mt-9 inline-flex items-center gap-4 border-b border-emerald-300 pb-2 text-xs font-black uppercase tracking-[.18em] text-emerald-200">Open the story <b className="transition-transform group-hover:translate-x-2">→</b></span>
                 </div>
               </Link>
             </div>
           </section>
         )}
 
-        <section className="py-14 lg:py-20">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-8 flex items-end justify-between border-b border-black/10 pb-5"><h2 className="text-2xl font-black tracking-[-0.03em]">Terbaru dari blog</h2><p className="text-sm text-neutral-500">{allArticles.length} artikel</p></div>
-            <div className="grid gap-x-7 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-              {rest.map((post: Article) => (
-                <article key={post.slug} className="group border-b border-black/10 pb-8">
-                  <Link href={`/blog/${post.slug}`} className="relative block aspect-[16/10] overflow-hidden rounded-3xl border border-black/10 bg-neutral-100">
-                    <Image src={post.image} alt={post.title} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="object-cover transition duration-700 group-hover:scale-[1.04]" unoptimized />
-                  </Link>
-                  <div className="pt-5">
-                    <div className="mb-3 flex flex-wrap items-center gap-2 text-xs text-neutral-500"><span className="font-black uppercase tracking-[0.16em] text-emerald-700">{post.category}</span><span>•</span><time>{new Date(post.date).toLocaleDateString("id-ID", { day:"numeric", month:"short", year:"numeric" })}</time></div>
-                    <h3 className="text-xl font-black leading-tight tracking-[-0.025em]"><Link href={`/blog/${post.slug}`} className="group-hover:text-neutral-600">{post.title}</Link></h3>
-                    <p className="mt-3 line-clamp-3 text-[15px] leading-7 text-neutral-600">{post.excerpt}</p>
-                    <Link href={`/blog/${post.slug}`} className="mt-5 inline-flex text-sm font-bold underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-950">Baca selengkapnya</Link>
+        <section className="py-16 lg:py-28">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mb-8 grid items-end gap-5 border-b border-emerald-950/20 pb-7 sm:grid-cols-2"><h2 className="text-4xl font-black tracking-[-.055em] sm:text-6xl">Latest dispatches</h2><p className="text-sm text-emerald-950/55 sm:text-right">{allArticles.length} catatan lapangan · diperbarui berkala</p></div>
+            <div>
+              {rest.map((post: Article, index) => (
+                <article key={post.slug} className="group grid gap-5 border-b border-emerald-950/15 py-8 sm:grid-cols-[3rem_1fr_11rem] lg:grid-cols-[4rem_1fr_18rem] lg:items-center">
+                  <span className="text-xs font-black text-emerald-800">{String(index + 2).padStart(2, '0')}</span>
+                  <div>
+                    <div className="mb-3 flex items-center gap-3 text-[10px] font-black uppercase tracking-[.18em] text-emerald-700"><span>{post.category}</span><span>—</span><time>{formatDate(post.date)}</time></div>
+                    <h3 className="max-w-3xl text-2xl font-black leading-[1.02] tracking-[-.04em] sm:text-4xl"><Link href={`/blog/${post.slug}`} className="transition-colors group-hover:text-emerald-700">{post.title}</Link></h3>
+                    <p className="mt-3 line-clamp-2 max-w-2xl text-sm leading-6 text-emerald-950/55">{post.excerpt}</p>
                   </div>
+                  <Link href={`/blog/${post.slug}`} className="relative hidden aspect-[16/10] overflow-hidden bg-emerald-950 sm:block">
+                    <Image src={post.image} alt={post.title} fill sizes="288px" className="image-lift object-cover grayscale-[18%]" unoptimized />
+                  </Link>
                 </article>
               ))}
             </div>

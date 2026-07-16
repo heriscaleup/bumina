@@ -3,7 +3,7 @@ title: "Situs Bersejarah & Budaya Pangalengan yang Wajib Dikunjungi"
 date: "2026-05-25"
 category: "Wisata"
 excerpt: "Pangalengan bukan cuma soal alam dan kebun teh, tapi juga menyimpan situs bersejarah dan budaya yang kaya dan menakjubkan untuk dijelajahi."
-image: "/pemandangan1.webp"
+image: "/images/editorial/colonial-house-mist.webp"
 ---
 
 Kalau kamu pikir Pangalengan cuma terkenal karena kebun tehnya yang hijau membentang atau danau-danaunya yang cantik, kamu belum mengenal daerah ini sepenuhnya. Di balik keindahan alamnya yang memukau, Pangalengan juga menyimpan warisan sejarah dan budaya yang begitu kaya — mulai dari peninggalan era kolonial Belanda, tradisi masyarakat Sunda yang masih terjaga, hingga situs-situs bersejarah yang sayang banget kalau kamu lewatkan begitu saja.

@@ -3,7 +3,7 @@ title: "Panduan Liburan Keluarga Hemat dengan Homestay"
 excerpt: "Liburan keluarga hemat bisa tetap berkualitas! Panduan lengkap memilih homestay terbaik, tips budget, dan aktivitas seru yang tidak menguras kantong."
 category: "Tips"
 date: "2026-05-30"
-image: "/panduan-liburan-keluarga-hemat-homestay.webp"
+image: "/images/editorial/breakfast-window.webp"
 ---
 
 # Panduan Liburan Keluarga Hemat dengan Homestay

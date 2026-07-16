@@ -4,7 +4,7 @@ description: "Menginap di homestay jadi lebih berkesan dengan aktivitas seru di 
 pubDate: 2026-06-04T07:00:00.000Z
 category: "Wisata"
 tags: ["aktivitas dekat homestay", "wisata lokal", "liburan seru"]
-image: "/images/blog/aktivitas-seru-dekat-homestay-2026-06.jpg"
+image: "/images/editorial/offroad-jeep.webp"
 readTime: "7 min read"
 author: "Tim Bumina"
 draft: false

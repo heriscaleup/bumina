@@ -3,7 +3,7 @@ title: "Camping di Pangalengan: 7 Lokasi Terbaik Wajib Dicoba"
 date: "2026-07-06"
 category: "Aktivitas"
 excerpt: "Temukan lokasi camping terbaik di Pangalengan yang menawarkan pemandangan alam menakjubkan, udara segar, dan pengalaman berkemah tak terlupakan."
-image: "/pemandangan1.webp"
+image: "/images/editorial/tent-blue-hour.webp"
 ---
 
 Pangalengan, sebuah kawasan dataran tinggi di selatan Bandung, sudah lama jadi primadona buat para pecinta alam di Jawa Barat. Udaranya yang sejuk, hamparan kebun teh yang hijau, danau-danau yang memesona, sampai langit malam yang penuh bintang — semuanya bikin kawasan ini jadi destinasi camping impian banyak orang. Nggak heran kalau setiap akhir pekan, tenda-tenda warna-warni mulai bermunculan di berbagai sudut Pangalengan.

@@ -3,7 +3,7 @@ title: "Pangalengan vs Lembang: Mana yang Cocok Buat Liburanmu?"
 date: "2026-05-04"
 category: "Tips"
 excerpt: "Bingung pilih Pangalengan atau Lembang untuk liburan? Simak perbandingan lengkapnya biar kamu nggak salah pilih destinasi!"
-image: "/pemandangan1.webp"
+image: "/pemandangan3.webp"
 ---
 
 Kalau kamu tinggal di Bandung atau lagi planning liburan ke Jawa Barat, pasti dua nama ini udah nggak asing lagi di telinga: **Pangalengan** dan **Lembang**. Keduanya sama-sama menawarkan udara segar pegunungan, pemandangan hijau yang bikin mata adem, dan suasana yang jauh dari hiruk pikuk kota. Tapi tunggu dulu — dua tempat ini punya karakter yang sangat berbeda, lho!

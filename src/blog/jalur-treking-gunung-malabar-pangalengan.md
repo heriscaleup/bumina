@@ -3,7 +3,7 @@ title: "Jalur Treking Gunung Malabar Pangalengan yang Wajib Dicoba"
 date: "2026-06-22"
 category: "Aktivitas"
 excerpt: "Temukan keindahan jalur treking Gunung Malabar Pangalengan yang menantang sekaligus memukau dengan panorama alam Jawa Barat terbaik."
-image: "/pemandangan1.webp"
+image: "/images/editorial/trekking-trail.webp"
 ---
 
 Pangalengan bukan cuma soal kebun teh dan danau yang instagramable. Di balik hamparan hijau dataran tingginya, ada satu petualangan yang sayang banget kalau kamu lewatkan — **treking Gunung Malabar**. Gunung yang terletak di kawasan Bandung Selatan ini punya pesona alam yang luar biasa, mulai dari hutan montane yang lebat, padang edelweis yang cantik, sampai pemandangan 360 derajat di puncaknya yang bikin napas sejenak terhenti.

@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
 import { generateMetadataObject } from '@/lib/seo';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const WA_URL = 'https://wa.me/6285219460779?text=Halo%2C%20saya%20ingin%20tanya%20ketersediaan%20Homestay%20Bumina%20EENK%20Pangalengan';
 const SITE_URL = 'https://buminaeenk.com';
 
 export const metadata: Metadata = generateMetadataObject({
   title: 'Wisata Situ Cileunca Pangalengan — Panduan Lengkap + Penginapan Terdekat',
-  description: 'Panduan wisata Situ Cileunca Pangalengan: tiket masuk, aktivitas rafting, rute dari Bandung, dan rekomendasi penginapan terdekat. Homestay Bumina EENK hanya 15 menit dari Situ Cileunca.',
+  description: 'Panduan wisata Situ Cileunca Pangalengan: tiket masuk, aktivitas rafting, rute dari Bandung, dan home base sekitar 26 menit dari kawasan danau.',
   keywords: ['wisata situ cileunca', 'situ cileunca pangalengan', 'rafting situ cileunca', 'penginapan dekat situ cileunca', 'tiket masuk situ cileunca', 'situ cileunca bandung'],
   canonical: '/wisata-situ-cileunca-pangalengan/',
 });
@@ -29,7 +30,7 @@ const jsonLd = {
     name: 'Homestay Bumina EENK',
     url: SITE_URL,
     telephone: '+6285219460779',
-    description: 'Homestay terdekat dari Situ Cileunca, hanya 15 menit berkendara. Kapasitas 25 orang, perapian, dapur lengkap.',
+    description: 'Homestay privat sekitar 26 menit dari Situ Cileunca. Maksimal 20 orang, perapian, dan dapur lengkap.',
   },
 };
 
@@ -37,8 +38,8 @@ const faqs = [
   { q: 'Berapa tiket masuk Situ Cileunca Pangalengan?', a: 'Tiket masuk Situ Cileunca sekitar Rp 10.000–15.000 per orang. Untuk aktivitas rafting dikenakan biaya tambahan sekitar Rp 150.000–250.000 per orang tergantung operator.' },
   { q: 'Berapa jauh Situ Cileunca dari Kota Bandung?', a: 'Situ Cileunca berjarak sekitar 40 km dari pusat Kota Bandung, atau sekitar 1,5–2 jam perjalanan menggunakan kendaraan pribadi via Jl. Raya Banjaran–Pangalengan.' },
   { q: 'Aktivitas apa saja yang bisa dilakukan di Situ Cileunca?', a: 'Ada banyak aktivitas: rafting di Sungai Palayangan (4–5 km), perahu kayak di danau, memancing, camping tepi danau, dan menikmati pemandangan perbukitan hijau.' },
-  { q: 'Penginapan mana yang paling dekat dengan Situ Cileunca?', a: 'Homestay Bumina EENK adalah salah satu penginapan terdekat — hanya 15 menit berkendara dari Situ Cileunca. Kapasitas hingga 25 orang, terdaftar di Agoda & Booking.com (rating 4.9/5), dilengkapi perapian dan dapur lengkap.' },
-  { q: 'Apakah bisa camping di Situ Cileunca?', a: 'Ya, ada area camping di sekitar Situ Cileunca. Namun untuk kenyamanan lebih, banyak wisatawan memilih menginap di homestay atau villa terdekat seperti Bumina EENK yang berjarak 15 menit.' },
+  { q: 'Berapa jarak Bumina EENK ke Situ Cileunca?', a: 'Perjalanan dari Homestay Bumina EENK ke Situ Cileunca sekitar 26 menit, bergantung kondisi lalu lintas. Rumah privat ini menerima maksimal 20 orang serta dilengkapi perapian dan dapur lengkap.' },
+  { q: 'Apakah bisa camping di Situ Cileunca?', a: 'Ya, ada area camping di sekitar Situ Cileunca. Untuk kenyamanan rumah privat, Bumina EENK berada sekitar 26 menit dari kawasan danau.' },
 ];
 
 export default function WisataSituCileuncaPage() {
@@ -58,15 +59,18 @@ export default function WisataSituCileuncaPage() {
       </nav>
 
       {/* HERO */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-blue-950 via-blue-900 to-emerald-950">
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,_#34d399,_transparent)]" />
+      <section className="relative min-h-[78vh] flex items-center justify-center overflow-hidden bg-blue-950">
+        <div className="absolute inset-0">
+          <Image src="/images/editorial/situ-cileunca-blue-hour.webp" alt="Situ Cileunca pada blue hour dikelilingi perbukitan" fill priority unoptimized sizes="100vw" className="object-cover scale-[1.03]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/20 via-slate-950/50 to-slate-950/95" />
+        </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center pt-24 pb-16">
           <span className="inline-block bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">
             🚣 Wisata Air Pangalengan
           </span>
           <h1 className="text-4xl sm:text-6xl font-black text-white leading-tight mb-6">
             Wisata Situ Cileunca Pangalengan<br />
-            <span className="text-emerald-400">Panduan Lengkap 2025</span>
+            <span className="text-emerald-400">Panduan Lengkap 2026</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-10">
             Danau vulkanik paling menakjubkan di Bandung Selatan — rafting, kayak, camping, dan panorama perbukitan hijau yang bikin betah seharian.
@@ -91,7 +95,7 @@ export default function WisataSituCileuncaPage() {
               { icon: '🎟️', label: 'Tiket Masuk', val: 'Rp 10–15 ribu' },
               { icon: '🚗', label: 'Dari Bandung', val: '~1,5–2 jam' },
               { icon: '🚣', label: 'Rafting', val: 'Rp 150–250 ribu' },
-              { icon: '🏨', label: 'Penginapan Terdekat', val: '15 menit' },
+              { icon: '🏨', label: 'Dari Bumina EENK', val: '±26 menit' },
             ].map(s => (
               <div key={s.label} className="p-4 rounded-xl bg-gray-50">
                 <div className="text-2xl mb-1">{s.icon}</div>
@@ -158,16 +162,16 @@ export default function WisataSituCileuncaPage() {
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">
               Menginap Dekat Situ Cileunca?<br />
-              <span className="text-emerald-600">Bumina EENK — 15 Menit dari Sini</span>
+              <span className="text-emerald-600">Bumina EENK — ±26 Menit dari Sini</span>
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Jadikan Bumina EENK sebagai basecamp liburanmu. Bangun pagi, sarapan di tengah kebun teh, lalu berangkat ke Situ Cileunca cuma 15 menit.
+              Jadikan Bumina EENK sebagai basecamp liburanmu. Bangun pagi, sarapan di tengah kebun teh, lalu berkendara sekitar 26 menit ke Situ Cileunca.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
-              { icon: '📍', label: 'Jarak ke Situ Cileunca', val: '15 menit berkendara' },
-              { icon: '👥', label: 'Kapasitas', val: 'Hingga 25 orang' },
+              { icon: '📍', label: 'Jarak ke Situ Cileunca', val: '±26 menit berkendara' },
+              { icon: '👥', label: 'Kapasitas', val: 'Maksimal 20 orang' },
               { icon: '🔥', label: 'Fasilitas Unggulan', val: 'Perapian + dapur lengkap' },
               { icon: '⭐', label: 'Rating', val: '4.9/5 di Booking.com' },
               { icon: '🍃', label: 'Lokasi', val: 'Tengah kebun teh Sosro' },

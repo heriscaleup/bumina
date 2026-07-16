@@ -3,7 +3,7 @@ title: "Pengalaman Menginap di Homestay: Cerita Tamu Nyata"
 date: "2026-05-31"
 category: "Wisata"
 excerpt: "Cerita nyata dari tamu yang menginap di homestay — momen hangat, keramahan tuan rumah, dan kenangan yang tidak terlupakan."
-image: "/pengalaman-menginap-homestay-cerita-tamu.webp"
+image: "/images/editorial/homestay-rain.webp"
 ---
 
 Liburan bisa kamu ukur dari banyak hal — pemandangan yang indah, makanan yang enak, atau aktivitas yang seru. Tapi ada satu hal yang sering kali paling membekas: **orang-orang yang kamu temui di sana**.

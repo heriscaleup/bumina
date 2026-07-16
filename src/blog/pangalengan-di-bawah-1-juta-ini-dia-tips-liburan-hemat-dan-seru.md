@@ -3,7 +3,7 @@ title: "Pangalengan di Bawah 1 Juta? Ini Dia Tips Liburan Hemat dan Seru!"
 excerpt: "Siapa bilang liburan ke Pangalengan mahal? Dengan tips ini, kamu bisa menikmati keindahan alamnya tanpa bikin kantong jebol. Plus, rekomendasi tempat menginap yang cozy!"
 category: "Tips"
 date: "2025-08-26"
-image: "/pemandangan3.webp"
+image: "/images/editorial/parking-arrival.webp"
 ---
 
 # Pangalengan di Bawah 1 Juta? Ini Dia Tips Liburan Hemat dan Seru!
@@ -97,7 +97,7 @@ Ini daftar destinasi yang bisa kamu masukkan itinerary tanpa bikin kantong bolon
 
 Untuk mewujudkan liburan hemat di Pangalengan, kunci utamanya ada di pilihan penginapan. **Homestay Bumina EENK** dirancang sempurna untuk rombongan yang ingin maksimalkan pengalaman dengan budget minimal.
 
-Dengan kapasitas 25 orang dalam satu villa privat, biaya per orang bisa sangat terjangkau. Dapur lengkap memungkinkan kamu masak sendiri dan hemat biaya makan. Camping ground berlantai kayu memberikan pengalaman camping tanpa harus sewa tenda.
+Dengan kapasitas maksimal 20 orang dalam satu rumah privat, biaya per orang bisa sangat terjangkau. Dapur lengkap memungkinkan kamu masak sendiri dan hemat biaya makan. Tenda tambahan juga tersedia khusus untuk tamu homestay.
 
 Lokasi strategis di tengah kebun teh dengan akses jalan kaki ke Taman Langit membuat kamu tidak perlu mengeluarkan biaya transport ekstra untuk aktivitas pagi. Semua sudah ada di depan pintu.
 

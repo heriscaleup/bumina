@@ -3,7 +3,7 @@ title: "Pangalengan: Hidden Gems Bandung yang Bikin Nagih! (Plus, Rekomendasi Vi
 excerpt: "Siapa bilang Bandung cuma Kawah Putih dan floating market? Pangalengan punya segudang pesona tersembunyi yang siap memanjakan mata dan dompetmu. Yuk, intip itinerary liburan hemat di Pangalengan!"
 category: "Wisata"
 date: "2025-08-30"
-image: "/pemandangan3.webp"
+image: "/images/editorial/hot-spring.webp"
 ---
 
 # Pangalengan: Hidden Gems Bandung yang Bikin Nagih! (Plus, Rekomendasi Villa Kece!)
@@ -79,7 +79,7 @@ Sudah disinggung sebelumnya, tapi mari kita bahas lebih detail kenapa **Homestay
 Terletak di Desa Puncak Mulya di tengah kebun teh Sosro, Bumina EENK bukan sekadar tempat tidur — ini adalah pengalaman menginap yang menjadi bagian dari destinasi wisata itu sendiri. Bayangkan bangun tidur dan langsung disuguhi pemandangan kebun teh dari jendela kamar.
 
 **Keunggulan Bumina EENK:**
-- Kapasitas 25 orang — ideal untuk keluarga besar dan rombongan
+- Maksimal 20 orang — ideal untuk keluarga besar dan rombongan
 - Perapian hangat — esensial untuk malam-malam dingin di Pangalengan
 - Dapur lengkap — masak sendiri untuk penghematan maksimal
 - Camping ground berlantai kayu — pengalaman berkemah tanpa repot

@@ -3,7 +3,7 @@ title: "Tips Liburan ke Pangalengan Bareng Anak, Seru!"
 date: "2026-04-27"
 category: "Tips"
 excerpt: "Liburan ke Pangalengan bareng anak bisa jadi pengalaman seru dan berkesan asal kamu tahu tips persiapannya dengan baik."
-image: "/pemandangan1.webp"
+image: "/images/editorial/strawberry-field.webp"
 ---
 
 Pangalengan, sebuah kawasan pegunungan yang tersembunyi di selatan Bandung, memang punya pesona tersendiri. Udaranya segar, pemandangannya hijau memanjakan mata, dan suasananya jauh dari keramaian kota. Nggak heran kalau banyak keluarga yang menjadikan Pangalengan sebagai destinasi liburan favorit, termasuk yang bawa anak-anak kecil sekalipun.

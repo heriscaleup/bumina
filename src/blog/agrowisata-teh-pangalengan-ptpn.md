@@ -3,7 +3,7 @@ title: "Agrowisata Teh Pangalengan PTPN: Surga Hijau di Bandung"
 date: "2026-05-11"
 category: "Wisata"
 excerpt: "Jelajahi keindahan agrowisata teh Pangalengan PTPN Bandung yang memukau dengan hamparan kebun teh hijau dan udara segar pegunungan."
-image: "/pemandangan1.webp"
+image: "/images/editorial/tea-factory-heritage.webp"
 ---
 
 Kalau kamu lagi cari destinasi wisata yang beda dari biasanya di sekitar Bandung, agrowisata teh Pangalengan adalah jawaban yang tepat. Bayangkan hamparan kebun teh hijau sepanjang mata memandang, udara segar yang bikin paru-paru happy, dan suasana pegunungan yang tenang jauh dari hiruk pikuk kota. Sounds perfect, right? Nah, di artikel ini kita bakal kupas tuntas semua hal yang perlu kamu tahu sebelum berkunjung ke surga hijau satu ini!

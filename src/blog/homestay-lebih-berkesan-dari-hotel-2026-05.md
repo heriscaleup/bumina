@@ -3,7 +3,7 @@ title: "Kenapa Homestay Lebih Berkesan dari Hotel?"
 date: "2026-05-29"
 category: "Tips"
 excerpt: "Pernah nanya kenapa liburan di homestay terasa beda? Ini alasan nyata kenapa nginap di homestay jauh lebih berkesan dan personal dari hotel bintang manapun."
-image: "/homestay-berkesan.webp"
+image: "/images/editorial/rainy-veranda.webp"
 ---
 
 Kamu pernah pulang dari liburan, tapi yang paling diingat justru bukan hotelnya — melainkan ibu pemilik penginapan yang masak sarapan sambil cerita sejarah kampung, atau teras yang menghadap sawah tempat kamu duduk sambil ngopi pagi. Itulah yang cuma bisa kamu dapat dari **homestay**.

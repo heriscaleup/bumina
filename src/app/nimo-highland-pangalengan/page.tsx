@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
 import { generateMetadataObject } from '@/lib/seo';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const WA_URL = 'https://wa.me/6285219460779?text=Halo%2C%20saya%20ingin%20tanya%20ketersediaan%20Homestay%20Bumina%20EENK%20Pangalengan';
 const SITE_URL = 'https://buminaeenk.com';
 
 export const metadata: Metadata = generateMetadataObject({
-  title: 'Nimo Highland Pangalengan — Sky Bridge, Tiket & Cara Ke Sana 2025',
-  description: 'Panduan lengkap wisata Nimo Highland Pangalengan: tiket masuk, sky bridge tapal kuda, jam buka, cara ke sana dari Bandung. Homestay Bumina EENK hanya 20 menit dari Nimo Highland.',
+  title: 'Nimo Highland Pangalengan — Sky Bridge, Tiket & Cara Ke Sana 2026',
+  description: 'Panduan lengkap wisata Nimo Highland Pangalengan: tiket masuk, sky bridge tapal kuda, jam buka, cara ke sana dari Bandung. Sekitar 45 menit dari Homestay Bumina EENK.',
   keywords: ['nimo highland pangalengan', 'sky bridge nimo highland', 'tiket nimo highland', 'nimo highland bandung', 'nimo highland cara ke sana', 'wisata pangalengan nimo'],
   canonical: '/nimo-highland-pangalengan/',
 });
@@ -19,15 +20,15 @@ const jsonLd = {
   description: 'Destinasi wisata Nimo Highland di Pangalengan dengan Glass Sky Bridge berbentuk tapal kuda (horseshoe). Panorama 360 derajat kebun teh dan Situ Cileunca dari ketinggian.',
   url: `${SITE_URL}/nimo-highland-pangalengan/`,
   address: { '@type': 'PostalAddress', streetAddress: 'Jl. Cisarua', addressLocality: 'Pangalengan', addressRegion: 'Jawa Barat', addressCountry: 'ID' },
-  nearbyLodging: { '@type': 'LodgingBusiness', name: 'Homestay Bumina EENK', url: SITE_URL, telephone: '+6285219460779', description: 'Penginapan 20 menit dari Nimo Highland. Menginap semalam dan berangkat pagi untuk hindari keramaian.' },
+  nearbyLodging: { '@type': 'LodgingBusiness', name: 'Homestay Bumina EENK', url: SITE_URL, telephone: '+6285219460779', description: 'Penginapan sekitar 45 menit dari Nimo Highland. Menginap semalam dan berangkat pagi untuk menghindari keramaian.' },
 };
 
 const faqs = [
   { q: 'Berapa tiket masuk Nimo Highland Pangalengan?', a: 'Tiket masuk Nimo Highland sekitar Rp 30.000–50.000 per orang. Harga bisa berubah tergantung periode (weekday/weekend) dan event tertentu. Selalu cek info terbaru sebelum berangkat.' },
   { q: 'Nimo Highland buka jam berapa?', a: 'Nimo Highland umumnya buka pukul 07.00–17.00 WIB. Datang sebelum jam 09.00 sangat disarankan untuk menghindari keramaian dan mendapatkan view terbaik sebelum kabut muncul.' },
-  { q: 'Dari Bandung ke Nimo Highland berapa lama?', a: 'Sekitar 2–2,5 jam dari pusat Kota Bandung menggunakan kendaraan pribadi via Jl. Banjaran–Pangalengan. Jika menginap di Bumina EENK, Nimo Highland hanya 20 menit dari homestay.' },
+  { q: 'Dari Bandung ke Nimo Highland berapa lama?', a: 'Sekitar 2–2,5 jam dari pusat Kota Bandung menggunakan kendaraan pribadi via Jl. Banjaran–Pangalengan. Dari Bumina EENK, estimasinya sekitar 45 menit.' },
   { q: 'Apakah ada parkir di Nimo Highland?', a: 'Ya, tersedia area parkir untuk motor dan mobil. Area parkir bisa penuh di weekend dan hari libur, jadi usahakan datang pagi hari sebelum jam 09.00.' },
-  { q: 'Penginapan mana yang terdekat dari Nimo Highland?', a: 'Homestay Bumina EENK hanya 20 menit berkendara dari Nimo Highland. Strategi terbaik: menginap di Bumina EENK, bangun pagi, sarapan, lalu berangkat ke Nimo sebelum ramai — dapat view terbaik, antrian lebih pendek.' },
+  { q: 'Penginapan nyaman untuk trip ke Nimo Highland?', a: 'Bumina EENK bisa menjadi home base privat untuk rombongan hingga 20 orang, sekitar 45 menit dari Nimo Highland. Berangkat pagi membantu mendapat suasana yang lebih tenang.' },
   { q: 'Apakah Nimo Highland ramai? Kapan waktu terbaik?', a: 'Sangat ramai di weekend dan hari libur, terutama setelah jam 10.00. Waktu terbaik: weekday pagi (07.00–09.00) atau weekend subuh. Menginap semalam di dekat lokasi (Bumina EENK) adalah strategi terbaik.' },
 ];
 
@@ -43,8 +44,11 @@ export default function NimoHighlandPage() {
         </div>
       </nav>
 
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-purple-950 via-indigo-900 to-blue-950">
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_top_left,_#818cf8,_transparent)]" />
+      <section className="relative min-h-[78vh] flex items-center justify-center overflow-hidden bg-indigo-950">
+        <div className="absolute inset-0">
+          <Image src="/images/editorial/nimo-skybridge.webp" alt="Jembatan langit Nimo Highland di atas kebun teh" fill priority unoptimized sizes="100vw" className="object-cover scale-[1.03]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-indigo-950/35 via-slate-950/55 to-slate-950/95" />
+        </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center pt-24 pb-16">
           <span className="inline-block bg-indigo-500/20 border border-indigo-400/30 text-indigo-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">🌉 Destinasi Viral Pangalengan</span>
           <h1 className="text-4xl sm:text-6xl font-black text-white leading-tight mb-6">
@@ -54,7 +58,7 @@ export default function NimoHighlandPage() {
             Glass Sky Bridge berbentuk tapal kuda dengan panorama 360° — hamparan kebun teh, Situ Cileunca dari ketinggian, dan gunung-gunung Pangalengan. Ini yang semua orang foto di sosmed.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-10">
-            {['🎟️ Tiket Rp 30–50 ribu', '📍 Jl. Cisarua, Pangalengan', '🌅 Terbaik: Pagi hari', '🏨 20 mnt dari Bumina EENK'].map(b => (
+            {['🎟️ Tiket Rp 30–50 ribu', '📍 Jl. Cisarua, Pangalengan', '🌅 Terbaik: Pagi hari', '🏨 ±45 mnt dari Bumina EENK'].map(b => (
               <span key={b} className="bg-white/10 border border-white/20 text-white text-xs font-semibold px-3 py-1.5 rounded-full">{b}</span>
             ))}
           </div>
@@ -72,7 +76,7 @@ export default function NimoHighlandPage() {
               { icon: '🎟️', label: 'Tiket Masuk', val: 'Rp 30–50 ribu' },
               { icon: '🕐', label: 'Jam Buka', val: '07.00–17.00' },
               { icon: '📍', label: 'Lokasi', val: 'Jl. Cisarua, Pangalengan' },
-              { icon: '🏨', label: 'Dari Bumina', val: '20 menit' },
+              { icon: '🏨', label: 'Dari Bumina', val: '±45 menit' },
             ].map(s => (
               <div key={s.label} className="p-4 rounded-xl bg-gray-50">
                 <div className="text-2xl mb-1">{s.icon}</div>
@@ -101,7 +105,7 @@ export default function NimoHighlandPage() {
                 'Pakai sepatu yang nyaman — ada area jalan di kebun teh',
                 'Bawa jaket — angin di atas jembatan bisa sangat kencang',
                 'Charge HP dan kamera penuh — view-nya sayang dilewatkan',
-                'Strategi terbaik: menginap semalam di Bumina EENK (20 mnt), berangkat pagi sebelum ramai',
+                'Strategi terbaik: menginap semalam di Bumina EENK, lalu berangkat lebih pagi sebelum ramai',
               ].map(t => (
                 <li key={t} className="flex gap-2"><span className="text-amber-500 flex-shrink-0">•</span>{t}</li>
               ))}
@@ -115,7 +119,7 @@ export default function NimoHighlandPage() {
           <div className="text-center mb-10">
             <span className="inline-block bg-emerald-100 text-emerald-700 font-bold text-xs tracking-widest uppercase px-4 py-2 rounded-full mb-4">Strategi Terbaik</span>
             <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">Menginap di Bumina EENK, Berangkat Pagi ke Nimo</h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">Jarak hanya 20 menit. Bangun jam 06.00 dari homestay, sarapan, berangkat jam 07.00 — tiba di Nimo Highland sebelum ramai. View terbaik, antrian terpendek.</p>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">Sekitar 45 menit dari homestay. Bangun lebih pagi, sarapan, lalu berangkat sebelum arus pengunjung datang untuk menikmati pemandangan dalam tempo yang lebih tenang.</p>
           </div>
           <div className="grid sm:grid-cols-3 gap-4 mb-8">
             {[

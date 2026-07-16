@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
 import { generateMetadataObject } from '@/lib/seo';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const WA_URL = 'https://wa.me/6285219460779?text=Halo%2C%20saya%20ingin%20tanya%20ketersediaan%20Homestay%20Bumina%20EENK%20Pangalengan';
 const SITE_URL = 'https://buminaeenk.com';
 
 export const metadata: Metadata = generateMetadataObject({
   title: 'Wisata Hutan Pinus Rahong Pangalengan — Camping, Healing & Spot Viral',
-  description: 'Panduan wisata Hutan Pinus Rahong Pangalengan: tiket masuk, aktivitas, camping, dan tips. Homestay Bumina EENK hanya 10 menit dari Rahong — basecamp ideal untuk healing trip.',
+  description: 'Panduan wisata Hutan Pinus Rahong Pangalengan: tiket masuk, aktivitas, camping, dan tips. Sekitar 32 menit dari Homestay Bumina EENK.',
   keywords: ['wisata rahong pangalengan', 'hutan pinus rahong', 'camping rahong pangalengan', 'rahong pangalengan tiket', 'penginapan dekat rahong pangalengan', 'healing pangalengan'],
   canonical: '/wisata-rahong-pangalengan/',
 });
@@ -19,15 +20,15 @@ const jsonLd = {
   description: 'Destinasi wisata alam hutan pinus di Pangalengan. Ada hammock area, tubing sungai, camping, dan suasana hutan pinus yang instagramable dan healing.',
   url: `${SITE_URL}/wisata-rahong-pangalengan/`,
   address: { '@type': 'PostalAddress', addressLocality: 'Pangalengan', addressRegion: 'Jawa Barat', addressCountry: 'ID' },
-  nearbyLodging: { '@type': 'LodgingBusiness', name: 'Homestay Bumina EENK', url: SITE_URL, telephone: '+6285219460779', description: 'Penginapan 10 menit dari Rahong. Basecamp ideal untuk healing trip Pangalengan.' },
+  nearbyLodging: { '@type': 'LodgingBusiness', name: 'Homestay Bumina EENK', url: SITE_URL, telephone: '+6285219460779', description: 'Penginapan sekitar 32 menit dari Rahong. Basecamp privat untuk healing trip Pangalengan.' },
 };
 
 const faqs = [
   { q: 'Berapa tiket masuk Hutan Pinus Rahong Pangalengan?', a: 'Tiket masuk Rahong sekitar Rp 15.000 per orang. Harga bisa berubah tergantung musim dan event. Bayar di loket saat masuk.' },
-  { q: 'Apakah boleh camping semalam di Rahong?', a: 'Ada fasilitas camping di area Rahong. Hubungi pengelola terlebih dahulu untuk info tarif camping dan ketersediaan spot. Alternatinya, menginap di homestay terdekat seperti Bumina EENK (10 menit) yang lebih nyaman.' },
+  { q: 'Apakah boleh camping semalam di Rahong?', a: 'Ada fasilitas camping di area Rahong. Hubungi pengelola terlebih dahulu untuk info tarif dan ketersediaan spot. Alternatifnya, Bumina EENK berjarak sekitar 32 menit dan menawarkan rumah privat yang lebih nyaman.' },
   { q: 'Berapa jauh Rahong dari Kota Bandung?', a: 'Rahong berjarak sekitar 40–45 km dari pusat Kota Bandung, dengan waktu tempuh sekitar 1,5–2 jam menggunakan kendaraan pribadi via Jl. Raya Banjaran–Pangalengan.' },
   { q: 'Aman tidak untuk anak-anak?', a: 'Ya, Hutan Pinus Rahong relatif aman untuk anak-anak. Areanya tidak terlalu curam dan ada jalur yang nyaman untuk jalan santai. Pengawasan orang tua tetap diperlukan, terutama saat tubing atau di dekat sungai.' },
-  { q: 'Penginapan mana yang paling dekat dengan Rahong?', a: 'Homestay Bumina EENK adalah pilihan terdekat — hanya 10 menit berkendara dari Hutan Pinus Rahong. Kapasitas 25 orang, terdaftar Agoda & Booking.com rating 4.9. Ideal untuk rombongan yang mau healing bareng.' },
+  { q: 'Berapa jarak Bumina EENK ke Rahong?', a: 'Perjalanan dari Bumina EENK ke Hutan Pinus Rahong sekitar 32 menit, bergantung lalu lintas. Homestay menerima maksimal 20 orang dan cocok untuk keluarga atau rombongan.' },
   { q: 'Aktivitas apa yang bisa dilakukan di Rahong?', a: 'Hammock di antara pohon pinus, tubing di sungai kecil, foto-foto instagramable dengan latar hutan pinus berkabut, camping, meditasi dan healing, serta trekking ringan di jalur hutan.' },
 ];
 
@@ -43,8 +44,11 @@ export default function WisataRahongPage() {
         </div>
       </nav>
 
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-green-950 via-emerald-900 to-teal-950">
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,_#166534,_transparent)]" />
+      <section className="relative min-h-[78vh] flex items-center justify-center overflow-hidden bg-green-950">
+        <div className="absolute inset-0">
+          <Image src="/images/editorial/rahong-pine-forest.webp" alt="Hutan Pinus Rahong yang berkabut pada pagi hari" fill priority unoptimized sizes="100vw" className="object-cover scale-[1.03]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-green-950/25 via-slate-950/50 to-slate-950/95" />
+        </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center pt-24 pb-16">
           <span className="inline-block bg-green-500/20 border border-green-400/30 text-green-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">🌲 Healing Spot Pangalengan</span>
           <h1 className="text-4xl sm:text-6xl font-black text-white leading-tight mb-6">
@@ -65,7 +69,7 @@ export default function WisataRahongPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
             {[
               { icon: '🎟️', label: 'Tiket Masuk', val: 'Rp 15 ribu' },
-              { icon: '🚗', label: 'Dari Bumina EENK', val: '10 menit' },
+              { icon: '🚗', label: 'Dari Bumina EENK', val: '±32 menit' },
               { icon: '⛺', label: 'Camping', val: 'Tersedia' },
               { icon: '🕐', label: 'Buka', val: 'Setiap hari' },
             ].map(s => (
@@ -110,13 +114,13 @@ export default function WisataRahongPage() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-10">
             <span className="inline-block bg-emerald-100 text-emerald-700 font-bold text-xs tracking-widest uppercase px-4 py-2 rounded-full mb-4">Rekomendasi Basecamp</span>
-            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">Bumina EENK — 10 Menit dari Rahong</h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">Healing trip lebih nyaman dengan home base yang tepat. Dari Bumina EENK, kamu bisa day trip ke Rahong pagi hari, lalu lanjut ke destinasi lain siang-sorenya.</p>
+            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">Bumina EENK — ±32 Menit dari Rahong</h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">Healing trip lebih nyaman dengan home base yang tepat. Dari Bumina EENK, kamu bisa menuju Rahong pagi hari lalu pulang ke rumah privat yang hangat.</p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
-              { icon: '📍', label: 'Jarak ke Rahong', val: '10 menit berkendara' },
-              { icon: '👥', label: 'Kapasitas', val: 'Hingga 25 orang' },
+              { icon: '📍', label: 'Jarak ke Rahong', val: '±32 menit berkendara' },
+              { icon: '👥', label: 'Kapasitas', val: 'Maksimal 20 orang' },
               { icon: '🔥', label: 'Perapian Hangat', desc: 'Malam di Pangalengan sangat dingin' },
               { icon: '⭐', label: 'Rating', val: '4.9/5 Booking.com' },
             ].map(f => (

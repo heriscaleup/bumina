@@ -4,7 +4,7 @@ description: "Mau pesan homestay last minute tapi takut kehabisan atau kena tipu
 pubDate: 2026-06-09T07:00:00.000Z
 category: "Tips"
 tags: ["pesan homestay last minute", "tips homestay", "liburan mendadak"]
-image: "/images/blog/tips-pesan-homestay-last-minute-2026-06.jpg"
+image: "/herohome-depan-villa.webp"
 readTime: "6 min read"
 author: "Tim Bumina"
 draft: false

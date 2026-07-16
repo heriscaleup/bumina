@@ -4,7 +4,7 @@ description: "Menginap di homestay bukan sekadar hemat — ada kehangatan, cerit
 pubDate: 2026-06-05T07:00:00.000Z
 category: "Lifestyle"
 tags: ["homestay vs hotel", "tips menginap", "wisata hemat"]
-image: "/images/blog/homestay-lebih-berkesan-dari-hotel-2026-06.jpg"
+image: "/images/editorial/fireplace-interior.webp"
 readTime: "7 min read"
 author: "Tim Bumina"
 draft: false

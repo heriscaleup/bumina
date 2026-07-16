@@ -181,7 +181,7 @@ export default function HomepageContent({ testimonials, sliderImages }: Homepage
                 </div>
                 <div className="bg-white p-8 rounded-2xl shadow-xl border border-green-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                     <div className="text-5xl mb-4">👥</div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">Kapasitas 25 Orang</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">Maksimal 20 Orang</h3>
                     <p className="text-gray-600">Villa luas yang cocok untuk keluarga besar, rombongan, atau gathering</p>
                 </div>
             </div>
@@ -238,7 +238,7 @@ export default function HomepageContent({ testimonials, sliderImages }: Homepage
                       index === currentTestimonial ? 'bg-emerald-400 scale-125' : 'bg-white/30 hover:bg-white/50'
                     }`}
                     aria-label={`Pindah ke testimoni ${index + 1}`}
-                    aria-pressed={index === currentTestimonial}
+                    aria-selected={index === currentTestimonial}
                     role="tab"
                   />
                 ))}

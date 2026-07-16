@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { generateMetadataObject, SchemaOrg } from "@/lib/seo";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = generateMetadataObject({
   title: "Kontak — Homestay Bumina EENK Pangalengan",
@@ -19,7 +20,7 @@ const YOUTUBE_URL = 'https://www.youtube.com/watch?v=bfpnKx1WCQw';
 const faqQuestions = [
   {
     question: "Berapa kapasitas maksimal homestay?",
-    answer: "Homestay kami dapat menampung hingga 25 orang dengan nyaman, cocok untuk keluarga besar atau rombongan kantor.",
+    answer: "Homestay kami menerima maksimal 20 orang. Harga dasar berlaku untuk 5 orang, lalu ditambah Rp70.000 per tamu berikutnya.",
   },
   {
     question: "Fasilitas apa saja yang tersedia?",
@@ -54,9 +55,12 @@ export default function ContactPage() {
       <main className="min-h-screen">
 
         {/* ─── HERO ─────────────────────────────── */}
-        <section className="relative overflow-hidden bg-emerald-950 py-24">
-          <div className="absolute -right-24 -top-20 h-80 w-80 rounded-full bg-emerald-400/10 blur-3xl" data-parallax="0.13" aria-hidden="true" />
-          <div className="max-w-4xl mx-auto px-4 text-center">
+        <section className="relative min-h-[62vh] overflow-hidden bg-emerald-950 flex items-center py-24">
+          <div className="absolute -inset-6" data-parallax="0.06" aria-hidden="true">
+            <Image src="/images/editorial/tea-road-dawn.webp" alt="" fill priority unoptimized sizes="100vw" className="object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-b from-emerald-950/45 via-slate-950/60 to-emerald-950/95" />
+          </div>
+          <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
             <span className="inline-block bg-emerald-800 text-emerald-300 font-bold text-xs tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-6">
               Kontak &amp; Lokasi
             </span>
@@ -104,27 +108,6 @@ export default function ContactPage() {
                     <div className="text-gray-400 text-xs mt-0.5">Biasanya respons dalam beberapa menit</div>
                   </div>
                 </a>
-
-                {/* Hidden WebMCP form for AI Agents to trigger WhatsApp chat */}
-                <form 
-                  action="https://wa.me/6285219460779" 
-                  method="GET" 
-                  style={{ display: 'none' }}
-                  {...{
-                    toolname: "startWhatsappChat",
-                    tooldescription: "Initiate a direct WhatsApp chat with Homestay Bumina EENK Pangalengan for booking or availability inquiries",
-                    toolautosubmit: "true"
-                  } as Record<string, string>}
-                >
-                  <input 
-                    type="text" 
-                    name="text" 
-                    {...{
-                      toolparamtitle: "messageText",
-                      toolparamdescription: "Pre-filled text message detailing your booking request or questions"
-                    } as Record<string, string>}
-                  />
-                </form>
 
                 {/* Alamat */}
                 <div className="flex items-start gap-4 p-5">
@@ -277,4 +260,3 @@ export default function ContactPage() {
     </>
   );
 }
-

@@ -7,7 +7,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = generateMetadataObject({
   title: "Tentang Kami — Cerita di Balik Villa Pangalengan",
-  description: "Pelajari kisah Homestay Bumina EENK, penginapan terpercaya di Pangalengan Bandung Selatan. Villa kebun teh, kapasitas 25 orang, rating 4.9/5 di Agoda & Booking.com.",
+  description: "Pelajari kisah Homestay Syariah Bumina EENK, rumah privat di Pangalengan Bandung Selatan dengan 3 kamar, 2 kamar mandi, dan kapasitas maksimal 20 orang.",
   canonical: "/about",
 });
 
@@ -16,7 +16,7 @@ const WA_URL = 'https://wa.me/6285219460779?text=Halo%2C%20saya%20ingin%20tanya%
 const stats = [
   { val: '200+', lbl: 'Tamu Puas' },
   { val: '4.9★', lbl: 'Rating Agoda & Booking' },
-  { val: '25', lbl: 'Kapasitas Orang' },
+  { val: '20', lbl: 'Kapasitas Maksimal' },
   { val: '1.400', lbl: 'Meter di Atas Laut' },
 ];
 
@@ -38,10 +38,10 @@ export default function AboutPage() {
           <div className="absolute inset-0">
             <div className="absolute -inset-6" data-parallax="0.06">
             <Image
-              src="/herohome-kebon-teh.webp"
-              alt="Kebun Teh Pangalengan — Homestay Bumina EENK"
+              src="/images/editorial/rainy-veranda.webp"
+              alt="Beranda hangat saat hujan turun di Pangalengan"
               fill
-              className="object-cover opacity-30"
+              className="object-cover opacity-65"
               priority
               unoptimized
             />
@@ -96,21 +96,15 @@ export default function AboutPage() {
                     Bagi kami, kebahagiaan adalah melihat tawa tamu saat berkumpul di malam hari, menyaksikan mereka menikmati secangkir teh hangat di pagi hari, dan menjadi bagian dari kenangan liburan yang tak terlupakan.
                   </p>
                 </div>
-                <div className="mt-8 flex items-center gap-3">
-                  <div className="flex -space-x-2">
-                    {['/konten1.webp', '/konten2.webp', '/pemandangan1.webp'].map((src, i) => (
-                      <div key={i} className="w-10 h-10 relative rounded-full overflow-hidden ring-2 ring-white">
-                        <Image src={src} alt="Tamu Bumina EENK" fill className="object-cover" unoptimized loading="lazy" sizes="40px" />
-                      </div>
-                    ))}
-                  </div>
-                  <span className="text-gray-500 text-sm">200+ tamu sudah merasakan pengalamannya</span>
+                <div className="mt-9 flex items-center gap-4 border-l border-emerald-800 pl-5">
+                  <span className="font-serif text-4xl italic text-emerald-800">200+</span>
+                  <span className="max-w-[15rem] text-sm leading-6 text-gray-500">malam yang telah berubah menjadi cerita keluarga.</span>
                 </div>
               </div>
               <div className="relative h-96 lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/konten2.webp"
-                  alt="Suasana villa Homestay Bumina EENK Pangalengan"
+                  src="/images/editorial/homestay-rain.webp"
+                  alt="Rumah hangat di antara kabut Pangalengan"
                   fill
                   className="object-cover"
                   sizes="(min-width: 1024px) 50vw, 100vw"
@@ -203,11 +197,11 @@ export default function AboutPage() {
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {[
-                { src: '/herohome-padang-yang-luas.webp', alt: 'Padang luas Bumina EENK Pangalengan', span: 'lg:col-span-2' },
-                { src: '/pemandangan1.webp', alt: 'Pemandangan gunung dari Bumina EENK', span: '' },
-                { src: '/konten1.webp', alt: 'Suasana dalam villa Bumina EENK', span: '' },
-                { src: '/pemandangan2.webp', alt: 'Alam Pangalengan Bandung Selatan', span: '' },
-                { src: '/herohome-tamanlangit.webp', alt: 'Taman Langit Pangalengan dekat Bumina EENK', span: '' },
+                { src: '/images/editorial/homestay-rain.webp', alt: 'Homestay hangat dalam kabut Pangalengan', span: 'lg:col-span-2' },
+                { src: '/images/editorial/bedroom-rain.webp', alt: 'Kamar tidur hangat dengan jendela menghadap hujan', span: '' },
+                { src: '/images/editorial/fireplace-interior.webp', alt: 'Perapian dalam rumah yang menyala', span: '' },
+                { src: '/images/editorial/homestay-kitchen.webp', alt: 'Dapur homestay siap digunakan', span: '' },
+                { src: '/images/editorial/outdoor-fireplace.webp', alt: 'Perapian luar rumah pada malam hari', span: '' },
               ].map((img, i) => (
                 <div key={i} className={`h-60 relative rounded-2xl overflow-hidden group ${img.span}`}>
                   <Image src={img.src} alt={img.alt} fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized loading="lazy" sizes="(max-width: 768px) 50vw, 25vw" />
