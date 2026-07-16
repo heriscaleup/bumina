@@ -33,8 +33,8 @@ export default async function BlogPage() {
               <span className="hidden sm:block">Pangalengan · Indonesia</span>
             </div>
             <p className="mb-5 text-xs font-black uppercase tracking-[0.28em] text-emerald-700">Bumina Field Notes · Vol. 01</p>
-            <h1 className="max-w-6xl text-[17vw] font-black leading-[.85] tracking-[-.085em] sm:text-[8rem] lg:text-[10.5rem]">
-              FIELD<span className="block mt-2 pl-[.16em] font-serif font-normal italic tracking-[-.065em] text-emerald-700">Notes.</span>
+            <h1 className="max-w-6xl text-[17vw] font-black leading-[.85] tracking-[-.04em] sm:text-[8rem] lg:text-[10.5rem]">
+              FIELD<span className="block mt-2 pl-[.16em] font-serif font-normal italic tracking-[-.03em] text-emerald-700">Notes.</span>
             </h1>
             <div className="mt-12 grid gap-6 border-t border-emerald-950/15 pt-6 sm:grid-cols-[1fr_1fr] lg:grid-cols-[1.4fr_.6fr]">
               <p className="max-w-2xl text-xl font-medium leading-8 tracking-[-.02em] sm:text-2xl">Catatan dari jalan berkabut, dapur yang tetap hangat, dan pagi yang dimulai sebelum matahari.</p>
