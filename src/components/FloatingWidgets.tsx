@@ -31,15 +31,15 @@ const FloatingWidgets = () => {
   ];
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
-      <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+    <div className="fixed bottom-5 right-4 z-50 sm:bottom-6 sm:right-6">
+      <div className="flex flex-col gap-2.5 sm:gap-3">
         {widgets.map((widget) => (
           <a
             key={widget.name}
             href={widget.link}
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex items-center justify-center w-16 h-16 rounded-full text-white shadow-lg transition-all duration-200 transform hover:scale-110 ${widget.color}`}
+            className={`group flex h-12 w-12 items-center justify-center rounded-full text-white shadow-xl shadow-emerald-950/20 transition-all duration-300 hover:-translate-y-1 hover:scale-110 sm:h-14 sm:w-14 ${widget.color}`}
             title={`Hubungi kami di ${widget.name}`}
           >
             {widget.icon}

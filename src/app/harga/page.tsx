@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const SITE_URL = 'https://buminaeenk.com';
 const WA_HARGA = 'https://wa.me/6285219460779?text=Halo%2C%20saya%20mau%20tanya%20info%20harga%20dan%20booking%20Homestay%20Bumina%20EENK%20Pangalengan';
@@ -158,6 +160,7 @@ export default function HargaPage() {
 
   return (
     <>
+      <Header />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }}
@@ -173,8 +176,8 @@ export default function HargaPage() {
       <section className="relative bg-gradient-to-br from-emerald-950 via-emerald-900 to-green-900 overflow-hidden">
         {/* Decorative blobs */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-emerald-700/20 blur-3xl" />
-          <div className="absolute bottom-0 -left-16 w-72 h-72 rounded-full bg-green-600/15 blur-3xl" />
+          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-emerald-700/20 blur-3xl" data-parallax="0.12" />
+          <div className="absolute bottom-0 -left-16 w-72 h-72 rounded-full bg-green-600/15 blur-3xl" data-parallax="0.07" />
         </div>
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 lg:pt-28 lg:pb-32">
@@ -829,6 +832,7 @@ export default function HargaPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

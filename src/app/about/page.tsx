@@ -36,6 +36,7 @@ export default function AboutPage() {
         {/* ─── HERO ─────────────────────────────── */}
         <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-emerald-950">
           <div className="absolute inset-0">
+            <div className="absolute -inset-6" data-parallax="0.06">
             <Image
               src="/herohome-kebon-teh.webp"
               alt="Kebun Teh Pangalengan — Homestay Bumina EENK"
@@ -44,6 +45,7 @@ export default function AboutPage() {
               priority
               unoptimized
             />
+            </div>
             <div className="absolute inset-0 bg-gradient-to-b from-emerald-950/60 to-emerald-950" />
           </div>
           <div className="relative z-10 max-w-4xl mx-auto px-4 text-center py-24">

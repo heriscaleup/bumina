@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import FloatingWidgets from "@/components/FloatingWidgets";
+import ExperienceShell from "@/components/ExperienceShell";
 import { generateMetadataObject } from "@/lib/seo";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body className={inter.className}>
+        <ExperienceShell />
         <div className="min-h-screen bg-white">
           {children}
           <FloatingWidgets />

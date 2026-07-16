@@ -54,7 +54,8 @@ export default function ContactPage() {
       <main className="min-h-screen">
 
         {/* ─── HERO ─────────────────────────────── */}
-        <section className="bg-emerald-950 py-24">
+        <section className="relative overflow-hidden bg-emerald-950 py-24">
+          <div className="absolute -right-24 -top-20 h-80 w-80 rounded-full bg-emerald-400/10 blur-3xl" data-parallax="0.13" aria-hidden="true" />
           <div className="max-w-4xl mx-auto px-4 text-center">
             <span className="inline-block bg-emerald-800 text-emerald-300 font-bold text-xs tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-6">
               Kontak &amp; Lokasi
@@ -276,5 +277,4 @@ export default function ContactPage() {
     </>
   );
 }
-
 

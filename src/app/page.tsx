@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const SITE_URL = 'https://buminaeenk.com';
 
@@ -449,7 +450,12 @@ export default function HomePage() {
               Bumina<span className="text-emerald-400"> EENK</span>
             </span>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-5">
+            <div className="hidden items-center gap-5 text-xs font-bold text-white/80 lg:flex">
+              <Link href="/about" className="transition-colors hover:text-emerald-300">Cerita Kami</Link>
+              <Link href="/harga" className="transition-colors hover:text-emerald-300">Harga</Link>
+              <Link href="/blog" className="transition-colors hover:text-emerald-300">Journal</Link>
+            </div>
             <div className="hidden sm:flex items-center gap-1.5 text-emerald-300 text-xs font-semibold">
               <ShieldCheck />
               Terverifikasi Agoda & Booking.com
@@ -470,15 +476,16 @@ export default function HomePage() {
           SECTION 1 — HERO
       ════════════════════════════════════════ */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
+        <div className="absolute -inset-6" data-parallax="0.075">
           <Image src="/herohome.webp" alt="Villa Kebun Teh Pangalengan Homestay Bumina EENK" fill className="object-cover" priority unoptimized />
           <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/90" />
         </div>
+        <div className="grain-overlay absolute inset-0" aria-hidden="true" />
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center text-white pt-24 pb-20">
 
           {/* Trust badge row */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-8">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-8" data-reveal>
             <a href={AGODA_URL} target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-1.5 bg-red-600/90 backdrop-blur-sm border border-red-400/30 rounded-full px-3.5 py-1.5 text-xs font-bold hover:bg-red-500 transition-colors">
               <span className="text-sm">🏨</span> Agoda Verified
@@ -492,7 +499,7 @@ export default function HomePage() {
             </span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.05] mb-6">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.05] mb-6" data-reveal="slow">
             Homestay Kebun Teh<br />
             <span className="text-emerald-400">Terpercaya</span> di Pangalengan
           </h1>
@@ -1242,5 +1249,4 @@ export default function HomePage() {
     </div>
   );
 }
-
 
