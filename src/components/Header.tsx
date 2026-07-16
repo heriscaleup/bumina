@@ -9,7 +9,7 @@ const navigation = [
   { name: "Experience", href: "/#experience", section: "experience" },
   { name: "The Stay", href: "/#stay", section: "stay" },
   { name: "Facilities", href: "/#facilities", section: "facilities" },
-  { name: "Rates", href: "/#rates", section: "rates" },
+  { name: "Rates", href: "/harga", section: "harga" },
   { name: "Journal", href: "/blog", section: "blog" },
 ] as const;
 
@@ -19,7 +19,11 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const isActive = (section: string) => section === "blog" && pathname.startsWith("/blog");
+  const isActive = (section: string) => {
+    if (section === "blog" && pathname.startsWith("/blog")) return true;
+    if (section === "harga" && pathname.startsWith("/harga")) return true;
+    return false;
+  };
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#061b15]/72 text-white shadow-[0_1px_0_rgba(255,255,255,.04)] backdrop-blur-xl">
