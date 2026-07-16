@@ -5,6 +5,7 @@ import FloatingWidgets from "@/components/FloatingWidgets";
 import ExperienceShell from "@/components/ExperienceShell";
 import { generateMetadataObject } from "@/lib/seo";
 import AgentBookingBar from "@/components/AgentBookingBar";
+import Preloader from "@/components/Preloader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
         </head>
       ) : null}
       <body className={inter.className}>
+        <Preloader />
         <ExperienceShell />
         <div className="min-h-screen bg-white">
           {children}
